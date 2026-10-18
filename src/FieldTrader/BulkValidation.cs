@@ -1,0 +1,25 @@
+using System.IO;
+using System.Text.Json;
+using System.Diagnostics;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+namespace FieldTrader;
+public static class BulkValidation {
+ public static async Task Run(string bulkDirectory,string reports){Directory.CreateDirectory(reports);var db=new CatalogStore(Path.Combine(reports,"verification-database"));db.Load();SeedCatalog.Merge(db);int missingImages=db.Data.Items.Count(i=>ItemImage.Load(i,db)==null);if(missingImages>0)throw new InvalidOperationException("有物品图片未能加载");var engine=new TemplateRecognitionService();engine.Load(db.Data,db.Root);var recordings=JsonSerializer.Deserialize<List<ExportRecording>>(File.ReadAllText(Path.Combine(bulkDirectory,"export.json")))!;var results=new List<object>();int correct=0,rejected=0,wrong=0,total=0;var elapsed=new List<double>();
+  await Task.Run(()=>{foreach(var r in recordings){int trainCount=r.Clips.Count>=6?4:Math.Max(1,r.Clips.Count/2);var wanted=db.Data.Items.Where(i=>i.SourceName==r.Name).Select(i=>i.Id).ToHashSet();foreach(var clip in r.Clips.Skip(trainCount)){var clock=Stopwatch.StartNew();var decision=engine.Compare(AudioFiles.Read(Path.Combine(bulkDirectory,"clips",clip.File)),db.Data);elapsed.Add(clock.Elapsed.TotalMilliseconds);bool contains=decision.Result?.Candidates.Any(c=>wanted.Contains(c.Item.Id))==true;total++;if(contains)correct++;else if(decision.Result==null)rejected++;else wrong++;results.Add(new{Name=r.Name,clip.File,Status=contains?"正确候选组":decision.Result==null?"拒绝":"错组",Distance=decision.Ranking.FirstOrDefault()?.Distance,Margin=decision.Ranking.Count>1?decision.Ranking[1].Distance-decision.Ranking[0].Distance:1,Candidates=decision.Result?.Candidates.Select(c=>c.Item.Name).ToArray()??[],decision.Reason});}}});
+  int falseAccepts=0;await Task.Run(()=>{for(int seed=0;seed<40;seed++){var random=new Random(seed);var x=Enumerable.Range(0,2400+seed*200).Select(_=>(float)((random.NextDouble()*2-1)*.03)).ToArray();if(engine.Compare(new(x,16000,DateTimeOffset.Now),db.Data).Result!=null)falseAccepts++;}});
+  File.WriteAllText(Path.Combine(reports,"held-out-results.json"),JsonSerializer.Serialize(results,new JsonSerializerOptions{WriteIndented=true}));var summary=new{ImageLoadErrors=missingImages,Items=db.Data.Items.Count,Groups=db.Data.SoundGroups.Count,Templates=engine.TemplateCount,LoadErrors=engine.LoadErrors,HeldOut=total,CorrectCandidateGroup=correct,Rejected=rejected,WrongGroup=wrong,NoiseFalseAccepts=falseAccepts,NoiseTests=40,MeanMilliseconds=elapsed.Average(),MaxMilliseconds=elapsed.Max()};File.WriteAllText(Path.Combine(reports,"summary.json"),JsonSerializer.Serialize(summary,new JsonSerializerOptions{WriteIndented=true}));
+  // Render original screenshots with the exact in-app crop and aspect-ratio behavior for QA.
+  var sorted=db.Data.Items.OrderBy(i=>i.Name,StringComparer.Ordinal).ToArray();for(int page=0;page*20<sorted.Length;page++){var panel=new UniformGrid{Columns=5,Rows=4,Width=1000,Height=800,Background=new SolidColorBrush(Color.FromRgb(9,21,29))};foreach(var item in sorted.Skip(page*20).Take(20)){var stack=new StackPanel{Margin=new Thickness(8)};stack.Children.Add(new TextBlock{Text=item.Name,FontSize=15});stack.Children.Add(new Image{Source=ItemImage.Load(item,db),Width=180,Height=137,Stretch=Stretch.Uniform,Margin=new Thickness(0,5,0,5)});stack.Children.Add(new TextBlock{Text=ItemImage.Layout(item),FontSize=12});panel.Children.Add(stack);}Render(panel,1000,800,Path.Combine(reports,$"image-review-{page+1}.png"));}
+  using var session=new SessionState(db,Application.Current.Dispatcher);var main=new MainWindow(session);var hud=new OverlayWindow(session);main.Show();hud.Show();var sample=db.Data.SoundSamples.First(s=>s.SourceRecording=="显卡.wav");session.Publish(engine.Compare(AudioFiles.Read(Path.Combine(db.Root,sample.FilePath)),db.Data).Result!);await Task.Delay(150);Render(main,(int)main.ActualWidth,(int)main.ActualHeight,Path.Combine(reports,"main-window.png"));Render(hud,(int)hud.ActualWidth,(int)hud.ActualHeight,Path.Combine(reports,"hud-layout.png"));
+  var shared=db.Data.SoundSamples.First(s=>s.SourceRecording=="红绿蓝宝石.wav");session.Publish(engine.Compare(AudioFiles.Read(Path.Combine(db.Root,shared.FilePath)),db.Data).Result!);session.LayoutFilter="1格";await Task.Delay(100);if(session.HudCandidates.Count()!=3)throw new InvalidOperationException("宝石组与1格筛选应显示三色宝石");Render(hud,(int)hud.ActualWidth,(int)hud.ActualHeight,Path.Combine(reports,"hud-gems-filter.png"));hud.Close();main.Close();
+ }
+ private static void Render(FrameworkElement element,int width,int height,string path){if(element is Window){element.UpdateLayout();width=(int)element.ActualWidth;height=(int)element.ActualHeight;}else{element.Measure(new Size(width,height));element.Arrange(new Rect(0,0,width,height));element.UpdateLayout();}var bitmap=new RenderTargetBitmap(width,height,96,96,PixelFormats.Pbgra32);bitmap.Render(element);var encoder=new PngBitmapEncoder();encoder.Frames.Add(BitmapFrame.Create(bitmap));using var file=File.Create(path);encoder.Save(file);}
+}
+
+
+
+

@@ -1,0 +1,17 @@
+﻿VB-CABLE 虚拟音频组件（独立第三方软件）
+
+作者及版权：Vincent Burel / VB-Audio Software。
+官方网站：https://vb-audio.com/Cable/ ，https://www.vb-cable.com/
+许可与分发说明：https://vb-audio.com/Services/licensing.htm
+
+VB-CABLE 是 Donationware，欢迎用户在觉得有用时自愿付费支持其作者。
+VB-CABLE 并非听声识物作者开发；听声识物的免费使用说明不替代VB-CABLE自身许可。
+本软件随附标准版完整原始包，未修改其安装器、驱动、签名、说明或原始许可文件。
+按官方当前公开分发规则“VB-CABLE Distribution with other product”，在明确来源且保留Donationware模式的情况下，可随免费或商业应用分发标准包。A+B、C+D扩展包不包含在此软件中。
+原始包readme.txt同时保留，请阅读官方现行许可及原始说明。
+
+安装：
+安装向导完成页勾选“安装虚拟麦克风组件 VB-CABLE”；或在游戏语音板点击“安装虚拟麦克风”。
+Windows会要求管理员确认，然后打开官方安装窗口，点击Install Driver并按提示重启。
+已有VB-CABLE时不重复安装。取消管理员确认不会影响听声识物的其他功能。
+卸载听声识物不会自动卸载共享的VB-CABLE驱动，以免影响其他音频软件。

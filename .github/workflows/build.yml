@@ -1,0 +1,42 @@
+name: Windows build and offline checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - name: Publish Windows x64
+        shell: pwsh
+        run: ./build.ps1
+      - name: Offline audio, PTT and bundled component checks
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $checks = @(
+            @{ Command = '--microphone-mix-test'; Dir = 'artifacts/tests/mix'; Report = 'mix-validation.json' },
+            @{ Command = '--ptt-test'; Dir = 'artifacts/tests/ptt'; Report = 'ptt-validation.json' },
+            @{ Command = '--cable-bundle-test'; Dir = 'artifacts/tests/cable'; Report = 'bundle-validation.json' }
+          )
+          foreach ($check in $checks) {
+            $process = Start-Process -FilePath './artifacts/publish/FieldTrader.exe' -ArgumentList @($check.Command, $check.Dir) -Wait -PassThru
+            if ($process.ExitCode -ne 0) { throw "Check failed: $($check.Command)" }
+            $report = Get-Content (Join-Path $check.Dir $check.Report) -Raw | ConvertFrom-Json
+            if (-not $report.Passed) { throw "Check did not pass: $($check.Command)" }
+          }
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: FieldTrader-Windows-x64
+          path: |
+            artifacts/publish/
+            artifacts/tests/
+          retention-days: 7

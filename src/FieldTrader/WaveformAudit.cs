@@ -1,0 +1,13 @@
+using System.IO;
+using System.Text.Json;
+namespace FieldTrader;
+public static class WaveformAudit {
+ public static void Run(string path,string directory){Directory.CreateDirectory(directory);var store=new CatalogStore(Path.Combine(directory,"database"));store.Load();SeedCatalog.Merge(store);var engine=new WaveformRecognitionService();engine.Load(store.Data,store.Root);var detector=new PickupEventDetector();var audio=AudioFiles.Read(path);var rows=new List<object>();int step=audio.SampleRate/100;int starts=0;detector.Detected+=()=>starts++;
+  for(int i=0;i<audio.Mono.Length+audio.SampleRate;i+=step){var data=i<audio.Mono.Length?audio.Mono[i..Math.Min(audio.Mono.Length,i+step)]:new float[step];foreach(var frame in detector.Push(new(data,audio.SampleRate,DateTimeOffset.UnixEpoch.AddSeconds(i/(double)audio.SampleRate)))){var watch=System.Diagnostics.Stopwatch.StartNew();var d=engine.Compare(frame,store.Data);rows.Add(new{Time=(frame.Timestamp-DateTimeOffset.UnixEpoch).TotalSeconds,Ms=watch.Elapsed.TotalMilliseconds,Accepted=d.Result!=null,d.Reason,Groups=d.Ranking.Take(3).Select(r=>new{Name=store.Data.SoundGroups.First(g=>g.Id==r.GroupId).Name,r.Score})});}}
+  var silent=engine.Compare(new(new float[6720],16000,DateTimeOffset.Now),store.Data);if(silent.Result!=null)throw new Exception("静音误匹配");
+  var sample=FirstSound.Templates(store.Data).First();var known=AudioFiles.Read(Path.Combine(store.Root,sample.FilePath));var normal=engine.Compare(known,store.Data);var quiet=engine.Compare(known with {Mono=known.Mono.Select(v=>v*.15f).ToArray()},store.Data);if(normal.Ranking.Count==0||Math.Abs(normal.Ranking[0].Score-quiet.Ranking[0].Score)>.001)throw new Exception("音量不变性失败");
+  var checks=new List<string>{"PASS 静音不匹配","PASS 同一声音降低至15%音量分数保持一致"};
+  var duplicate=new Catalog();duplicate.SoundGroups.AddRange([new("a","a"),new("b","b")]);duplicate.Items.AddRange([new("a","a",null,"a"),new("b","b",null,"b")]);duplicate.SoundSamples.AddRange([sample with{Id="a",SoundGroupId="a",SourceBatch=null},sample with{Id="b",SoundGroupId="b",SourceBatch=null}]);var ambiguous=new WaveformRecognitionService();ambiguous.Load(duplicate,store.Root);var conflict=ambiguous.Compare(known,duplicate);if(conflict.Result!=null||conflict.Ranking[0].Score<.70)throw new Exception("跨组同分拒绝失败");checks.Add("PASS 两组均超过70%且同分时显示不确定");File.WriteAllLines(Path.Combine(directory,"checks.txt"),checks);
+  File.WriteAllText(Path.Combine(directory,"audit.json"),JsonSerializer.Serialize(new{engine.TemplateCount,engine.LoadErrors,Starts=starts,SilenceRejected=true,Rows=rows},new JsonSerializerOptions{WriteIndented=true}));
+ }
+}

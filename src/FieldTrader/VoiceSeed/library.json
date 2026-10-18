@@ -1,0 +1,69 @@
+{
+  "Revision": "qq20261015-v081",
+  "Phrases": [
+    {
+      "Id": "qq20261015-130539",
+      "Title": "哈基米吐槽",
+      "Text": "",
+      "Note": "围绕“哈基米”的中文吐槽梗，偏调侃",
+      "Hotkey": "Ctrl+Shift+1",
+      "Wav": "voiceboard-audio/qq20261015-130539.wav"
+    },
+    {
+      "Id": "qq20261015-130842",
+      "Title": "哈基米小曲",
+      "Text": "",
+      "Note": "蜂蜜饮料歌，轻松活跃气氛",
+      "Hotkey": "Ctrl+Shift+2",
+      "Wav": "voiceboard-audio/qq20261015-130842.wav"
+    },
+    {
+      "Id": "qq20261015-131320",
+      "Title": "哈基米连唱",
+      "Text": "",
+      "Note": "反复唱“哈基米”的轻松调侃音效",
+      "Hotkey": "Ctrl+Shift+3",
+      "Wav": "voiceboard-audio/qq20261015-131320.wav"
+    },
+    {
+      "Id": "qq20261015-131420",
+      "Title": "WOW惊讶",
+      "Text": "",
+      "Note": "哇！表达惊讶或赞叹",
+      "Hotkey": "Ctrl+Shift+4",
+      "Wav": "voiceboard-audio/qq20261015-131420.wav"
+    },
+    {
+      "Id": "qq20261015-131458",
+      "Title": "阿米诺斯",
+      "Text": "",
+      "Note": "网络音译梗；具体含义未确认，偏调侃",
+      "Hotkey": "Ctrl+Shift+5",
+      "Wav": "voiceboard-audio/qq20261015-131458.wav"
+    },
+    {
+      "Id": "qq20261015-131524",
+      "Title": "呵呵笑声",
+      "Text": "",
+      "Note": "夸张笑声，调侃或表示好笑",
+      "Hotkey": "Ctrl+Shift+6",
+      "Wav": "voiceboard-audio/qq20261015-131524.wav"
+    },
+    {
+      "Id": "qq20261015-131608",
+      "Title": "斯国一",
+      "Text": "",
+      "Note": "日语“好厉害”，表示称赞或惊讶",
+      "Hotkey": "Ctrl+Shift+7",
+      "Wav": "voiceboard-audio/qq20261015-131608.wav"
+    },
+    {
+      "Id": "qq20261015-131724",
+      "Title": "不给",
+      "Text": "",
+      "Note": "表示不给、拒绝或开玩笑地回绝",
+      "Hotkey": "Ctrl+Shift+8",
+      "Wav": "voiceboard-audio/qq20261015-131724.wav"
+    }
+  ]
+}
