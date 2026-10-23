@@ -4,7 +4,7 @@
 
 **FieldTrader ·《暗区突围：无限》声音识别与游戏语音工具**
 
-![版本](https://img.shields.io/badge/version-0.9.2-EAA44A)
+![版本](https://img.shields.io/badge/version-0.9.3-EAA44A)
 ![平台](https://img.shields.io/badge/platform-Windows%20x64-247BB2)
 ![技术](https://img.shields.io/badge/.NET-8%20%7C%20WPF-6D54A4)
 
@@ -18,7 +18,7 @@
 
 ## 下载与安装
 
-普通用户请到 **[Releases 下载页面](https://github.com/yu6339096-creator/FieldTrader/releases/latest)** 下载 `FieldTrader-0.9.2-Setup.exe`，不要把 GitHub 的源码压缩包当成可运行软件。
+普通用户请到 **[Releases 下载页面](https://github.com/yu6339096-creator/FieldTrader/releases/latest)** 下载 `FieldTrader-0.9.3-Setup.exe`，不要把 GitHub 的源码压缩包当成可运行软件。
 
 - 安装版包含 .NET 运行组件、物品数据库、图片、声音样本和语音音效。
 - 同时提供便携版 ZIP，解压后运行 `FieldTrader.exe`。
@@ -44,7 +44,7 @@
 | 模块 | 功能 |
 | --- | --- |
 | 听声识物 | 持续监听 Windows 输出音频，以拿起声为重点，与本地模板匹配 |
-| 游戏悬浮窗 | 置顶、拖动、锁定、规格筛选、透明图片品质底色、透明度、价格/品质/名字排序、极简模式；保留最近两轮有效结果 |
+| 游戏悬浮窗 | 置顶、拖动、自由缩放并记忆尺寸、锁定、规格筛选、透明图片品质底色、透明度、价格/品质/名字排序、极简模式；保留最近两轮有效结果 |
 | 悬浮窗记忆 | 自动记忆透明度和排序方式；规格筛选每次重新打开时恢复为“全部规格” |
 | 品质背景颜色 | 在软件设置中分别自定义红色、金色、紫色物品图片的透明区域底色 |
 | 全局快捷键 | 默认 `Alt + W` 开始/停止监听，可在软件设置中自定义 |
