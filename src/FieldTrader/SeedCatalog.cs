@@ -2,7 +2,9 @@ using System.IO;
 using System.Text.Json;
 namespace FieldTrader;
 public static class SeedCatalog {
- public static void Merge(CatalogStore store){var root=Path.Combine(AppContext.BaseDirectory,"SeedData");var file=Path.Combine(root,"catalog.json");if(!File.Exists(file))return;var seed=JsonSerializer.Deserialize<Catalog>(File.ReadAllText(file))!;CatalogStore.Validate(seed);if(seed.SeedRevision!=null&&store.Data.SeedRevision==seed.SeedRevision)return;
+ public static void Merge(CatalogStore store){var root=Path.Combine(AppContext.BaseDirectory,"SeedData");var file=Path.Combine(root,"catalog.json");if(!File.Exists(file))return;var seed=JsonSerializer.Deserialize<Catalog>(File.ReadAllText(file))!;CatalogStore.Validate(seed);
+  var seedIsCurrent=seed.SeedRevision!=null&&store.Data.SeedRevision==seed.SeedRevision&&seed.Items.All(item=>string.IsNullOrWhiteSpace(item.Quality)||store.Data.Items.Any(existing=>existing.Id==item.Id&&existing.Quality==item.Quality&&existing.QualityColor==item.QualityColor));
+  if(seedIsCurrent)return;
   var current=Path.Combine(store.Root,"catalog.json");if(File.Exists(current))File.Copy(current,Path.Combine(store.Root,$"catalog-backup-{DateTime.Now:yyyyMMdd-HHmmss-fff}.json"),false);
   if(seed.ReplaceLegacySeeds){
    var legacyGroupIds=store.Data.SoundGroups.Where(g=>g.Id.StartsWith("family-202609-")||g.Id.StartsWith("merchanthelper-")||g.Id.StartsWith("demo-")||g.Id is "sound-double-neck-lute-20261008" or "sound-golden-lion" or "sound-antique-teapot").Select(g=>g.Id).ToHashSet();

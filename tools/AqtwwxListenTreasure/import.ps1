@@ -11,7 +11,7 @@ $catalogPath = Join-Path $seedRoot 'catalog.json'
 $sourceBase = 'https://aqtwwx.net'
 $sourcePage = "$sourceBase/listen-treasure"
 $sourceBatch = 'aqtwwx-listen-treasure-20261023'
-$seedRevision = 'aqtwwx-listen-treasure-20261023-v1'
+$seedRevision = 'aqtwwx-listen-treasure-20261023-v2'
 
 if (-not (Test-Path -LiteralPath $Snapshot)) { throw "Missing snapshot: $Snapshot" }
 $snapshotData = Get-Content -LiteralPath $Snapshot -Raw | ConvertFrom-Json

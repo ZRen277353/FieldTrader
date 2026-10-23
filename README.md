@@ -4,7 +4,7 @@
 
 **FieldTrader ·《暗区突围：无限》声音识别与游戏语音工具**
 
-![版本](https://img.shields.io/badge/version-0.9.1-EAA44A)
+![版本](https://img.shields.io/badge/version-0.9.2-EAA44A)
 ![平台](https://img.shields.io/badge/platform-Windows%20x64-247BB2)
 ![技术](https://img.shields.io/badge/.NET-8%20%7C%20WPF-6D54A4)
 
@@ -18,7 +18,7 @@
 
 ## 下载与安装
 
-普通用户请到 **[Releases 下载页面](https://github.com/yu6339096-creator/FieldTrader/releases/latest)** 下载 `FieldTrader-0.9.1-Setup.exe`，不要把 GitHub 的源码压缩包当成可运行软件。
+普通用户请到 **[Releases 下载页面](https://github.com/yu6339096-creator/FieldTrader/releases/latest)** 下载 `FieldTrader-0.9.2-Setup.exe`，不要把 GitHub 的源码压缩包当成可运行软件。
 
 - 安装版包含 .NET 运行组件、物品数据库、图片、声音样本和语音音效。
 - 同时提供便携版 ZIP，解压后运行 `FieldTrader.exe`。
