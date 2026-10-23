@@ -16,7 +16,7 @@ public partial class MainWindow : Window {
  private void StartListening(object sender,RoutedEventArgs e)=>StartListeningFromShortcut();
  private async void StopListening(object sender,RoutedEventArgs e)=>await session.StopAsync();
  private void StartListeningFromShortcut() { if(!session.CanStart)return;session.Start();if(session.Listening)ShowOverlay(); }
- private async Task ToggleListeningAsync() { if(session.Listening)await session.StopAsync();else StartListeningFromShortcut(); }
+ private async Task ToggleListeningAsync() { if(session.Listening){await session.StopAsync();if(!session.Listening)overlay?.Hide();}else StartListeningFromShortcut(); }
  private void RefreshDevices(object sender,RoutedEventArgs e)=>session.RefreshDevices();
  private void AudioDiagnostics(object sender,RoutedEventArgs e){
   var panel=new StackPanel{Margin=new Thickness(20)};
@@ -43,7 +43,7 @@ public partial class MainWindow : Window {
  private void GoHome(object sender,RoutedEventArgs e)=>Activate();
  private void ClearHistory(object sender,RoutedEventArgs e)=>session.ClearHistory();
  private void OpenDataFolder(object sender,RoutedEventArgs e){try{Process.Start(new ProcessStartInfo(session.Store.Root){UseShellExecute=true});}catch(Exception ex){ShowInfo("无法打开数据目录",ex.Message);}}
- private void Help(object sender,RoutedEventArgs e)=>ShowInfo("使用说明","作者：取名字真麻烦\n抖音号：21360166462\n作者 QQ：3445838743\n免费使用，禁止倒卖；转载分发请保留作者信息。\n\n1. 选择游戏使用的输出设备，点击开始监听，小悬浮窗将自动打开。默认可用全局快捷键 Alt + W 开始或停止监听，并在「软件设置」中修改。\n\n2. 两个窗口的波形、电平与频谱来自实际采集。开始监听后只匹配拿起声音的起始部分，无需放下声音；也可以用「音频文件测试」分析录音。相似度不是准确率。\n\n3. 在「物品数据库」中添加图片、声音样本和声音组关系。同一声音可能对应多个物品。悬浮窗在物品名称下显示 MerchantHelper 参考价。\n\n4. 拖动小窗标题栏调整位置；锁定后不能拖动；极简缩小显示；规格切换与透明度选项默认显示。\n\n5. 隐藏 HUD、最小化主窗口不会停止监听；退出主程序会释放设备。建议游戏使用窗口化或无边框全屏，独占全屏可能无法覆盖。");
+ private void Help(object sender,RoutedEventArgs e)=>ShowInfo("使用说明","作者：取名字真麻烦\n抖音号：21360166462\n作者 QQ：3445838743\n免费使用，禁止倒卖；转载分发请保留作者信息。\n\n1. 选择游戏使用的输出设备，点击开始监听，小悬浮窗将自动打开。默认可用全局快捷键 Alt + W 开始或停止监听，停止时悬浮窗同步隐藏，快捷键可在「软件设置」中修改。\n\n2. 两个窗口的波形、电平与频谱来自实际采集。开始监听后只匹配拿起声音的起始部分，无需放下声音；也可以用「音频文件测试」分析录音。相似度不是准确率。\n\n3. 在「物品数据库」中添加图片、声音样本和声音组关系。同一声音可能对应多个物品。悬浮窗在物品名称下显示 MerchantHelper 参考价。\n\n4. 拖动小窗标题栏调整位置；锁定后不能拖动；极简缩小显示；规格切换与透明度选项默认显示。\n\n5. 隐藏 HUD、最小化主窗口不会停止监听；退出主程序会释放设备。建议游戏使用窗口化或无边框全屏，独占全屏可能无法覆盖。");
  private void Settings(object sender,RoutedEventArgs e){
   var panel=new StackPanel{Margin=new Thickness(24)};
   panel.Children.Add(new TextBlock{Text="全局监听快捷键",FontSize=16,Margin=new Thickness(0,0,0,8)});
