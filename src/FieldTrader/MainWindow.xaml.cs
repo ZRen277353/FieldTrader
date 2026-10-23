@@ -5,8 +5,9 @@ using System.Windows.Controls;
 using System.Windows.Input;
 namespace FieldTrader;
 public partial class MainWindow : Window {
- private readonly SessionState session; private OverlayWindow? overlay;private VoiceBoardWindow? voiceBoard;
- public MainWindow(SessionState session) { InitializeComponent(); this.session=session; DataContext=session;Closed+=(_,_)=>voiceBoard?.Dispose(); }
+ private readonly SessionState session; private OverlayWindow? overlay;private VoiceBoardWindow? voiceBoard;private Market.MarketWindow? market;
+ public MainWindow(SessionState session) { InitializeComponent(); this.session=session; DataContext=session;Closed+=(_,_)=>{voiceBoard?.Dispose();market?.Close();}; }
+ private void OpenMarket(object sender,RoutedEventArgs e){market??=new Market.MarketWindow(session.Store.Root){Owner=this};market.Closed+=(_,_)=>market=null;market.Show();market.Activate();}
  private void StartListening(object sender,RoutedEventArgs e) { session.Start(); if(session.Listening) ShowOverlay(); }
  private async void StopListening(object sender,RoutedEventArgs e)=>await session.StopAsync();
  private void RefreshDevices(object sender,RoutedEventArgs e)=>session.RefreshDevices();

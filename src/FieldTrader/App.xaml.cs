@@ -4,6 +4,12 @@ namespace FieldTrader;
 public partial class App : Application {
  private SessionState? session;
  protected override async void OnStartup(StartupEventArgs e) { base.OnStartup(e); ShutdownMode=ShutdownMode.OnMainWindowClose; try {
+  if(e.Args.Length==2&&e.Args[0]=="--market-ab-test"){await Task.Run(()=>Market.MarketStageValidation.Run(e.Args[1]));Shutdown();return;}
+  if(e.Args.Length==2&&e.Args[0]=="--stage-cd-test"){await Task.Run(()=>Market.MarketCdValidation.Run(e.Args[1]));Shutdown();return;}
+  if(e.Args.Length==4&&e.Args[0]=="--cd-vision"){await Task.Run(()=>Market.MarketCdValidation.Replay(e.Args[1],e.Args[2],e.Args[3]));Shutdown();return;}
+  if(e.Args.Length==4&&e.Args[0]=="--market-vision"){await Task.Run(()=>Market.MarketStageValidation.AnalyzeFolder(e.Args[1],e.Args[2],e.Args[3]));Shutdown();return;}
+  if(e.Args.Length==4&&e.Args[0]=="--market-integration-test"){await Market.MarketIntegrationValidation.Run(e.Args[1],e.Args[2],e.Args[3]);Shutdown();return;}
+  if(e.Args.Length==3&&e.Args[0]=="--market-ui-preview"){await Market.MarketIntegrationValidation.Preview(e.Args[1],e.Args[2]);Shutdown();return;}
   if(e.Args.Length>=2&&e.Args[0]=="--cable-bundle-test"){VoiceCableValidation.Run(e.Args[1]);Shutdown();return;}
   if(e.Args.Length==1&&e.Args[0]=="--has-vbcable"){Shutdown(VoiceCableInstaller.IsInstalled()?0:3);return;}
   if(e.Args.Length>=2&&e.Args[0]=="--microphone-mix-test"){VoiceMixValidation.Run(e.Args[1]);Shutdown();return;}

@@ -1,0 +1,3086 @@
+{
+  "WebsiteTotal": 1416,
+  "PageCount": 71,
+  "RawRows": 1416,
+  "ImportedCatalog": 1243,
+  "ReferencePrices": 1150,
+  "MissingNames": 57,
+  "DuplicateRows": 116,
+  "Categories": {
+    "藏品": 348,
+    "配件": 536,
+    "子弹": 59,
+    "医疗": 27,
+    "装备": 135,
+    "武器": 70,
+    "钥匙": 39,
+    "饮食": 29
+  },
+  "RawSnapshotHash": "6ff6654cd6a61b466a9020afd5f9f2f7e7ed617fca558cef6414d3d0bca2b6f3",
+  "CoverageNote": "公开列表 71 页、1416 行；有效唯一目录 1243 项。分页出现重复及空名称，不能视为覆盖游戏全部商品。名称哈希是本地键，不是游戏或网站ID。",
+  "Issues": [
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "17,355",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=1&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:52:26.624Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "9,620",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=4&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:52:27.860Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "88,275",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=4&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:52:27.860Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "14,472",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=5&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:52:28.389Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "34,970",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=7&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:52:29.241Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "34,278",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=8&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:52:29.673Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "11,076",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=8&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:52:29.673Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "20,330",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=11&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:52:31.164Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "4,095",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=12&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:52:46.861Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "19,695",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=20&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:52:50.658Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "18,914",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=20&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:52:50.658Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "3,648",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=23&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:01.729Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "25,346",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=23&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:01.729Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=24&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:02.210Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=24&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:02.210Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=24&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:02.210Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=26&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:03.021Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=26&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:03.021Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=27&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:03.459Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=27&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:03.459Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=28&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:03.952Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=28&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:03.952Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "7,144",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=28&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:03.952Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=28&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:03.952Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=29&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:04.418Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "93,850",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=29&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:04.418Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "1,824",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=30&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:04.907Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=31&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:05.248Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "12,540",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=31&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:05.248Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=31&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:05.248Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=32&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:53.014Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=32&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:53.014Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=32&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:53.014Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=32&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:53.014Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "12,446",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=33&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:53.501Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=37&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:55.151Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=37&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:55.151Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=38&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:55.489Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "4,080",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=39&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:56.009Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=40&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:56.336Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=40&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:56.336Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "30,096",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=40&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:56.336Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=40&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:56.336Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=41&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:54:56.829Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=43&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:55:18.042Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=43&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:55:18.042Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=46&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:55:19.420Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "0",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=47&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:55:19.768Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "77,855",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=53&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:56:14.523Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "39,812",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=55&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:56:18.118Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "11,928",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=58&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:56:19.295Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "27,930",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=59&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:56:19.662Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "78,085",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=60&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:56:33.178Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "18,511",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=61&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:56:33.813Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "97,776",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=63&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:56:35.062Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "33,660",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=65&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:56:36.302Z"
+      }
+    },
+    {
+      "reason": "页面商品名称为空，未导入",
+      "row": {
+        "category": "藏品",
+        "name": "",
+        "price": "9,271",
+        "subcategory": "易燃物",
+        "pageUrl": "https://aqtwwx.net/item-list?page=68&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+        "fetchedAt": "2026-10-21T11:56:38.026Z"
+      }
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "46多口径消音器",
+          "price": "16,695",
+          "subcategory": "枪口",
+          "pageUrl": "https://aqtwwx.net/item-list?page=12&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:46.861Z"
+        },
+        {
+          "category": "配件",
+          "name": "46多口径消音器",
+          "price": "20,405",
+          "subcategory": "枪口",
+          "pageUrl": "https://aqtwwx.net/item-list?page=66&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:36.904Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "4倍/16倍准镜",
+          "price": "35,802",
+          "subcategory": "瞄具",
+          "pageUrl": "https://aqtwwx.net/item-list?page=10&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:30.658Z"
+        },
+        {
+          "category": "配件",
+          "name": "4倍/16倍准镜",
+          "price": "34,398",
+          "subcategory": "瞄具",
+          "pageUrl": "https://aqtwwx.net/item-list?page=30&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:54:04.907Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称及价格去重",
+      "rows": [
+        {
+          "category": "子弹",
+          "name": "5.8×42毫米 DBP87子弹",
+          "price": "192",
+          "subcategory": "5.8×42",
+          "pageUrl": "https://aqtwwx.net/item-list?page=11&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:31.164Z"
+        },
+        {
+          "category": "子弹",
+          "name": "5.8×42毫米 DBP87子弹",
+          "price": "192",
+          "subcategory": "5.8×42",
+          "pageUrl": "https://aqtwwx.net/item-list?page=23&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:54:01.729Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "装备",
+          "name": "6BNT型头盔",
+          "price": "402,039",
+          "subcategory": "头盔",
+          "pageUrl": "https://aqtwwx.net/item-list?page=2&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:27.094Z"
+        },
+        {
+          "category": "装备",
+          "name": "6BNT型头盔",
+          "price": "449,592",
+          "subcategory": "头盔",
+          "pageUrl": "https://aqtwwx.net/item-list?page=56&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:18.591Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "子弹",
+          "name": "7.62×25毫米 AKBS子弹",
+          "price": "23",
+          "subcategory": "7.62×25",
+          "pageUrl": "https://aqtwwx.net/item-list?page=14&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:47.899Z"
+        },
+        {
+          "category": "子弹",
+          "name": "7.62×25毫米 AKBS子弹",
+          "price": "24",
+          "subcategory": "7.62×25",
+          "pageUrl": "https://aqtwwx.net/item-list?page=33&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:54:53.501Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "子弹",
+          "name": "7.62×39毫米 BP子弹",
+          "price": "1,400",
+          "subcategory": "7.62×39",
+          "pageUrl": "https://aqtwwx.net/item-list?page=7&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:29.241Z"
+        },
+        {
+          "category": "子弹",
+          "name": "7.62×39毫米 BP子弹",
+          "price": "1,512",
+          "subcategory": "7.62×39",
+          "pageUrl": "https://aqtwwx.net/item-list?page=61&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:33.813Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称及价格去重",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "81式枪托",
+          "price": "11,025",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=10&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:30.658Z"
+        },
+        {
+          "category": "配件",
+          "name": "81式枪托",
+          "price": "11,025",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=53&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:14.523Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "装备",
+          "name": "926野战背包",
+          "price": "168,480",
+          "subcategory": "背包",
+          "pageUrl": "https://aqtwwx.net/item-list?page=21&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:51.109Z"
+        },
+        {
+          "category": "装备",
+          "name": "926野战背包",
+          "price": "170,640",
+          "subcategory": "背包",
+          "pageUrl": "https://aqtwwx.net/item-list?page=33&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:54:53.501Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "9×19轻量化消音器",
+          "price": "10,272",
+          "subcategory": "枪口",
+          "pageUrl": "https://aqtwwx.net/item-list?page=14&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:47.899Z"
+        },
+        {
+          "category": "配件",
+          "name": "9×19轻量化消音器",
+          "price": "12,626",
+          "subcategory": "枪口",
+          "pageUrl": "https://aqtwwx.net/item-list?page=69&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:38.668Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "ACE31上机匣",
+          "price": "8,556",
+          "subcategory": "机匣&防尘盖",
+          "pageUrl": "https://aqtwwx.net/item-list?page=6&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:28.885Z"
+        },
+        {
+          "category": "配件",
+          "name": "ACE31上机匣",
+          "price": "9,200",
+          "subcategory": "机匣&防尘盖",
+          "pageUrl": "https://aqtwwx.net/item-list?page=62&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:34.436Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "AEK枪托转接器",
+          "price": "24,735",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=3&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:27.485Z"
+        },
+        {
+          "category": "配件",
+          "name": "AEK枪托转接器",
+          "price": "30,264",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=60&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:33.178Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称及价格去重",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "AKM高级稳定消焰器",
+          "price": "18,818",
+          "subcategory": "枪口",
+          "pageUrl": "https://aqtwwx.net/item-list?page=15&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:48.351Z"
+        },
+        {
+          "category": "配件",
+          "name": "AKM高级稳定消焰器",
+          "price": "18,818",
+          "subcategory": "枪口",
+          "pageUrl": "https://aqtwwx.net/item-list?page=61&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:33.813Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称及价格去重",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "AK定制合金导轨护木",
+          "price": "21,975",
+          "subcategory": "护木",
+          "pageUrl": "https://aqtwwx.net/item-list?page=9&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:30.166Z"
+        },
+        {
+          "category": "配件",
+          "name": "AK定制合金导轨护木",
+          "price": "21,975",
+          "subcategory": "护木",
+          "pageUrl": "https://aqtwwx.net/item-list?page=48&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:55:20.304Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "AK系列SF二代枪托",
+          "price": "33,020",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=7&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:29.241Z"
+        },
+        {
+          "category": "配件",
+          "name": "AK系列SF二代枪托",
+          "price": "40,640",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=63&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:35.062Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "AK系列SF二代枪托垫",
+          "price": "33,440",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=9&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:30.166Z"
+        },
+        {
+          "category": "配件",
+          "name": "AK系列SF二代枪托垫",
+          "price": "36,960",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=49&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:55:20.748Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "AK系列SF轻型后托",
+          "price": "24,462",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=3&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:27.485Z"
+        },
+        {
+          "category": "配件",
+          "name": "AK系列SF轻型后托",
+          "price": "30,200",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=58&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:19.295Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "AK系列高级拉机柄帽",
+          "price": "3,395",
+          "subcategory": "枪栓",
+          "pageUrl": "https://aqtwwx.net/item-list?page=21&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:51.109Z"
+        },
+        {
+          "category": "配件",
+          "name": "AK系列高级拉机柄帽",
+          "price": "3,640",
+          "subcategory": "枪栓",
+          "pageUrl": "https://aqtwwx.net/item-list?page=49&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:55:20.748Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称及价格去重",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "AK系带观察窗30发弹匣",
+          "price": "15,010",
+          "subcategory": "弹匣",
+          "pageUrl": "https://aqtwwx.net/item-list?page=9&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:30.166Z"
+        },
+        {
+          "category": "配件",
+          "name": "AK系带观察窗30发弹匣",
+          "price": "15,010",
+          "subcategory": "弹匣",
+          "pageUrl": "https://aqtwwx.net/item-list?page=54&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:17.691Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "AK系经典消焰器",
+          "price": "12,870",
+          "subcategory": "枪口",
+          "pageUrl": "https://aqtwwx.net/item-list?page=2&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:27.094Z"
+        },
+        {
+          "category": "配件",
+          "name": "AK系经典消焰器",
+          "price": "19,110",
+          "subcategory": "枪口",
+          "pageUrl": "https://aqtwwx.net/item-list?page=61&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:33.813Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "武器",
+          "name": "AN94突击步枪",
+          "price": "72,648",
+          "subcategory": "突击步枪",
+          "pageUrl": "https://aqtwwx.net/item-list?page=14&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:47.899Z"
+        },
+        {
+          "category": "武器",
+          "name": "AN94突击步枪",
+          "price": "66,594",
+          "subcategory": "突击步枪",
+          "pageUrl": "https://aqtwwx.net/item-list?page=59&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:19.662Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "AR 15短轨导气箍",
+          "price": "10,126",
+          "subcategory": "导气箍",
+          "pageUrl": "https://aqtwwx.net/item-list?page=20&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:50.658Z"
+        },
+        {
+          "category": "配件",
+          "name": "AR 15短轨导气箍",
+          "price": "8,174",
+          "subcategory": "导气箍",
+          "pageUrl": "https://aqtwwx.net/item-list?page=60&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:33.178Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "AR 60发大容量弹匣",
+          "price": "40,850",
+          "subcategory": "弹匣",
+          "pageUrl": "https://aqtwwx.net/item-list?page=7&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:29.241Z"
+        },
+        {
+          "category": "配件",
+          "name": "AR 60发大容量弹匣",
+          "price": "52,288",
+          "subcategory": "弹匣",
+          "pageUrl": "https://aqtwwx.net/item-list?page=64&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:35.662Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "AR枪族通用30发聚合弹匣",
+          "price": "6,600",
+          "subcategory": "弹匣",
+          "pageUrl": "https://aqtwwx.net/item-list?page=1&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:26.624Z"
+        },
+        {
+          "category": "配件",
+          "name": "AR枪族通用30发聚合弹匣",
+          "price": "11,040",
+          "subcategory": "弹匣",
+          "pageUrl": "https://aqtwwx.net/item-list?page=54&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:17.691Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "AR系列卡宾枪长度护木",
+          "price": "33,696",
+          "subcategory": "护木",
+          "pageUrl": "https://aqtwwx.net/item-list?page=8&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:29.673Z"
+        },
+        {
+          "category": "配件",
+          "name": "AR系列卡宾枪长度护木",
+          "price": "38,376",
+          "subcategory": "护木",
+          "pageUrl": "https://aqtwwx.net/item-list?page=64&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:35.662Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "AR紧凑战术前握把",
+          "price": "24,232",
+          "subcategory": "前握把",
+          "pageUrl": "https://aqtwwx.net/item-list?page=13&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:47.405Z"
+        },
+        {
+          "category": "配件",
+          "name": "AR紧凑战术前握把",
+          "price": "25,630",
+          "subcategory": "前握把",
+          "pageUrl": "https://aqtwwx.net/item-list?page=34&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:54:53.808Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称及价格去重",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "AR缓冲枪托",
+          "price": "22,272",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=11&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:31.164Z"
+        },
+        {
+          "category": "配件",
+          "name": "AR缓冲枪托",
+          "price": "22,272",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=52&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:14.067Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "B25斜向前握把",
+          "price": "77,250",
+          "subcategory": "前握把",
+          "pageUrl": "https://aqtwwx.net/item-list?page=10&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:30.658Z"
+        },
+        {
+          "category": "配件",
+          "name": "B25斜向前握把",
+          "price": "83,430",
+          "subcategory": "前握把",
+          "pageUrl": "https://aqtwwx.net/item-list?page=50&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:55:21.178Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "装备",
+          "name": "B4战术弹挂",
+          "price": "55,965",
+          "subcategory": "无甲弹挂",
+          "pageUrl": "https://aqtwwx.net/item-list?page=10&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:30.658Z"
+        },
+        {
+          "category": "装备",
+          "name": "B4战术弹挂",
+          "price": "61,425",
+          "subcategory": "无甲弹挂",
+          "pageUrl": "https://aqtwwx.net/item-list?page=52&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:14.067Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "武器",
+          "name": "F57手枪",
+          "price": "18,315",
+          "subcategory": "手枪",
+          "pageUrl": "https://aqtwwx.net/item-list?page=17&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:49.248Z"
+        },
+        {
+          "category": "武器",
+          "name": "F57手枪",
+          "price": "18,480",
+          "subcategory": "手枪",
+          "pageUrl": "https://aqtwwx.net/item-list?page=52&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:14.067Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "装备",
+          "name": "F70战术头盔",
+          "price": "39,790",
+          "subcategory": "头盔",
+          "pageUrl": "https://aqtwwx.net/item-list?page=11&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:31.164Z"
+        },
+        {
+          "category": "装备",
+          "name": "F70战术头盔",
+          "price": "40,828",
+          "subcategory": "头盔",
+          "pageUrl": "https://aqtwwx.net/item-list?page=54&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:17.691Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "FAL 50发弹鼓",
+          "price": "30,690",
+          "subcategory": "弹匣",
+          "pageUrl": "https://aqtwwx.net/item-list?page=18&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:49.741Z"
+        },
+        {
+          "category": "配件",
+          "name": "FAL 50发弹鼓",
+          "price": "27,720",
+          "subcategory": "弹匣",
+          "pageUrl": "https://aqtwwx.net/item-list?page=53&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:14.523Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "FAL四导轨加长护木",
+          "price": "27,280",
+          "subcategory": "护木",
+          "pageUrl": "https://aqtwwx.net/item-list?page=21&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:51.109Z"
+        },
+        {
+          "category": "配件",
+          "name": "FAL四导轨加长护木",
+          "price": "27,776",
+          "subcategory": "护木",
+          "pageUrl": "https://aqtwwx.net/item-list?page=64&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:35.662Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称及价格去重",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "FAL稳定枪托",
+          "price": "28,106",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=17&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:49.248Z"
+        },
+        {
+          "category": "配件",
+          "name": "FAL稳定枪托",
+          "price": "28,106",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=24&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:54:02.210Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "H416A5通用配件枪管",
+          "price": "14,688",
+          "subcategory": "枪管",
+          "pageUrl": "https://aqtwwx.net/item-list?page=14&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:47.899Z"
+        },
+        {
+          "category": "配件",
+          "name": "H416A5通用配件枪管",
+          "price": "16,065",
+          "subcategory": "枪管",
+          "pageUrl": "https://aqtwwx.net/item-list?page=58&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:19.295Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "H416专属导气箍",
+          "price": "25,145",
+          "subcategory": "导气箍",
+          "pageUrl": "https://aqtwwx.net/item-list?page=9&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:30.166Z"
+        },
+        {
+          "category": "配件",
+          "name": "H416专属导气箍",
+          "price": "25,850",
+          "subcategory": "导气箍",
+          "pageUrl": "https://aqtwwx.net/item-list?page=58&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:19.295Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "H416改进型护木",
+          "price": "29,673",
+          "subcategory": "护木",
+          "pageUrl": "https://aqtwwx.net/item-list?page=7&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:29.241Z"
+        },
+        {
+          "category": "配件",
+          "name": "H416改进型护木",
+          "price": "30,144",
+          "subcategory": "护木",
+          "pageUrl": "https://aqtwwx.net/item-list?page=60&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:33.178Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "装备",
+          "name": "IMTV 武士攻击型防弹衣",
+          "price": "333,079",
+          "subcategory": "防弹衣",
+          "pageUrl": "https://aqtwwx.net/item-list?page=9&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:30.166Z"
+        },
+        {
+          "category": "装备",
+          "name": "IMTV 武士攻击型防弹衣",
+          "price": "337,092",
+          "subcategory": "防弹衣",
+          "pageUrl": "https://aqtwwx.net/item-list?page=56&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:18.591Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称及价格去重",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "KIR斜向前握把",
+          "price": "25,110",
+          "subcategory": "前握把",
+          "pageUrl": "https://aqtwwx.net/item-list?page=14&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:47.899Z"
+        },
+        {
+          "category": "配件",
+          "name": "KIR斜向前握把",
+          "price": "25,110",
+          "subcategory": "前握把",
+          "pageUrl": "https://aqtwwx.net/item-list?page=66&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:36.904Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "装备",
+          "name": "KN 复合防弹衣",
+          "price": "1,487,523",
+          "subcategory": "防弹衣",
+          "pageUrl": "https://aqtwwx.net/item-list?page=10&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:30.658Z"
+        },
+        {
+          "category": "装备",
+          "name": "KN 复合防弹衣",
+          "price": "1,555,758",
+          "subcategory": "防弹衣",
+          "pageUrl": "https://aqtwwx.net/item-list?page=62&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:34.436Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "M110 20发弹匣",
+          "price": "9,546",
+          "subcategory": "弹匣",
+          "pageUrl": "https://aqtwwx.net/item-list?page=6&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:28.885Z"
+        },
+        {
+          "category": "配件",
+          "name": "M110 20发弹匣",
+          "price": "11,544",
+          "subcategory": "弹匣",
+          "pageUrl": "https://aqtwwx.net/item-list?page=57&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:18.912Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "M110 20发透明弹匣",
+          "price": "15,916",
+          "subcategory": "弹匣",
+          "pageUrl": "https://aqtwwx.net/item-list?page=10&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:30.658Z"
+        },
+        {
+          "category": "配件",
+          "name": "M110 20发透明弹匣",
+          "price": "17,300",
+          "subcategory": "弹匣",
+          "pageUrl": "https://aqtwwx.net/item-list?page=46&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:55:19.420Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称及价格去重",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "M24改良型枪托",
+          "price": "39,693",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=19&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:50.196Z"
+        },
+        {
+          "category": "配件",
+          "name": "M24改良型枪托",
+          "price": "39,693",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=62&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:34.436Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称及价格去重",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "M4A1战术护木",
+          "price": "41,360",
+          "subcategory": "护木",
+          "pageUrl": "https://aqtwwx.net/item-list?page=20&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:50.658Z"
+        },
+        {
+          "category": "配件",
+          "name": "M4A1战术护木",
+          "price": "41,360",
+          "subcategory": "护木",
+          "pageUrl": "https://aqtwwx.net/item-list?page=48&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:55:20.304Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "MAC 10导轨上机匣",
+          "price": "5,256",
+          "subcategory": "机匣&防尘盖",
+          "pageUrl": "https://aqtwwx.net/item-list?page=4&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:27.860Z"
+        },
+        {
+          "category": "配件",
+          "name": "MAC 10导轨上机匣",
+          "price": "6,480",
+          "subcategory": "机匣&防尘盖",
+          "pageUrl": "https://aqtwwx.net/item-list?page=51&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:55:21.490Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "MCX战术护木",
+          "price": "14,014",
+          "subcategory": "护木",
+          "pageUrl": "https://aqtwwx.net/item-list?page=9&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:30.166Z"
+        },
+        {
+          "category": "配件",
+          "name": "MCX战术护木",
+          "price": "17,160",
+          "subcategory": "护木",
+          "pageUrl": "https://aqtwwx.net/item-list?page=54&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:17.691Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "MCX标准拉机柄",
+          "price": "4,680",
+          "subcategory": "枪栓",
+          "pageUrl": "https://aqtwwx.net/item-list?page=7&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:29.241Z"
+        },
+        {
+          "category": "配件",
+          "name": "MCX标准拉机柄",
+          "price": "5,200",
+          "subcategory": "枪栓",
+          "pageUrl": "https://aqtwwx.net/item-list?page=23&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:54:01.729Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "MCX消音器",
+          "price": "34,390",
+          "subcategory": "枪口",
+          "pageUrl": "https://aqtwwx.net/item-list?page=10&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:30.658Z"
+        },
+        {
+          "category": "配件",
+          "name": "MCX消音器",
+          "price": "33,304",
+          "subcategory": "枪口",
+          "pageUrl": "https://aqtwwx.net/item-list?page=67&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:37.505Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称及价格去重",
+      "rows": [
+        {
+          "category": "武器",
+          "name": "MCX突击步枪",
+          "price": "63,572",
+          "subcategory": "突击步枪",
+          "pageUrl": "https://aqtwwx.net/item-list?page=11&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:31.164Z"
+        },
+        {
+          "category": "武器",
+          "name": "MCX突击步枪",
+          "price": "63,572",
+          "subcategory": "突击步枪",
+          "pageUrl": "https://aqtwwx.net/item-list?page=70&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:39.267Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称及价格去重",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "MDR标准模块长护木",
+          "price": "12,780",
+          "subcategory": "护木",
+          "pageUrl": "https://aqtwwx.net/item-list?page=21&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:51.109Z"
+        },
+        {
+          "category": "配件",
+          "name": "MDR标准模块长护木",
+          "price": "12,780",
+          "subcategory": "护木",
+          "pageUrl": "https://aqtwwx.net/item-list?page=62&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:34.436Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "ML杠杆步枪消音器",
+          "price": "10,050",
+          "subcategory": "枪口",
+          "pageUrl": "https://aqtwwx.net/item-list?page=10&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:30.658Z"
+        },
+        {
+          "category": "配件",
+          "name": "ML杠杆步枪消音器",
+          "price": "10,251",
+          "subcategory": "枪口",
+          "pageUrl": "https://aqtwwx.net/item-list?page=52&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:14.067Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "ML杠杆步枪骨架托垫",
+          "price": "7,200",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=8&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:29.673Z"
+        },
+        {
+          "category": "配件",
+          "name": "ML杠杆步枪骨架托垫",
+          "price": "8,320",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=56&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:18.591Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "MP5SD消音器",
+          "price": "11,094",
+          "subcategory": "枪口",
+          "pageUrl": "https://aqtwwx.net/item-list?page=17&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:49.248Z"
+        },
+        {
+          "category": "配件",
+          "name": "MP5SD消音器",
+          "price": "13,416",
+          "subcategory": "枪口",
+          "pageUrl": "https://aqtwwx.net/item-list?page=69&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:38.668Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "武器",
+          "name": "MP5微型冲锋枪",
+          "price": "9,225",
+          "subcategory": "冲锋枪",
+          "pageUrl": "https://aqtwwx.net/item-list?page=10&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:30.658Z"
+        },
+        {
+          "category": "武器",
+          "name": "MP5微型冲锋枪",
+          "price": "10,800",
+          "subcategory": "冲锋枪",
+          "pageUrl": "https://aqtwwx.net/item-list?page=60&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:33.178Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "MP5战术枪托",
+          "price": "9,975",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=11&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:31.164Z"
+        },
+        {
+          "category": "配件",
+          "name": "MP5战术枪托",
+          "price": "10,108",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=56&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:18.591Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称及价格去重",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "MPX14英寸模块锁护木",
+          "price": "31,824",
+          "subcategory": "护木",
+          "pageUrl": "https://aqtwwx.net/item-list?page=12&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:46.861Z"
+        },
+        {
+          "category": "配件",
+          "name": "MPX14英寸模块锁护木",
+          "price": "31,824",
+          "subcategory": "护木",
+          "pageUrl": "https://aqtwwx.net/item-list?page=65&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:36.302Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "MPX枪托转接器",
+          "price": "41,688",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=17&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:49.248Z"
+        },
+        {
+          "category": "配件",
+          "name": "MPX枪托转接器",
+          "price": "43,232",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=52&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:14.067Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "P90上机匣上导轨",
+          "price": "5,460",
+          "subcategory": "导轨",
+          "pageUrl": "https://aqtwwx.net/item-list?page=21&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:51.109Z"
+        },
+        {
+          "category": "配件",
+          "name": "P90上机匣上导轨",
+          "price": "6,305",
+          "subcategory": "导轨",
+          "pageUrl": "https://aqtwwx.net/item-list?page=66&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:36.904Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "P90上机匣侧导轨",
+          "price": "6,860",
+          "subcategory": "导轨",
+          "pageUrl": "https://aqtwwx.net/item-list?page=20&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:50.658Z"
+        },
+        {
+          "category": "配件",
+          "name": "P90上机匣侧导轨",
+          "price": "6,930",
+          "subcategory": "导轨",
+          "pageUrl": "https://aqtwwx.net/item-list?page=25&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:54:02.537Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "P90攻击头上机匣",
+          "price": "17,533",
+          "subcategory": "机匣&防尘盖",
+          "pageUrl": "https://aqtwwx.net/item-list?page=9&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:30.166Z"
+        },
+        {
+          "category": "配件",
+          "name": "P90攻击头上机匣",
+          "price": "19,306",
+          "subcategory": "机匣&防尘盖",
+          "pageUrl": "https://aqtwwx.net/item-list?page=50&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:55:21.178Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "P90缓冲后托垫",
+          "price": "26,460",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=18&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:49.741Z"
+        },
+        {
+          "category": "配件",
+          "name": "P90缓冲后托垫",
+          "price": "27,930",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=54&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:17.691Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称及价格去重",
+      "rows": [
+        {
+          "category": "装备",
+          "name": "PCA350型防弹衣",
+          "price": "29,568",
+          "subcategory": "防弹衣",
+          "pageUrl": "https://aqtwwx.net/item-list?page=10&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:30.658Z"
+        },
+        {
+          "category": "装备",
+          "name": "PCA350型防弹衣",
+          "price": "29,568",
+          "subcategory": "防弹衣",
+          "pageUrl": "https://aqtwwx.net/item-list?page=31&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:54:05.248Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "PP19长枪管",
+          "price": "12,462",
+          "subcategory": "枪管",
+          "pageUrl": "https://aqtwwx.net/item-list?page=12&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:46.861Z"
+        },
+        {
+          "category": "配件",
+          "name": "PP19长枪管",
+          "price": "13,936",
+          "subcategory": "枪管",
+          "pageUrl": "https://aqtwwx.net/item-list?page=59&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:19.662Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "PSO 4倍瞄具",
+          "price": "7,527",
+          "subcategory": "瞄具",
+          "pageUrl": "https://aqtwwx.net/item-list?page=11&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:31.164Z"
+        },
+        {
+          "category": "配件",
+          "name": "PSO 4倍瞄具",
+          "price": "7,334",
+          "subcategory": "瞄具",
+          "pageUrl": "https://aqtwwx.net/item-list?page=39&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:54:56.009Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "装备",
+          "name": "RAL全面罩防毒面具",
+          "price": "23,552",
+          "subcategory": "防毒面具",
+          "pageUrl": "https://aqtwwx.net/item-list?page=9&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:30.166Z"
+        },
+        {
+          "category": "装备",
+          "name": "RAL全面罩防毒面具",
+          "price": "28,336",
+          "subcategory": "防毒面具",
+          "pageUrl": "https://aqtwwx.net/item-list?page=57&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:18.912Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "RPK16加长枪管",
+          "price": "36,146",
+          "subcategory": "枪管",
+          "pageUrl": "https://aqtwwx.net/item-list?page=13&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:47.405Z"
+        },
+        {
+          "category": "配件",
+          "name": "RPK16加长枪管",
+          "price": "33,759",
+          "subcategory": "枪管",
+          "pageUrl": "https://aqtwwx.net/item-list?page=65&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:36.302Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "装备",
+          "name": "RST特种部队面罩",
+          "price": "181,272",
+          "subcategory": "面罩",
+          "pageUrl": "https://aqtwwx.net/item-list?page=2&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:27.094Z"
+        },
+        {
+          "category": "装备",
+          "name": "RST特种部队面罩",
+          "price": "203,184",
+          "subcategory": "面罩",
+          "pageUrl": "https://aqtwwx.net/item-list?page=39&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:54:56.009Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "武器",
+          "name": "SA85M卡宾枪",
+          "price": "4,366",
+          "subcategory": "卡宾枪",
+          "pageUrl": "https://aqtwwx.net/item-list?page=1&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:26.624Z"
+        },
+        {
+          "category": "武器",
+          "name": "SA85M卡宾枪",
+          "price": "6,608",
+          "subcategory": "卡宾枪",
+          "pageUrl": "https://aqtwwx.net/item-list?page=64&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:35.662Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "SCAR-L稳定枪托",
+          "price": "13,860",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=3&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:27.485Z"
+        },
+        {
+          "category": "配件",
+          "name": "SCAR-L稳定枪托",
+          "price": "14,652",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=63&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:35.062Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "装备",
+          "name": "SH-4型防毒面具",
+          "price": "27,335",
+          "subcategory": "防毒面具",
+          "pageUrl": "https://aqtwwx.net/item-list?page=5&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:28.389Z"
+        },
+        {
+          "category": "装备",
+          "name": "SH-4型防毒面具",
+          "price": "29,820",
+          "subcategory": "防毒面具",
+          "pageUrl": "https://aqtwwx.net/item-list?page=67&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:37.505Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "装备",
+          "name": "SH60面罩",
+          "price": "22,052",
+          "subcategory": "面罩",
+          "pageUrl": "https://aqtwwx.net/item-list?page=12&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:46.861Z"
+        },
+        {
+          "category": "装备",
+          "name": "SH60面罩",
+          "price": "22,648",
+          "subcategory": "面罩",
+          "pageUrl": "https://aqtwwx.net/item-list?page=66&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:36.904Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "SJ16可调节枪托",
+          "price": "96,096",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=14&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:47.899Z"
+        },
+        {
+          "category": "配件",
+          "name": "SJ16可调节枪托",
+          "price": "97,482",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=61&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:33.813Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "武器",
+          "name": "SKS卡宾枪",
+          "price": "3,456",
+          "subcategory": "卡宾枪",
+          "pageUrl": "https://aqtwwx.net/item-list?page=1&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:26.624Z"
+        },
+        {
+          "category": "武器",
+          "name": "SKS卡宾枪",
+          "price": "5,248",
+          "subcategory": "卡宾枪",
+          "pageUrl": "https://aqtwwx.net/item-list?page=64&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:35.662Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "T951增强提把",
+          "price": "19,656",
+          "subcategory": "机匣&防尘盖",
+          "pageUrl": "https://aqtwwx.net/item-list?page=7&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:29.241Z"
+        },
+        {
+          "category": "配件",
+          "name": "T951增强提把",
+          "price": "21,840",
+          "subcategory": "机匣&防尘盖",
+          "pageUrl": "https://aqtwwx.net/item-list?page=50&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:55:21.178Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "藏品",
+          "name": "T型插头",
+          "price": "2,225",
+          "subcategory": "建筑材料",
+          "pageUrl": "https://aqtwwx.net/item-list?page=9&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:30.166Z"
+        },
+        {
+          "category": "藏品",
+          "name": "T型插头",
+          "price": "2,450",
+          "subcategory": "建筑材料",
+          "pageUrl": "https://aqtwwx.net/item-list?page=42&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:55:17.573Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "USAS12 20发弹鼓",
+          "price": "42,372",
+          "subcategory": "弹匣",
+          "pageUrl": "https://aqtwwx.net/item-list?page=13&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:47.405Z"
+        },
+        {
+          "category": "配件",
+          "name": "USAS12 20发弹鼓",
+          "price": "46,728",
+          "subcategory": "弹匣",
+          "pageUrl": "https://aqtwwx.net/item-list?page=52&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:14.067Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "USAS12改进护木",
+          "price": "14,444",
+          "subcategory": "护木",
+          "pageUrl": "https://aqtwwx.net/item-list?page=16&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:48.732Z"
+        },
+        {
+          "category": "配件",
+          "name": "USAS12改进护木",
+          "price": "15,386",
+          "subcategory": "护木",
+          "pageUrl": "https://aqtwwx.net/item-list?page=56&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:18.591Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "USAS12标准拉机柄帽",
+          "price": "3,827",
+          "subcategory": "枪栓",
+          "pageUrl": "https://aqtwwx.net/item-list?page=10&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:30.658Z"
+        },
+        {
+          "category": "配件",
+          "name": "USAS12标准拉机柄帽",
+          "price": "4,214",
+          "subcategory": "枪栓",
+          "pageUrl": "https://aqtwwx.net/item-list?page=51&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:55:21.490Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "Vector45卡宾枪管",
+          "price": "13,000",
+          "subcategory": "枪管",
+          "pageUrl": "https://aqtwwx.net/item-list?page=21&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:51.109Z"
+        },
+        {
+          "category": "配件",
+          "name": "Vector45卡宾枪管",
+          "price": "14,040",
+          "subcategory": "枪管",
+          "pageUrl": "https://aqtwwx.net/item-list?page=60&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:33.178Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "Vector标准后托",
+          "price": "2,916",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=8&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:29.673Z"
+        },
+        {
+          "category": "配件",
+          "name": "Vector标准后托",
+          "price": "3,240",
+          "subcategory": "枪托",
+          "pageUrl": "https://aqtwwx.net/item-list?page=33&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:54:53.501Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "武器",
+          "name": "Z3震撼弹",
+          "price": "8,160",
+          "subcategory": "投掷武器",
+          "pageUrl": "https://aqtwwx.net/item-list?page=4&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:27.860Z"
+        },
+        {
+          "category": "武器",
+          "name": "Z3震撼弹",
+          "price": "8,640",
+          "subcategory": "投掷武器",
+          "pageUrl": "https://aqtwwx.net/item-list?page=59&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:19.662Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "三角稳定前握把",
+          "price": "34,700",
+          "subcategory": "前握把",
+          "pageUrl": "https://aqtwwx.net/item-list?page=11&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:31.164Z"
+        },
+        {
+          "category": "配件",
+          "name": "三角稳定前握把",
+          "price": "36,435",
+          "subcategory": "前握把",
+          "pageUrl": "https://aqtwwx.net/item-list?page=22&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:54:01.263Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "藏品",
+          "name": "丙烷罐",
+          "price": "50,139",
+          "subcategory": "易燃物",
+          "pageUrl": "https://aqtwwx.net/item-list?page=2&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:27.094Z"
+        },
+        {
+          "category": "藏品",
+          "name": "丙烷罐",
+          "price": "55,091",
+          "subcategory": "易燃物",
+          "pageUrl": "https://aqtwwx.net/item-list?page=71&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:39.788Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称及价格去重",
+      "rows": [
+        {
+          "category": "钥匙",
+          "name": "二层综合办公室钥匙",
+          "price": "1,602,590",
+          "subcategory": "电视台",
+          "pageUrl": "https://aqtwwx.net/item-list?page=18&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:49.741Z"
+        },
+        {
+          "category": "钥匙",
+          "name": "二层综合办公室钥匙",
+          "price": "1,602,590",
+          "subcategory": "电视台",
+          "pageUrl": "https://aqtwwx.net/item-list?page=68&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:38.026Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "藏品",
+          "name": "人工心脏",
+          "price": "320,840",
+          "subcategory": "医疗杂物",
+          "pageUrl": "https://aqtwwx.net/item-list?page=11&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:31.164Z"
+        },
+        {
+          "category": "藏品",
+          "name": "人工心脏",
+          "price": "370,200",
+          "subcategory": "医疗杂物",
+          "pageUrl": "https://aqtwwx.net/item-list?page=53&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:14.523Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "医疗",
+          "name": "再生强度剂",
+          "price": "71,280",
+          "subcategory": "药剂",
+          "pageUrl": "https://aqtwwx.net/item-list?page=18&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:49.741Z"
+        },
+        {
+          "category": "医疗",
+          "name": "再生强度剂",
+          "price": "76,320",
+          "subcategory": "药剂",
+          "pageUrl": "https://aqtwwx.net/item-list?page=59&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:19.662Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "医疗",
+          "name": "再生注射剂",
+          "price": "22,800",
+          "subcategory": "药剂",
+          "pageUrl": "https://aqtwwx.net/item-list?page=18&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:49.741Z"
+        },
+        {
+          "category": "医疗",
+          "name": "再生注射剂",
+          "price": "26,200",
+          "subcategory": "药剂",
+          "pageUrl": "https://aqtwwx.net/item-list?page=60&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:33.178Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称及价格去重",
+      "rows": [
+        {
+          "category": "藏品",
+          "name": "北山禁区通行证",
+          "price": "12,000",
+          "subcategory": "彩蛋物品",
+          "pageUrl": "https://aqtwwx.net/item-list?page=33&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:54:53.501Z"
+        },
+        {
+          "category": "藏品",
+          "name": "北山禁区通行证",
+          "price": "12,000",
+          "subcategory": "彩蛋物品",
+          "pageUrl": "https://aqtwwx.net/item-list?page=47&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:55:19.768Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称及价格去重",
+      "rows": [
+        {
+          "category": "藏品",
+          "name": "吸音板材",
+          "price": "21,582",
+          "subcategory": "建筑材料",
+          "pageUrl": "https://aqtwwx.net/item-list?page=12&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:46.861Z"
+        },
+        {
+          "category": "藏品",
+          "name": "吸音板材",
+          "price": "21,582",
+          "subcategory": "建筑材料",
+          "pageUrl": "https://aqtwwx.net/item-list?page=69&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:38.668Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "钥匙",
+          "name": "工厂更衣室钥匙",
+          "price": "1,176,775",
+          "subcategory": "山谷",
+          "pageUrl": "https://aqtwwx.net/item-list?page=7&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:29.241Z"
+        },
+        {
+          "category": "钥匙",
+          "name": "工厂更衣室钥匙",
+          "price": "1,393,850",
+          "subcategory": "山谷",
+          "pageUrl": "https://aqtwwx.net/item-list?page=58&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:19.295Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "装备",
+          "name": "帆布野营背囊",
+          "price": "36,855",
+          "subcategory": "背包",
+          "pageUrl": "https://aqtwwx.net/item-list?page=9&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:30.166Z"
+        },
+        {
+          "category": "装备",
+          "name": "帆布野营背囊",
+          "price": "40,365",
+          "subcategory": "背包",
+          "pageUrl": "https://aqtwwx.net/item-list?page=41&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:54:56.829Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "截短式莫辛枪管",
+          "price": "5,520",
+          "subcategory": "枪管",
+          "pageUrl": "https://aqtwwx.net/item-list?page=19&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:50.196Z"
+        },
+        {
+          "category": "配件",
+          "name": "截短式莫辛枪管",
+          "price": "5,640",
+          "subcategory": "枪管",
+          "pageUrl": "https://aqtwwx.net/item-list?page=48&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:55:20.304Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称及价格去重",
+      "rows": [
+        {
+          "category": "装备",
+          "name": "户外旅行背包",
+          "price": "80,582",
+          "subcategory": "背包",
+          "pageUrl": "https://aqtwwx.net/item-list?page=15&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:48.351Z"
+        },
+        {
+          "category": "装备",
+          "name": "户外旅行背包",
+          "price": "80,582",
+          "subcategory": "背包",
+          "pageUrl": "https://aqtwwx.net/item-list?page=35&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:54:54.177Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "藏品",
+          "name": "手机",
+          "price": "11,700",
+          "subcategory": "电子产品",
+          "pageUrl": "https://aqtwwx.net/item-list?page=21&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:51.109Z"
+        },
+        {
+          "category": "藏品",
+          "name": "手机",
+          "price": "12,792",
+          "subcategory": "电子产品",
+          "pageUrl": "https://aqtwwx.net/item-list?page=61&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:33.813Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "装备",
+          "name": "摩托车头盔",
+          "price": "3,996",
+          "subcategory": "头盔",
+          "pageUrl": "https://aqtwwx.net/item-list?page=4&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:27.860Z"
+        },
+        {
+          "category": "装备",
+          "name": "摩托车头盔",
+          "price": "4,428",
+          "subcategory": "头盔",
+          "pageUrl": "https://aqtwwx.net/item-list?page=64&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:35.662Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称及价格去重",
+      "rows": [
+        {
+          "category": "藏品",
+          "name": "机油",
+          "price": "17,385",
+          "subcategory": "易燃物",
+          "pageUrl": "https://aqtwwx.net/item-list?page=13&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:47.405Z"
+        },
+        {
+          "category": "藏品",
+          "name": "机油",
+          "price": "17,385",
+          "subcategory": "易燃物",
+          "pageUrl": "https://aqtwwx.net/item-list?page=59&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:19.662Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称及价格去重",
+      "rows": [
+        {
+          "category": "钥匙",
+          "name": "油库材料堆放间钥匙",
+          "price": "725,805",
+          "subcategory": "机场",
+          "pageUrl": "https://aqtwwx.net/item-list?page=9&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:30.166Z"
+        },
+        {
+          "category": "钥匙",
+          "name": "油库材料堆放间钥匙",
+          "price": "725,805",
+          "subcategory": "机场",
+          "pageUrl": "https://aqtwwx.net/item-list?page=24&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:54:02.210Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称及价格去重",
+      "rows": [
+        {
+          "category": "装备",
+          "name": "治安官重型防弹衣",
+          "price": "1,029,000",
+          "subcategory": "防弹衣",
+          "pageUrl": "https://aqtwwx.net/item-list?page=14&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:47.899Z"
+        },
+        {
+          "category": "装备",
+          "name": "治安官重型防弹衣",
+          "price": "1,029,000",
+          "subcategory": "防弹衣",
+          "pageUrl": "https://aqtwwx.net/item-list?page=50&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:55:21.178Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "藏品",
+          "name": "消毒水",
+          "price": "5,049",
+          "subcategory": "医疗杂物",
+          "pageUrl": "https://aqtwwx.net/item-list?page=20&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:50.658Z"
+        },
+        {
+          "category": "藏品",
+          "name": "消毒水",
+          "price": "5,100",
+          "subcategory": "医疗杂物",
+          "pageUrl": "https://aqtwwx.net/item-list?page=30&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:54:04.907Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称及价格去重",
+      "rows": [
+        {
+          "category": "藏品",
+          "name": "漂白剂",
+          "price": "5,742",
+          "subcategory": "生活用品",
+          "pageUrl": "https://aqtwwx.net/item-list?page=16&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:48.732Z"
+        },
+        {
+          "category": "藏品",
+          "name": "漂白剂",
+          "price": "5,742",
+          "subcategory": "生活用品",
+          "pageUrl": "https://aqtwwx.net/item-list?page=61&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:33.813Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "藏品",
+          "name": "火柴",
+          "price": "1,190",
+          "subcategory": "易燃物",
+          "pageUrl": "https://aqtwwx.net/item-list?page=9&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:30.166Z"
+        },
+        {
+          "category": "藏品",
+          "name": "火柴",
+          "price": "1,316",
+          "subcategory": "易燃物",
+          "pageUrl": "https://aqtwwx.net/item-list?page=49&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:55:20.748Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称及价格去重",
+      "rows": [
+        {
+          "category": "武器",
+          "name": "燃烧瓶",
+          "price": "6,840",
+          "subcategory": "投掷武器",
+          "pageUrl": "https://aqtwwx.net/item-list?page=5&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:28.389Z"
+        },
+        {
+          "category": "武器",
+          "name": "燃烧瓶",
+          "price": "6,840",
+          "subcategory": "投掷武器",
+          "pageUrl": "https://aqtwwx.net/item-list?page=44&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:55:18.516Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "医疗",
+          "name": "特效止痛药",
+          "price": "52,866",
+          "subcategory": "药物",
+          "pageUrl": "https://aqtwwx.net/item-list?page=11&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:31.164Z"
+        },
+        {
+          "category": "医疗",
+          "name": "特效止痛药",
+          "price": "56,604",
+          "subcategory": "药物",
+          "pageUrl": "https://aqtwwx.net/item-list?page=69&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:38.668Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "装备",
+          "name": "狩猎马甲",
+          "price": "3,008",
+          "subcategory": "无甲弹挂",
+          "pageUrl": "https://aqtwwx.net/item-list?page=16&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:48.732Z"
+        },
+        {
+          "category": "装备",
+          "name": "狩猎马甲",
+          "price": "3,104",
+          "subcategory": "无甲弹挂",
+          "pageUrl": "https://aqtwwx.net/item-list?page=50&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:55:21.178Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "藏品",
+          "name": "电线",
+          "price": "1,320",
+          "subcategory": "建筑材料",
+          "pageUrl": "https://aqtwwx.net/item-list?page=8&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:29.673Z"
+        },
+        {
+          "category": "藏品",
+          "name": "电线",
+          "price": "1,455",
+          "subcategory": "建筑材料",
+          "pageUrl": "https://aqtwwx.net/item-list?page=71&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:39.788Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称及价格去重",
+      "rows": [
+        {
+          "category": "藏品",
+          "name": "电视台临时凭证",
+          "price": "10,000",
+          "subcategory": "彩蛋物品",
+          "pageUrl": "https://aqtwwx.net/item-list?page=34&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:54:53.808Z"
+        },
+        {
+          "category": "藏品",
+          "name": "电视台临时凭证",
+          "price": "10,000",
+          "subcategory": "彩蛋物品",
+          "pageUrl": "https://aqtwwx.net/item-list?page=44&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:55:18.516Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称及价格去重",
+      "rows": [
+        {
+          "category": "藏品",
+          "name": "电路板",
+          "price": "6,831",
+          "subcategory": "电脑配件",
+          "pageUrl": "https://aqtwwx.net/item-list?page=20&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:50.658Z"
+        },
+        {
+          "category": "藏品",
+          "name": "电路板",
+          "price": "6,831",
+          "subcategory": "电脑配件",
+          "pageUrl": "https://aqtwwx.net/item-list?page=62&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:34.436Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "饮食",
+          "name": "红焖牛肉罐头",
+          "price": "1,133",
+          "subcategory": "食品",
+          "pageUrl": "https://aqtwwx.net/item-list?page=8&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:29.673Z"
+        },
+        {
+          "category": "饮食",
+          "name": "红焖牛肉罐头",
+          "price": "1,254",
+          "subcategory": "食品",
+          "pageUrl": "https://aqtwwx.net/item-list?page=48&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:55:20.304Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "饮食",
+          "name": "红阳功能饮料",
+          "price": "5,320",
+          "subcategory": "饮料",
+          "pageUrl": "https://aqtwwx.net/item-list?page=1&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:26.624Z"
+        },
+        {
+          "category": "饮食",
+          "name": "红阳功能饮料",
+          "price": "11,932",
+          "subcategory": "饮料",
+          "pageUrl": "https://aqtwwx.net/item-list?page=71&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:39.788Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "藏品",
+          "name": "老式收音机",
+          "price": "8,217",
+          "subcategory": "电子产品",
+          "pageUrl": "https://aqtwwx.net/item-list?page=16&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:48.732Z"
+        },
+        {
+          "category": "藏品",
+          "name": "老式收音机",
+          "price": "7,227",
+          "subcategory": "电子产品",
+          "pageUrl": "https://aqtwwx.net/item-list?page=69&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:38.668Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "藏品",
+          "name": "薇雷拉琴",
+          "price": "51,660",
+          "subcategory": "生活用品",
+          "pageUrl": "https://aqtwwx.net/item-list?page=11&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:31.164Z"
+        },
+        {
+          "category": "藏品",
+          "name": "薇雷拉琴",
+          "price": "50,512",
+          "subcategory": "生活用品",
+          "pageUrl": "https://aqtwwx.net/item-list?page=48&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:55:20.304Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "配件",
+          "name": "超轻斜向前握把",
+          "price": "16,524",
+          "subcategory": "前握把",
+          "pageUrl": "https://aqtwwx.net/item-list?page=21&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:51.109Z"
+        },
+        {
+          "category": "配件",
+          "name": "超轻斜向前握把",
+          "price": "18,972",
+          "subcategory": "前握把",
+          "pageUrl": "https://aqtwwx.net/item-list?page=53&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:14.523Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "藏品",
+          "name": "软盘",
+          "price": "6,248",
+          "subcategory": "电脑配件",
+          "pageUrl": "https://aqtwwx.net/item-list?page=11&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:31.164Z"
+        },
+        {
+          "category": "藏品",
+          "name": "软盘",
+          "price": "6,958",
+          "subcategory": "电脑配件",
+          "pageUrl": "https://aqtwwx.net/item-list?page=68&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:38.026Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称及价格去重",
+      "rows": [
+        {
+          "category": "藏品",
+          "name": "金丝边眼镜",
+          "price": "29,600",
+          "subcategory": "收藏品",
+          "pageUrl": "https://aqtwwx.net/item-list?page=2&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:27.094Z"
+        },
+        {
+          "category": "藏品",
+          "name": "金丝边眼镜",
+          "price": "29,600",
+          "subcategory": "收藏品",
+          "pageUrl": "https://aqtwwx.net/item-list?page=43&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:55:18.042Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "藏品",
+          "name": "镜头",
+          "price": "23,166",
+          "subcategory": "电子产品",
+          "pageUrl": "https://aqtwwx.net/item-list?page=6&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:28.885Z"
+        },
+        {
+          "category": "藏品",
+          "name": "镜头",
+          "price": "24,948",
+          "subcategory": "电子产品",
+          "pageUrl": "https://aqtwwx.net/item-list?page=71&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:39.788Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "藏品",
+          "name": "隔音棉",
+          "price": "163,776",
+          "subcategory": "建筑材料",
+          "pageUrl": "https://aqtwwx.net/item-list?page=8&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:29.673Z"
+        },
+        {
+          "category": "藏品",
+          "name": "隔音棉",
+          "price": "202,161",
+          "subcategory": "建筑材料",
+          "pageUrl": "https://aqtwwx.net/item-list?page=67&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:56:37.505Z"
+        }
+      ]
+    },
+    {
+      "reason": "重复名称合并；冲突价格不导入",
+      "rows": [
+        {
+          "category": "藏品",
+          "name": "露营灯",
+          "price": "18,900",
+          "subcategory": "生活用品",
+          "pageUrl": "https://aqtwwx.net/item-list?page=12&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:52:46.861Z"
+        },
+        {
+          "category": "藏品",
+          "name": "露营灯",
+          "price": "14,760",
+          "subcategory": "生活用品",
+          "pageUrl": "https://aqtwwx.net/item-list?page=48&size=20&view=grid&minPrice=0&minLevel=0&maxLevel=7&sortBy=name&sortOrder=asc",
+          "fetchedAt": "2026-10-21T11:55:20.304Z"
+        }
+      ]
+    }
+  ]
+}
