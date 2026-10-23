@@ -6,20 +6,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Threading;
 namespace FieldTrader;
-public sealed record CandidateView(string Name,string ScoreLabel,BitmapSource? Image,int ArtKind=0,bool Highlight=false,double Score=0,string Tag="MOCK · 同一声音组",int GridWidth=0,int GridHeight=0,string PriceLabel="",int? PriceValue=null,string Quality="",string QualityColor="",int QualityRank=0) {
+public sealed record CandidateView(string Name,string ScoreLabel,BitmapSource? Image,int ArtKind=0,bool Highlight=false,double Score=0,string Tag="MOCK · 同一声音组",int GridWidth=0,int GridHeight=0,string PriceLabel="",int? PriceValue=null,string Quality="",string QualityColor="",int QualityRank=0,string QualityBackgroundColor="") {
  public bool HasImage=>Image!=null;
  public string LayoutLabel=>ItemImage.Layout(GridWidth,GridHeight);
  public Visibility PriceVisibility=>string.IsNullOrWhiteSpace(PriceLabel)?Visibility.Collapsed:Visibility.Visible;
- public Brush QualityBackground {
-  get {
-   try {
-    var color=(Color)ColorConverter.ConvertFromString(string.IsNullOrWhiteSpace(QualityColor)?"#243746":QualityColor);
-    byte Blend(byte channel,byte baseChannel)=> (byte)Math.Clamp(Math.Round(channel*.45+baseChannel*.55),0,255);
-    var tinted=Color.FromRgb(Blend(color.R,12),Blend(color.G,18),Blend(color.B,24));
-    var brush=new SolidColorBrush(tinted);brush.Freeze();return brush;
-   } catch { return new SolidColorBrush(Color.FromRgb(36,55,70)); }
-  }
- }
+ public Brush QualityBackground=>QualityColors.Brush(string.IsNullOrWhiteSpace(QualityBackgroundColor)?QualityPalette.Default.Resolve(QualityColor):QualityBackgroundColor);
 }
 public sealed record HistoryView(string Time,string Name,string Detail,CandidateView? Candidate);
 public sealed class SessionState : INotifyPropertyChanged, IDisposable {
@@ -31,6 +22,7 @@ public sealed class SessionState : INotifyPropertyChanged, IDisposable {
  public AudioCaptureService Audio { get; }=new();
  private readonly IAudioRecognitionService recognition=new MockRecognitionService();
  private RecognitionPipeline? pipeline;
+ private QualityPalette qualityPalette=QualityPalette.Default;
  private readonly Dispatcher dispatcher; private readonly DispatcherTimer timer;
  private AudioFrame? latest; private DateTimeOffset lastFrame,startedAt;
  public ObservableCollection<AudioDevice> Devices { get; }=[];
@@ -94,7 +86,7 @@ public sealed class SessionState : INotifyPropertyChanged, IDisposable {
  public string DetectionSummary=>$"声音检测 {detectedEvents} 次 / 匹配 {matchedEvents} 次";
  private float[] waveform=new float[240]; public float[] Waveform { get=>waveform; private set { waveform=value; Changed(); } }
  public string CatalogSummary=>$"{ItemCount} 件物品  /  {GroupCount} 个声音组  /  {SampleCount} 段样本";
- public SessionState(CatalogStore store,Dispatcher dispatcher) { Store=store;InputGain=RecognitionGain.Load(store.Root);var settings=UserSettingsStore.Load(store.Root);hudOpacity=settings.OverlayOpacity;sortField=settings.SortField;sortDirection=settings.SortDirection; this.dispatcher=dispatcher; Audio.FrameAvailable+=frame=> { meter.Add(frame.Mono);Interlocked.Exchange(ref latest,frame);pipeline?.Submit(frame); }; Audio.CaptureStopped+=error=>dispatcher.BeginInvoke(()=>{ pipeline?.Dispose();pipeline=null; Listening=false; Status=error==null?"已停止监听":$"捕获中断：{error.Message} · 请重新选择设备"; ResetMeter(); }); timer=new DispatcherTimer(TimeSpan.FromMilliseconds(80),DispatcherPriority.Background,Tick,dispatcher); RefreshDevices(); }
+ public SessionState(CatalogStore store,Dispatcher dispatcher) { Store=store;InputGain=RecognitionGain.Load(store.Root);var settings=UserSettingsStore.Load(store.Root);hudOpacity=settings.OverlayOpacity;sortField=settings.SortField;sortDirection=settings.SortDirection;qualityPalette=settings.QualityPalette; this.dispatcher=dispatcher; Audio.FrameAvailable+=frame=> { meter.Add(frame.Mono);Interlocked.Exchange(ref latest,frame);pipeline?.Submit(frame); }; Audio.CaptureStopped+=error=>dispatcher.BeginInvoke(()=>{ pipeline?.Dispose();pipeline=null; Listening=false; Status=error==null?"已停止监听":$"捕获中断：{error.Message} · 请重新选择设备"; ResetMeter(); }); timer=new DispatcherTimer(TimeSpan.FromMilliseconds(80),DispatcherPriority.Background,Tick,dispatcher); RefreshDevices(); }
  public void RefreshDevices() { if(Listening) return; try { var id=SelectedDevice?.Id??AudioRouting.RecommendedId(); Devices.Clear(); foreach(var d in AudioCaptureService.EnumerateDevices()) Devices.Add(d); SelectedDevice=Devices.FirstOrDefault(d=>d.Id==id)??Devices.FirstOrDefault(); Status=Devices.Count==0?"未找到可用输出设备，请连接扬声器或耳机":"待机 · 系统输出音频 / WASAPI Loopback"; Changed(nameof(CanStart)); } catch(Exception ex) { Status="设备枚举失败："+ex.Message; } }
  public void Start() { if(!CanStart) return; try { ResetMeter();Interlocked.Exchange(ref latest,null);detectedEvents=matchedEvents=0;Changed(nameof(DetectionSummary));StartPipeline();Audio.Start(SelectedDevice!.Id); startedAt=DateTimeOffset.Now; Listening=true; Status="监听："+SelectedDevice.Name; } catch(Exception ex) { pipeline?.Dispose();pipeline=null;Status=$"无法开始监听：{ex.Message}（0x{ex.HResult:X8}）· 请在音频诊断中导出诊断信息"; } }
  public async Task DetectGameOutputAsync(){var id=AudioRouting.RecommendedId();if(id==null)throw new InvalidOperationException("没有可用的输出设备");bool resume=Listening;if(resume)await StopAsync();RefreshDevices();SelectedDevice=Devices.FirstOrDefault(d=>d.Id==id)??SelectedDevice;if(resume)Start();else Status="已选择游戏活动输出或系统默认输出："+SelectedDevice?.Name;}
@@ -120,8 +112,8 @@ public sealed class SessionState : INotifyPropertyChanged, IDisposable {
   if(!dispatcher.CheckAccess()) { dispatcher.BeginInvoke(()=>Publish(result)); return; }
   Candidates.Clear();int index=0;
   ResultNotice=result.IsMock?"模拟演示":"匹配 ≥70% · 同声物品请结合规格判断";ResultOpacity=1;Changed(nameof(ResultNotice));Changed(nameof(ResultOpacity));
-  foreach(var c in result.Candidates) { var image=ItemImage.Load(c.Item,Store);
-   Candidates.Add(new(c.Item.Name,$"{c.Similarity:P1}",image,index,index==0,c.Similarity*100,result.IsMock?"MOCK · 同一声音组":ItemImage.Layout(c.Item)+" · 同声",c.Item.GridWidth,c.Item.GridHeight,ReferencePriceCatalog.FormatWan(c.Item.Price),c.Item.Price,c.Item.Quality??"",c.Item.QualityColor??"",QualityRank(c.Item.Quality)));index++;
+  foreach(var c in result.Candidates) { var image=ItemImage.Load(c.Item,Store,qualityPalette);
+   Candidates.Add(new(c.Item.Name,$"{c.Similarity:P1}",image,index,index==0,c.Similarity*100,result.IsMock?"MOCK · 同一声音组":ItemImage.Layout(c.Item)+" · 同声",c.Item.GridWidth,c.Item.GridHeight,ReferencePriceCatalog.FormatWan(c.Item.Price),c.Item.Price,c.Item.Quality??"",c.Item.QualityColor??"",QualityColors.Rank(c.Item.Quality),qualityPalette.Resolve(c.Item.QualityColor)));index++;
   }
   previousHud=latestHud;previousHudTime=latestHudTime;latestHud=Candidates.ToArray();latestHudTime=result.Timestamp.ToString("HH:mm:ss");
   var group=Store.Data.SoundGroups.FirstOrDefault(g=>g.Id==result.SoundGroupId)?.Name??result.SoundGroupId;
@@ -132,6 +124,17 @@ public sealed class SessionState : INotifyPropertyChanged, IDisposable {
   foreach(var name in new[]{nameof(DisplayCandidates),nameof(HudCandidates),nameof(ResultBadge),nameof(MatchLabel),nameof(LastResultLabel),nameof(EmptyHistoryVisibility),nameof(FilterSummary),nameof(NoFilterMatchesVisibility)})Changed(name);RefreshHud();
  }
  public void ClearHistory(){History.Clear();HistoryEntries.Clear();Changed(nameof(EmptyHistoryVisibility));}
+ public void ApplyQualityPalette(QualityPalette palette){
+  qualityPalette=palette;
+  for(int i=0;i<Candidates.Count;i++)Candidates[i]=Restyle(Candidates[i]);
+  latestHud=latestHud.Select(Restyle).ToArray();previousHud=previousHud.Select(Restyle).ToArray();
+  for(int i=0;i<HistoryEntries.Count;i++){var row=HistoryEntries[i];if(row.Candidate!=null)HistoryEntries[i]=row with{Candidate=Restyle(row.Candidate)};}
+  NotifySorted();
+ }
+ private CandidateView Restyle(CandidateView candidate) {
+  var item=Store.Data.Items.FirstOrDefault(i=>i.Name==candidate.Name);
+  return candidate with{Image=item==null?candidate.Image:ItemImage.Load(item,Store,qualityPalette),QualityBackgroundColor=qualityPalette.Resolve(candidate.QualityColor)};
+ }
  private IEnumerable<CandidateView> SortCandidates(IEnumerable<CandidateView> source) {
   var ordered=sortField switch {
    "品质"=>source.OrderBy(c=>c.QualityRank).ThenBy(c=>c.Name,StringComparer.CurrentCulture),
@@ -140,7 +143,6 @@ public sealed class SessionState : INotifyPropertyChanged, IDisposable {
   };
   return sortDirection=="升序"?ordered:ordered.Reverse();
  }
- private static int QualityRank(string? quality)=>quality switch {"红色"=>5,"金色"=>4,"紫色"=>3,"蓝色"=>2,"白色"=>1,_=>0};
  private void NotifySorted(){foreach(var name in new[]{nameof(DisplayCandidates),nameof(HudCandidates),nameof(PreviousHudCandidates)})Changed(name);}
  public void CatalogChanged() { if(Listening)StartPipeline(); Changed(nameof(CatalogSummary));Changed(nameof(ItemCount));Changed(nameof(GroupCount));Changed(nameof(SampleCount)); }
  public void Dispose() { timer.Stop();pipeline?.Dispose();pipeline=null; Audio.Dispose(); }

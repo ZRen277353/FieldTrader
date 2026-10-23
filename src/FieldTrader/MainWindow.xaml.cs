@@ -46,6 +46,7 @@ public partial class MainWindow : Window {
  private void Help(object sender,RoutedEventArgs e)=>ShowInfo("使用说明","作者：取名字真麻烦\n抖音号：21360166462\n作者 QQ：3445838743\n免费使用，禁止倒卖；转载分发请保留作者信息。\n\n1. 选择游戏使用的输出设备，点击开始监听，小悬浮窗将自动打开。默认可用全局快捷键 Alt + W 开始或停止监听，停止时悬浮窗同步隐藏，快捷键可在「软件设置」中修改。\n\n2. 两个窗口的波形、电平与频谱来自实际采集。开始监听后只匹配拿起声音的起始部分，无需放下声音；也可以用「音频文件测试」分析录音。相似度不是准确率。\n\n3. 当前初始物品库来自暗区情报站“行商听声鉴宝”图鉴，包含网站标注的图片、名称、价格、占格和拾取音效。\n\n4. 拖动小窗标题栏调整位置；锁定后不能拖动；极简缩小显示；规格切换与透明度选项默认显示。\n\n5. 隐藏 HUD、最小化主窗口不会停止监听；退出主程序会释放设备。建议游戏使用窗口化或无边框全屏，独占全屏可能无法覆盖。");
  private void Settings(object sender,RoutedEventArgs e){
   var panel=new StackPanel{Margin=new Thickness(24)};
+  settings=UserSettingsStore.Load(session.Store.Root);
   panel.Children.Add(new TextBlock{Text="全局监听快捷键",FontSize=16,Margin=new Thickness(0,0,0,8)});
   panel.Children.Add(new TextBlock{Text="在游戏或其他窗口前台时，按一次开始监听，再按一次停止监听。点击下方输入框后按下新的组合键。",TextWrapping=TextWrapping.Wrap,Margin=new Thickness(0,0,0,5)});
   var hotKeyCandidate=settings.ToggleListeningHotKey;
@@ -60,14 +61,34 @@ public partial class MainWindow : Window {
   var restoreHotKey=new Button{Content="恢复默认 Alt + W",HorizontalAlignment=HorizontalAlignment.Left};restoreHotKey.Click+=(_,_)=>{hotKeyCandidate=UserSettings.Default.ToggleListeningHotKey;hotKeyBox.Text=hotKeyCandidate.DisplayText;ShowHotKeyStatus("将在保存后生效。");};
   panel.Children.Add(hotKeyBox);panel.Children.Add(hotKeyStatus);panel.Children.Add(restoreHotKey);
   panel.Children.Add(new Border{BorderBrush=new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(43,64,75)),BorderThickness=new Thickness(0,1,0,0),Margin=new Thickness(0,2,0,18)});
+  panel.Children.Add(new TextBlock{Text="品质背景颜色",FontSize=16,Margin=new Thickness(0,0,0,8)});
+  panel.Children.Add(new TextBlock{Text="分别设置红色、金色、紫色物品图片透明区域的背景色。请输入 #RRGGBB 十六进制颜色。",TextWrapping=TextWrapping.Wrap,Margin=new Thickness(0,0,0,8)});
+  var colorGrid=new Grid{Margin=new Thickness(0,0,0,5)};
+  colorGrid.ColumnDefinitions.Add(new ColumnDefinition{Width=new GridLength(58)});colorGrid.ColumnDefinitions.Add(new ColumnDefinition{Width=new GridLength(42)});colorGrid.ColumnDefinitions.Add(new ColumnDefinition());
+  for(int row=0;row<3;row++)colorGrid.RowDefinitions.Add(new RowDefinition{Height=GridLength.Auto});
+  (TextBox Box,Border Swatch) AddColorRow(string title,string value,int row){
+   var label=new TextBlock{Text=title,VerticalAlignment=VerticalAlignment.Center};
+   var swatch=new Border{Width=30,Height=30,CornerRadius=new CornerRadius(6),BorderBrush=new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(96,118,132)),BorderThickness=new Thickness(1),HorizontalAlignment=HorizontalAlignment.Left,VerticalAlignment=VerticalAlignment.Center};
+   var box=new TextBox{Text=value,Width=130,Height=34,Padding=new Thickness(7,4,7,4),Margin=new Thickness(0,4,0,4),FontFamily=new System.Windows.Media.FontFamily("Consolas"),VerticalContentAlignment=VerticalAlignment.Center};
+   Grid.SetRow(label,row);Grid.SetRow(swatch,row);Grid.SetRow(box,row);Grid.SetColumn(swatch,1);Grid.SetColumn(box,2);colorGrid.Children.Add(label);colorGrid.Children.Add(swatch);colorGrid.Children.Add(box);
+   void RefreshSwatch(){var valid=QualityColors.TryNormalize(box.Text,out var normalized);swatch.Background=QualityColors.Brush(valid?normalized:null);swatch.Opacity=valid?1:.35;}
+   box.TextChanged+=(_,_)=>RefreshSwatch();RefreshSwatch();
+   return(box,swatch);
+  }
+  var(redBox,_)=AddColorRow("红色",settings.RedQualityBackground,0);var(goldBox,_)=AddColorRow("金色",settings.GoldQualityBackground,1);var(purpleBox,_)=AddColorRow("紫色",settings.PurpleQualityBackground,2);
+  panel.Children.Add(colorGrid);
+  var colorStatus=new TextBlock{Foreground=new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(234,183,121)),FontSize=11,TextWrapping=TextWrapping.Wrap,Margin=new Thickness(0,2,0,8),Visibility=Visibility.Collapsed};
+  panel.Children.Add(colorStatus);
+  var restoreColors=new Button{Content="恢复默认品质颜色",HorizontalAlignment=HorizontalAlignment.Left};restoreColors.Click+=(_,_)=>{redBox.Text=QualityColors.RedDefault;goldBox.Text=QualityColors.GoldDefault;purpleBox.Text=QualityColors.PurpleDefault;colorStatus.Visibility=Visibility.Collapsed;};panel.Children.Add(restoreColors);
+  panel.Children.Add(new Border{BorderBrush=new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(43,64,75)),BorderThickness=new Thickness(0,1,0,0),Margin=new Thickness(0,2,0,18)});
   panel.Children.Add(new TextBlock{Text="内部识别增益",FontSize=23,Margin=new Thickness(0,0,0,16)});
   panel.Children.Add(new TextBlock{Text="只放大送入识别的声音，不改变耳机音量、原始录音或电平表。较小的拿起声更容易触发检测，环境声也会同时放大；70%匹配门槛不变。",TextWrapping=TextWrapping.Wrap,Margin=new Thickness(0,0,0,20)});
   var slider=new Slider{Minimum=1,Maximum=8,Value=session.InputGain,TickFrequency=1,IsSnapToTickEnabled=true};var label=new TextBlock{Margin=new Thickness(0,10,0,18)};
   void Update()=>label.Text=slider.Value==1?"1倍 · 关闭放大":$"{slider.Value:0}倍 · 建议先用4倍";slider.ValueChanged+=(_,_)=>Update();Update();panel.Children.Add(slider);panel.Children.Add(label);
   panel.Children.Add(new TextBlock{Text=$"物品库：{session.ItemCount}件 / {session.GroupCount}组\n同声物品请结合占格筛选。调节后会重新准备识别服务。",TextWrapping=TextWrapping.Wrap,Margin=new Thickness(0,0,0,20)});
-  var window=new Window{Title="软件设置",Owner=this,Width=560,SizeToContent=SizeToContent.Height,WindowStartupLocation=WindowStartupLocation.CenterOwner,Style=(Style)FindResource(typeof(Window)),Content=panel};
+  var window=new Window{Title="软件设置",Owner=this,Width=560,MaxHeight=Math.Max(520,SystemParameters.WorkArea.Height-80),SizeToContent=SizeToContent.Height,WindowStartupLocation=WindowStartupLocation.CenterOwner,Style=(Style)FindResource(typeof(Window)),Content=new ScrollViewer{Content=panel,VerticalScrollBarVisibility=ScrollBarVisibility.Auto}};
   window.Closed+=(_,_)=>hotKeys.Resume();
-  var save=new Button{Content="保存并应用"};save.Click+=(_,_)=>{try{if(!hotKeys.TrySet(hotKeyCandidate,out var error)){hotKeys.Suspend();ShowHotKeyStatus(error+"，请换一个组合键。");return;}session.SetInputGain(slider.Value);settings=UserSettingsStore.Load(session.Store.Root) with{ToggleListeningModifiers=hotKeyCandidate.Modifiers,ToggleListeningKey=hotKeyCandidate.Key};UserSettingsStore.Save(session.Store.Root,settings);window.Close();}catch(Exception ex){label.Text="保存失败："+ex.Message;}};panel.Children.Add(save);window.ShowDialog();
+  var save=new Button{Content="保存并应用"};save.Click+=(_,_)=>{try{if(!QualityColors.TryNormalize(redBox.Text,out var red)||!QualityColors.TryNormalize(goldBox.Text,out var gold)||!QualityColors.TryNormalize(purpleBox.Text,out var purple)){colorStatus.Text="品质背景颜色格式错误，请填写 #RRGGBB。";colorStatus.Visibility=Visibility.Visible;return;}colorStatus.Visibility=Visibility.Collapsed;if(!hotKeys.TrySet(hotKeyCandidate,out var error)){hotKeys.Suspend();ShowHotKeyStatus(error+"，请换一个组合键。");return;}session.SetInputGain(slider.Value);settings=UserSettingsStore.Load(session.Store.Root) with{ToggleListeningModifiers=hotKeyCandidate.Modifiers,ToggleListeningKey=hotKeyCandidate.Key,RedQualityBackground=red,GoldQualityBackground=gold,PurpleQualityBackground=purple};UserSettingsStore.Save(session.Store.Root,settings);session.ApplyQualityPalette(settings.QualityPalette);window.Close();}catch(Exception ex){label.Text="保存失败："+ex.Message;}};panel.Children.Add(save);window.ShowDialog();
  }
  private void ShowHistory(object sender,RoutedEventArgs e) {var list=new ListBox{ItemsSource=session.History,Margin=new Thickness(22)};var w=new Window{Title="识别记录",Width=760,Height=500,Owner=this,WindowStartupLocation=WindowStartupLocation.CenterOwner,Style=(Style)FindResource(typeof(Window)),Content=list};w.ShowDialog();}
  private void ShowInfo(string title,string text) {var panel=new StackPanel{Margin=new Thickness(26)};panel.Children.Add(new TextBlock{Text=title,FontSize=23,Margin=new Thickness(0,0,0,20)});panel.Children.Add(new TextBlock{Text=text,TextWrapping=TextWrapping.Wrap,LineHeight=23});var w=new Window{Title=title,Width=600,Height=580,Owner=this,WindowStartupLocation=WindowStartupLocation.CenterOwner,Style=(Style)FindResource(typeof(Window)),Content=new ScrollViewer{Content=panel,VerticalScrollBarVisibility=ScrollBarVisibility.Auto}};w.ShowDialog();}
