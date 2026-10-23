@@ -14,7 +14,9 @@
       "ImageCrop": null,
       "SourceName": "鎏金羽宫",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1650000
+      "Price": 1650000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-09c6ada7f2",
@@ -27,7 +29,9 @@
       "ImageCrop": null,
       "SourceName": "黎明",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1600000
+      "Price": 1600000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-033f51273c",
@@ -40,7 +44,9 @@
       "ImageCrop": null,
       "SourceName": "黄金面具",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1600000
+      "Price": 1600000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-0f71a15c94",
@@ -53,7 +59,9 @@
       "ImageCrop": null,
       "SourceName": "航天导航仪",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1550000
+      "Price": 1550000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-a6d4849d4c",
@@ -66,7 +74,9 @@
       "ImageCrop": null,
       "SourceName": "脑电装置",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1500000
+      "Price": 1500000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-72221c73c7",
@@ -79,7 +89,9 @@
       "ImageCrop": null,
       "SourceName": "法厄同之钟",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1500000
+      "Price": 1500000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-89b549b707",
@@ -92,7 +104,9 @@
       "ImageCrop": null,
       "SourceName": "真实矩阵",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1500000
+      "Price": 1500000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-470e6a3e0c",
@@ -105,7 +119,9 @@
       "ImageCrop": null,
       "SourceName": "孔雀羽扇",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1350000
+      "Price": 1350000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-e6fd7c3af0",
@@ -118,7 +134,9 @@
       "ImageCrop": null,
       "SourceName": "机械手臂",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1350000
+      "Price": 1350000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-12641b9b3e",
@@ -131,7 +149,9 @@
       "ImageCrop": null,
       "SourceName": "文明之声",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1350000
+      "Price": 1350000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-f63242117d",
@@ -144,7 +164,9 @@
       "ImageCrop": null,
       "SourceName": "玉制手串",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 500000
+      "Price": 500000,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-a04affe9e2",
@@ -157,7 +179,9 @@
       "ImageCrop": null,
       "SourceName": "金制钢笔",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 458400
+      "Price": 458400,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-5d5acdb31d",
@@ -170,7 +194,9 @@
       "ImageCrop": null,
       "SourceName": "人工心脏",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 314670
+      "Price": 314670,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-71fba1b798",
@@ -183,7 +209,9 @@
       "ImageCrop": null,
       "SourceName": "未来滑板",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 260800
+      "Price": 260800,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-5be7f56750",
@@ -196,7 +224,9 @@
       "ImageCrop": null,
       "SourceName": "\"航天实验室\"玩具箱",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 255200
+      "Price": 255200,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-6bdc06fb11",
@@ -209,7 +239,9 @@
       "ImageCrop": null,
       "SourceName": "冈格尼尔残页",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 220000
+      "Price": 220000,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-e3011103b0",
@@ -222,7 +254,9 @@
       "ImageCrop": null,
       "SourceName": "金手表",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 80950
+      "Price": 80950,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-b81563ece6",
@@ -235,7 +269,9 @@
       "ImageCrop": null,
       "SourceName": "维塞尔日记",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 71280
+      "Price": 71280,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-b414ba79c2",
@@ -248,7 +284,9 @@
       "ImageCrop": null,
       "SourceName": "非线性探测器",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 70000
+      "Price": 70000,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-8ada63ef31",
@@ -261,7 +299,9 @@
       "ImageCrop": null,
       "SourceName": "血糖仪套装",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 65000
+      "Price": 65000,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-7eaae87b6a",
@@ -274,7 +314,9 @@
       "ImageCrop": null,
       "SourceName": "单兵通讯装置",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 65000
+      "Price": 65000,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-40dd026182",
@@ -287,7 +329,9 @@
       "ImageCrop": null,
       "SourceName": "手持分析仪",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 45000
+      "Price": 45000,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-667228f361",
@@ -300,7 +344,9 @@
       "ImageCrop": null,
       "SourceName": "镁条打火石",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 40000
+      "Price": 40000,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-f2a75dbc5a",
@@ -313,7 +359,9 @@
       "ImageCrop": null,
       "SourceName": "托兰德工卡",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 40000
+      "Price": 40000,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-ab0897ef2a",
@@ -326,7 +374,9 @@
       "ImageCrop": null,
       "SourceName": "《行星之子》漫画",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 23068
+      "Price": 23068,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-19d97e9583",
@@ -339,7 +389,9 @@
       "ImageCrop": null,
       "SourceName": "电子宠物蛋",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 21622
+      "Price": 21622,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-d36f2c1ab4",
@@ -352,7 +404,9 @@
       "ImageCrop": null,
       "SourceName": "电容分析仪",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 20000
+      "Price": 20000,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-90bd938712",
@@ -365,7 +419,9 @@
       "ImageCrop": null,
       "SourceName": "电子听诊器",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 20000
+      "Price": 20000,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-6de0296633",
@@ -378,7 +434,9 @@
       "ImageCrop": null,
       "SourceName": "个人数字助理",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 20000
+      "Price": 20000,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-01e2fdc1a4",
@@ -391,7 +449,9 @@
       "ImageCrop": null,
       "SourceName": "腕表",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 10716
+      "Price": 10716,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-a8bd5d8eea",
@@ -404,7 +464,9 @@
       "ImageCrop": null,
       "SourceName": "发条小汽车",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 10488
+      "Price": 10488,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-f2d55c56a1",
@@ -417,7 +479,9 @@
       "ImageCrop": null,
       "SourceName": "天命泥板",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1350000
+      "Price": 1350000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-f922caec5c",
@@ -430,7 +494,9 @@
       "ImageCrop": null,
       "SourceName": "“理想国”试剂盒",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1000000
+      "Price": 1000000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-ee4ed353c9",
@@ -443,7 +509,9 @@
       "ImageCrop": null,
       "SourceName": "专用电池组",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 262880
+      "Price": 262880,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-be3bd017aa",
@@ -456,7 +524,9 @@
       "ImageCrop": null,
       "SourceName": "钛合金板",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 104099
+      "Price": 104099,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-0996c99869",
@@ -469,7 +539,9 @@
       "ImageCrop": null,
       "SourceName": "汽车蓄电池",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 103160
+      "Price": 103160,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-c3cd1cd36e",
@@ -482,7 +554,9 @@
       "ImageCrop": null,
       "SourceName": "钢管",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 32724
+      "Price": 32724,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-7add40bf78",
@@ -495,7 +569,9 @@
       "ImageCrop": null,
       "SourceName": "胶囊电视",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1600000
+      "Price": 1600000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-f52254fa73",
@@ -508,7 +584,9 @@
       "ImageCrop": null,
       "SourceName": "原型机模块",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1500000
+      "Price": 1500000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-f8b35e7da0",
@@ -521,7 +599,9 @@
       "ImageCrop": null,
       "SourceName": "混沌质",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1500000
+      "Price": 1500000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-36eb4d9d9e",
@@ -534,7 +614,9 @@
       "ImageCrop": null,
       "SourceName": "量子2000",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1350000
+      "Price": 1350000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-75679c5b48",
@@ -547,7 +629,9 @@
       "ImageCrop": null,
       "SourceName": "琥珀天心",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1350000
+      "Price": 1350000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-4b9a5dac96",
@@ -560,7 +644,9 @@
       "ImageCrop": null,
       "SourceName": "赫夫拉彩蛋",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1350000
+      "Price": 1350000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-876bb6b0c2",
@@ -573,7 +659,9 @@
       "ImageCrop": null,
       "SourceName": "承天浑仪",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1350000
+      "Price": 1350000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-b3321fb5b4",
@@ -586,7 +674,9 @@
       "ImageCrop": null,
       "SourceName": "里拉琴",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1350000
+      "Price": 1350000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-454eb82a45",
@@ -599,7 +689,9 @@
       "ImageCrop": null,
       "SourceName": "三轴陀螺仪",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1350000
+      "Price": 1350000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-71c2161fc2",
@@ -612,7 +704,9 @@
       "ImageCrop": null,
       "SourceName": "阵列镜片",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1000000
+      "Price": 1000000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-81e315794e",
@@ -625,7 +719,9 @@
       "ImageCrop": null,
       "SourceName": "卫星模型",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 581870
+      "Price": 581870,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-f4b1d6a7cb",
@@ -638,7 +734,9 @@
       "ImageCrop": null,
       "SourceName": "钻石原矿",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 518336
+      "Price": 518336,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-95e82b2e68",
@@ -651,7 +749,9 @@
       "ImageCrop": null,
       "SourceName": "宫廷银器",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 293050
+      "Price": 293050,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-7ad9b35d9c",
@@ -664,7 +764,9 @@
       "ImageCrop": null,
       "SourceName": "金块",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 270850
+      "Price": 270850,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-4e8ac60bab",
@@ -677,7 +779,9 @@
       "ImageCrop": null,
       "SourceName": "红外线理疗灯",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 220000
+      "Price": 220000,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-cb85d3e2ea",
@@ -690,7 +794,9 @@
       "ImageCrop": null,
       "SourceName": "液压扳手",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 69560
+      "Price": 69560,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-6678e0c4af",
@@ -703,7 +809,9 @@
       "ImageCrop": null,
       "SourceName": "电钻",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 52705
+      "Price": 52705,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-86e6679669",
@@ -716,7 +824,9 @@
       "ImageCrop": null,
       "SourceName": "工具套件",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 45000
+      "Price": 45000,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-6db74919cc",
@@ -729,7 +839,9 @@
       "ImageCrop": null,
       "SourceName": "液压电动钢筋剪",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 40016
+      "Price": 40016,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-ff894c37a7",
@@ -742,7 +854,9 @@
       "ImageCrop": null,
       "SourceName": "镍镉电池组",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 40000
+      "Price": 40000,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-c851f6c8c0",
@@ -755,7 +869,9 @@
       "ImageCrop": null,
       "SourceName": "太阳能充电器",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 35000
+      "Price": 35000,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-abc5225075",
@@ -768,7 +884,9 @@
       "ImageCrop": null,
       "SourceName": "鼓风机",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 28380
+      "Price": 28380,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-82ee184726",
@@ -781,7 +899,9 @@
       "ImageCrop": null,
       "SourceName": "炮弹",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 22914
+      "Price": 22914,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-d5fee302f2",
@@ -794,7 +914,9 @@
       "ImageCrop": null,
       "SourceName": "手持接收机",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 20000
+      "Price": 20000,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-5a42fac5ae",
@@ -807,7 +929,9 @@
       "ImageCrop": null,
       "SourceName": "手持计算器",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 20000
+      "Price": 20000,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-0559ad4642",
@@ -820,7 +944,9 @@
       "ImageCrop": null,
       "SourceName": "缓降器",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 16500
+      "Price": 16500,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-0976c34c9a",
@@ -833,7 +959,9 @@
       "ImageCrop": null,
       "SourceName": "盛宴雕像",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1550000
+      "Price": 1550000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-8e3725a15c",
@@ -846,7 +974,9 @@
       "ImageCrop": null,
       "SourceName": "光电模型",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1350000
+      "Price": 1350000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-fcd5189b23",
@@ -859,7 +989,9 @@
       "ImageCrop": null,
       "SourceName": "盘蛇金像",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1000000
+      "Price": 1000000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-d9ac8feee8",
@@ -872,7 +1004,9 @@
       "ImageCrop": null,
       "SourceName": "金杯",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 302830
+      "Price": 302830,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-b64c5c0778",
@@ -885,7 +1019,9 @@
       "ImageCrop": null,
       "SourceName": "金魔方",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 266400
+      "Price": 266400,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-c3fecdb0e9",
@@ -898,7 +1034,9 @@
       "ImageCrop": null,
       "SourceName": "K7-L密码机",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 210000
+      "Price": 210000,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-32d0015f51",
@@ -911,7 +1049,9 @@
       "ImageCrop": null,
       "SourceName": "仿制石膏雕塑",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 52880
+      "Price": 52880,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-c3c2bc89ed",
@@ -924,7 +1064,9 @@
       "ImageCrop": null,
       "SourceName": "工艺品猎刀",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 34079
+      "Price": 34079,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-6bf986459a",
@@ -937,7 +1079,9 @@
       "ImageCrop": null,
       "SourceName": "机密文件",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1000000
+      "Price": 1000000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-22cea70661",
@@ -950,7 +1094,9 @@
       "ImageCrop": null,
       "SourceName": "目标定位器模块",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1000000
+      "Price": 1000000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-3000e7b7c9",
@@ -963,7 +1109,9 @@
       "ImageCrop": null,
       "SourceName": "热成像模块",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1000000
+      "Price": 1000000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-4b6262acd0",
@@ -976,7 +1124,9 @@
       "ImageCrop": null,
       "SourceName": "笔记本电脑",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 283725
+      "Price": 283725,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-99d04e186f",
@@ -989,7 +1139,9 @@
       "ImageCrop": null,
       "SourceName": "USP电源",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 250000
+      "Price": 250000,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-0dedb0fbe0",
@@ -1002,7 +1154,9 @@
       "ImageCrop": null,
       "SourceName": "摄影机",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 248640
+      "Price": 248640,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-5f5ba45a73",
@@ -1015,7 +1169,9 @@
       "ImageCrop": null,
       "SourceName": "激光指示器模块",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 245120
+      "Price": 245120,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-69c6495d24",
@@ -1028,7 +1184,9 @@
       "ImageCrop": null,
       "SourceName": "向量处理器",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 240000
+      "Price": 240000,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-a3d344b4ac",
@@ -1041,7 +1199,9 @@
       "ImageCrop": null,
       "SourceName": "体外除颤器",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 230000
+      "Price": 230000,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-d71abbe03d",
@@ -1054,7 +1214,9 @@
       "ImageCrop": null,
       "SourceName": "钯金线材",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 227360
+      "Price": 227360,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-56a709841c",
@@ -1067,7 +1229,9 @@
       "ImageCrop": null,
       "SourceName": "水平仪",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 223800
+      "Price": 223800,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-907e026a63",
@@ -1080,7 +1244,9 @@
       "ImageCrop": null,
       "SourceName": "天线",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 180873
+      "Price": 180873,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-f98fc5a8d7",
@@ -1093,7 +1259,9 @@
       "ImageCrop": null,
       "SourceName": "游戏机",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 71960
+      "Price": 71960,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-027ef31e9a",
@@ -1106,7 +1274,9 @@
       "ImageCrop": null,
       "SourceName": "金色手机",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 67960
+      "Price": 67960,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-c20d0d4d7d",
@@ -1119,7 +1289,9 @@
       "ImageCrop": null,
       "SourceName": "芯片处理器",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 34959
+      "Price": 34959,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-5e1510b5aa",
@@ -1132,7 +1304,9 @@
       "ImageCrop": null,
       "SourceName": "平衡仪",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 33600
+      "Price": 33600,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-3538f7b531",
@@ -1145,7 +1319,9 @@
       "ImageCrop": null,
       "SourceName": "电台",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 32224
+      "Price": 32224,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-e3859294a8",
@@ -1158,7 +1334,9 @@
       "ImageCrop": null,
       "SourceName": "示波器",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 31641
+      "Price": 31641,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-1d1649ec71",
@@ -1171,7 +1349,9 @@
       "ImageCrop": null,
       "SourceName": "气体分析仪",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 30167
+      "Price": 30167,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-2728f68e10",
@@ -1184,7 +1364,9 @@
       "ImageCrop": null,
       "SourceName": "专用电路板",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 29376
+      "Price": 29376,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-37a03c7acb",
@@ -1197,7 +1379,9 @@
       "ImageCrop": null,
       "SourceName": "气密性检测仪",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 28796
+      "Price": 28796,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-fcfb524e24",
@@ -1210,7 +1394,9 @@
       "ImageCrop": null,
       "SourceName": "数据链接线",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 26394
+      "Price": 26394,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-f9120b9550",
@@ -1223,7 +1409,9 @@
       "ImageCrop": null,
       "SourceName": "炮队镜",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 23294
+      "Price": 23294,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-2619839d24",
@@ -1236,7 +1424,9 @@
       "ImageCrop": null,
       "SourceName": "测光表",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 16815
+      "Price": 16815,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-6e76bbc4d7",
@@ -1249,7 +1439,9 @@
       "ImageCrop": null,
       "SourceName": "游戏卡带",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 10564
+      "Price": 10564,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-a8c064d622",
@@ -1262,7 +1454,9 @@
       "ImageCrop": null,
       "SourceName": "内存条",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 10374
+      "Price": 10374,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-a8069f4b6f",
@@ -1275,7 +1469,9 @@
       "ImageCrop": null,
       "SourceName": "卡莫纳之星",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1350000
+      "Price": 1350000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-62beae156f",
@@ -1288,7 +1484,9 @@
       "ImageCrop": null,
       "SourceName": "宝石项链",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1000000
+      "Price": 1000000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-eac16452ec",
@@ -1301,7 +1499,9 @@
       "ImageCrop": null,
       "SourceName": "胸针",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 83950
+      "Price": 83950,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-0f6d57ccfd",
@@ -1314,7 +1514,9 @@
       "ImageCrop": null,
       "SourceName": "钻戒",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 82950
+      "Price": 82950,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-0332c8c112",
@@ -1327,7 +1529,9 @@
       "ImageCrop": null,
       "SourceName": "怀表",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 14700
+      "Price": 14700,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-260aed6b55",
@@ -1340,7 +1544,9 @@
       "ImageCrop": null,
       "SourceName": "银片手链",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 14600
+      "Price": 14600,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-d397fdcfb6",
@@ -1353,7 +1559,9 @@
       "ImageCrop": null,
       "SourceName": "古董茶壶",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1000000
+      "Price": 1000000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-1d40a6f529",
@@ -1366,7 +1574,9 @@
       "ImageCrop": null,
       "SourceName": "花瓶",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1000000
+      "Price": 1000000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-a7a3b0c81a",
@@ -1379,7 +1589,9 @@
       "ImageCrop": null,
       "SourceName": "变异体样本",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 250000
+      "Price": 250000,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-3d18b0f075",
@@ -1392,7 +1604,9 @@
       "ImageCrop": null,
       "SourceName": "金狮雕像",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 1000000
+      "Price": 1000000,
+      "Quality": "红色",
+      "QualityColor": "#ff4d4f"
     },
     {
       "Id": "aqtwwx-listen-item-07d8201bee",
@@ -1405,7 +1619,9 @@
       "ImageCrop": null,
       "SourceName": "金豹雕像",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 87950
+      "Price": 87950,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-648524ce5c",
@@ -1418,7 +1634,9 @@
       "ImageCrop": null,
       "SourceName": "液压扩张仪",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 250000
+      "Price": 250000,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-54e6933934",
@@ -1431,7 +1649,9 @@
       "ImageCrop": null,
       "SourceName": "正极模块",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 230000
+      "Price": 230000,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-c7e98f1508",
@@ -1444,7 +1664,9 @@
       "ImageCrop": null,
       "SourceName": "波纹钢板",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 220000
+      "Price": 220000,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-e99d442baa",
@@ -1457,7 +1679,9 @@
       "ImageCrop": null,
       "SourceName": "便携酒精炉",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 25389
+      "Price": 25389,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-6d1e7bcee6",
@@ -1470,7 +1694,9 @@
       "ImageCrop": null,
       "SourceName": "手持补光灯",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 24983
+      "Price": 24983,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-2a3153e350",
@@ -1483,7 +1709,9 @@
       "ImageCrop": null,
       "SourceName": "便携式千斤顶",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 21888
+      "Price": 21888,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-263db76515",
@@ -1496,7 +1724,9 @@
       "ImageCrop": null,
       "SourceName": "通枪工具组",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 13201
+      "Price": 13201,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-303712b9d0",
@@ -1509,7 +1739,9 @@
       "ImageCrop": null,
       "SourceName": "机油壶",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 11742
+      "Price": 11742,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-fca0109114",
@@ -1522,7 +1754,9 @@
       "ImageCrop": null,
       "SourceName": "显卡",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 100760
+      "Price": 100760,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-12a52745b7",
@@ -1535,7 +1769,9 @@
       "ImageCrop": null,
       "SourceName": "PSU电源",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 52207
+      "Price": 52207,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-2bb2d7dfee",
@@ -1548,7 +1784,9 @@
       "ImageCrop": null,
       "SourceName": "机械硬盘",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 25017
+      "Price": 25017,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-3f9a5f4ad5",
@@ -1561,7 +1799,9 @@
       "ImageCrop": null,
       "SourceName": "固态硬盘",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 20482
+      "Price": 20482,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-619938aa31",
@@ -1574,7 +1814,9 @@
       "ImageCrop": null,
       "SourceName": "CPU",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 19224
+      "Price": 19224,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-e7c2dd559a",
@@ -1587,7 +1829,9 @@
       "ImageCrop": null,
       "SourceName": "火药发射包",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 230000
+      "Price": 230000,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-5e3d152e85",
@@ -1600,7 +1844,9 @@
       "ImageCrop": null,
       "SourceName": "硝化棉",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 93058
+      "Price": 93058,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-eaa07d7a4a",
@@ -1613,7 +1859,9 @@
       "ImageCrop": null,
       "SourceName": "高能燃料",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 205326
+      "Price": 205326,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-736b3a090a",
@@ -1626,7 +1874,9 @@
       "ImageCrop": null,
       "SourceName": "燃料桶",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 100760
+      "Price": 100760,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-74795926a7",
@@ -1639,7 +1889,9 @@
       "ImageCrop": null,
       "SourceName": "丙烷罐",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 48282
+      "Price": 48282,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-19073a2d02",
@@ -1652,7 +1904,9 @@
       "ImageCrop": null,
       "SourceName": "油桶",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 22168
+      "Price": 22168,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-29e9b6e205",
@@ -1665,7 +1919,9 @@
       "ImageCrop": null,
       "SourceName": "扁气罐",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 20000
+      "Price": 20000,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-0d97aed674",
@@ -1678,7 +1934,9 @@
       "ImageCrop": null,
       "SourceName": "信息素试剂盒",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 250000
+      "Price": 250000,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-0c11144802",
@@ -1691,7 +1949,9 @@
       "ImageCrop": null,
       "SourceName": "奢华茶具",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 84200
+      "Price": 84200,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-0888152916",
@@ -1704,7 +1964,9 @@
       "ImageCrop": null,
       "SourceName": "阻断剂注射枪",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 40000
+      "Price": 40000,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-e919908b26",
@@ -1717,7 +1979,9 @@
       "ImageCrop": null,
       "SourceName": "香水",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 10640
+      "Price": 10640,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-091e84e2f3",
@@ -1730,7 +1994,9 @@
       "ImageCrop": null,
       "SourceName": "隔音棉",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 163776
+      "Price": 163776,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-612525adfb",
@@ -1743,7 +2009,9 @@
       "ImageCrop": null,
       "SourceName": "无线对讲机",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 30020
+      "Price": 30020,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-0d15a0e28e",
@@ -1756,7 +2024,9 @@
       "ImageCrop": null,
       "SourceName": "助听器",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 21090
+      "Price": 21090,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-302ea3630f",
@@ -1769,7 +2039,9 @@
       "ImageCrop": null,
       "SourceName": "生物样本",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 10944
+      "Price": 10944,
+      "Quality": "紫色",
+      "QualityColor": "#b37feb"
     },
     {
       "Id": "aqtwwx-listen-item-8e498b982b",
@@ -1782,7 +2054,9 @@
       "ImageCrop": null,
       "SourceName": "火焰喷灯",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 70000
+      "Price": 70000,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     },
     {
       "Id": "aqtwwx-listen-item-a34c6280ee",
@@ -1795,7 +2069,9 @@
       "ImageCrop": null,
       "SourceName": "唱片机",
       "SourceBatch": "aqtwwx-listen-treasure-20261023",
-      "Price": 297500
+      "Price": 297500,
+      "Quality": "金色",
+      "QualityColor": "#faad14"
     }
   ],
   "SoundGroups": [

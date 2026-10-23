@@ -32,12 +32,15 @@ public static class SelfTest {
   settingsButton.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));Check(defaultHotKeyShown,"设置窗口显示默认全局监听快捷键");Check(state.InputGain==3&&RecognitionGain.Load(state.Store.Root)==3,"内部增益设置保存并记忆");state.SetInputGain(4);
   var combo=Descendants(main).OfType<ComboBox>().First();combo.IsDropDownOpen=true;await Task.Delay(80);Check(combo.IsDropDownOpen,"深色设备下拉菜单可展开");combo.IsDropDownOpen=false; SaveImage(main,"main-window-idle.png"); Check(state.DisplayCandidates.Count()==4,"待机界面保留四个候选占位卡片"); state.Demo();state.Demo();state.Demo();
   var pricedItems=new[]{
-   new Candidate(new Item("preview-array-lens","阵列镜片",null,"preview",2,3,Price:1550000),.97),
-   new Candidate(new Item("preview-antenna","天线",null,"preview",2,2,Price:180873),.95),
-   new Candidate(new Item("preview-dawn","黎明",null,"preview",3,2,Price:1600000),.93)
+   new Candidate(new Item("preview-array-lens","阵列镜片",null,"preview",2,3,Price:1550000,Quality:"红色",QualityColor:"#ff4d4f"),.97),
+   new Candidate(new Item("preview-antenna","天线",null,"preview",2,2,Price:180873,Quality:"金色",QualityColor:"#faad14"),.95),
+   new Candidate(new Item("preview-dawn","黎明",null,"preview",3,2,Price:1600000,Quality:"红色",QualityColor:"#ff4d4f"),.93)
   };
   state.Publish(new(DateTimeOffset.Now,"price-preview",pricedItems,false));await Task.Delay(100);
-  Check(state.HudCandidates.Select(c=>c.PriceLabel).SequenceEqual(new[]{"155W","18.09W","160W"}),"HUD 名称下方显示图鉴参考价");
+  Check(state.HudCandidates.Select(c=>c.PriceLabel).SequenceEqual(new[]{"160W","155W","18.09W"}),"HUD 按价格降序并在名称下方显示参考价");
+  state.SortField="名字";state.SortDirection="升序";Check(state.HudCandidates.Select(c=>c.Name).SequenceEqual(new[]{"天线","黎明","阵列镜片"}),"HUD 名字升序排序");
+  state.HudOpacity=.62;Check(Math.Abs(UserSettingsStore.Load(store.Root).OverlayOpacity-.62)<.001,"HUD 透明度自动记忆");
+  state.SortField="价格";state.SortDirection="降序";state.HudOpacity=1;
   SaveImage(main,"main-window.png");SaveImage(overlay,"overlay-window.png"); main.Width=900;main.Height=760;await Task.Delay(100);SaveImage(main,"main-window-small.png");main.Width=1150;main.Height=970;overlay.Close();Check(state.Candidates.Count==3,"关闭 HUD 保留结果");
   var lastHud=state.HudCandidates.ToArray();var priorHud=state.PreviousHudCandidates.ToArray();
   state.MarkAnalyzing();Check(state.ResultBadge=="正在分析","检测后立即显示正在分析");state.MarkUnmatched("最高相似度 64%，未达到70%");Check(state.Candidates.Count==0&&state.HistoryEntries[0].Name=="本次不确定"&&state.ResultNotice.Contains("已收到声音"),"不确定清除旧候选、显示收到声音并写入历史");

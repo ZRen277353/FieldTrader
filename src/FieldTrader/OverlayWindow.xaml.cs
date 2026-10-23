@@ -10,7 +10,6 @@ public partial class OverlayWindow : Window {
  private void ToggleCompact(object sender,RoutedEventArgs e) { compact=!compact; ResultLabel.Visibility=Visibility.Visible; OpacityPanel.Visibility=compact?Visibility.Collapsed:Visibility.Visible; Cards.ItemTemplate=(DataTemplate)FindResource(compact?"CompactCandidateTemplate":"HudCandidateTemplate"); Cards.Height=compact?96:204; PreviousCards.ItemTemplate=Cards.ItemTemplate; PreviousCards.Height=Cards.Height; Width=compact?370:480; }
  private void ToggleOptions(object sender,RoutedEventArgs e)=>OpacityPanel.Visibility=OpacityPanel.Visibility==Visibility.Visible?Visibility.Collapsed:Visibility.Visible;
  private void HideOverlay(object sender,RoutedEventArgs e)=>Close();
- private void ChangeOpacity(object sender,RoutedPropertyChangedEventArgs<double> e)=>Opacity=e.NewValue;
 }
 
 

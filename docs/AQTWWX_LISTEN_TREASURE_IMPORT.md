@@ -13,6 +13,7 @@
 
 - `name` → `Item.Name`
 - 页面价格 → `Item.Price`
+- 页面品质颜色 → `Item.QualityColor`，并映射为 `Item.Quality`
 - 图片 `/images/items/<id>.png` → `SeedData/images/aqtwwx-listen-<hash>.png`
 - 页面 `rows`、`cols` → `GridHeight`、`GridWidth`
 - `cols > rows` → 横放；`cols < rows` → 竖放；相等 → 方形
@@ -28,6 +29,8 @@
 - 待补图：2
 - 声音组：17
 - 声音样本：17
+
+品质颜色分布：红色 33、金色 55、紫色 50。候选卡片使用对应颜色的半透明背景。
 
 ## 重新导入
 

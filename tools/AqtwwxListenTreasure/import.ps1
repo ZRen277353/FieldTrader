@@ -112,6 +112,15 @@ foreach ($group in @($snapshotData.groups)) {
         $rows = [int]$sourceItem.rows
         $cols = [int]$sourceItem.cols
         $orientation = if ($rows -eq $cols) { 'square' } elseif ($cols -gt $rows) { 'horizontal' } else { 'vertical' }
+        $qualityColor = ([string]$sourceItem.rarityColor).ToLowerInvariant()
+        $quality = switch ($qualityColor) {
+            '#ff4d4f' { '红色' }
+            '#faad14' { '金色' }
+            '#b37feb' { '紫色' }
+            '#1890ff' { '蓝色' }
+            '#d9d9d9' { '白色' }
+            default { '未知' }
+        }
         $items.Add([pscustomobject]@{
             Id = "aqtwwx-listen-item-$itemHash"
             Name = $name
@@ -124,6 +133,8 @@ foreach ($group in @($snapshotData.groups)) {
             SourceName = $name
             SourceBatch = $sourceBatch
             Price = [int]$sourceItem.price
+            Quality = $quality
+            QualityColor = $qualityColor
         })
     }
 }
