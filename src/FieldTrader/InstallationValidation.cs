@@ -1,6 +1,8 @@
 using System.IO;
 using System.Text.Json;
 using System.Windows;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
 namespace FieldTrader;
 public static class InstallationValidation {
  public static async Task Run(string dataDirectory,string reportPath) {
@@ -31,7 +33,7 @@ public static class InstallationValidation {
   ShowGroup("aqtwwx-listen-sound-01");session.LayoutFilter="全部规格";session.SortField="价格";session.SortDirection="降序";
   var prices=session.HudCandidates.Select(c=>c.PriceValue??0).ToArray();
   if(!prices.SequenceEqual(prices.OrderByDescending(v=>v)))throw new InvalidDataException("价格降序失败");
-  if(!session.HudCandidates.Any(c=>c.Quality=="红色"&&c.QualityColor=="#ff4d4f"&&c.QualityBackground is System.Windows.Media.SolidColorBrush brush&&brush.Color.A==72))throw new InvalidDataException("品质颜色背景缺失");
+  if(!session.HudCandidates.Any(c=>c.Quality=="红色"&&c.QualityColor=="#ff4d4f"&&c.QualityBackground is System.Windows.Media.SolidColorBrush brush&&brush.Color.A==255&&brush.Color.R>brush.Color.G&&brush.Color.R>brush.Color.B))throw new InvalidDataException("品质颜色背景缺失");
   session.SortField="品质";session.SortDirection="降序";
   var qualities=session.HudCandidates.Select(c=>c.QualityRank).ToArray();
   if(!qualities.SequenceEqual(qualities.OrderByDescending(v=>v)))throw new InvalidDataException("品质降序失败");
@@ -40,7 +42,9 @@ public static class InstallationValidation {
   if(!names.SequenceEqual(names.OrderBy(v=>v,StringComparer.CurrentCulture)))throw new InvalidDataException("名字升序失败");
   session.HudOpacity=.61;var saved=UserSettingsStore.Load(db.Root);
   if(Math.Abs(saved.OverlayOpacity-.61)>.001||saved.SortField!="名字"||saved.SortDirection!="升序")throw new InvalidDataException("透明度或排序未保存");
+  SaveImage(hud,Path.Combine(Path.GetDirectoryName(reportPath)!,"overlay-quality-sort.png"));SaveImage(main,Path.Combine(Path.GetDirectoryName(reportPath)!,"main-quality-sort.png"));
   File.WriteAllText(reportPath,JsonSerializer.Serialize(new{Passed=true,Items=db.Data.Items.Count,Groups=db.Data.SoundGroups.Count,Samples=db.Data.SoundSamples.Count,Images=images,Templates=engine.TemplateCount,Recognition=true,MainWindow=true,OverlayTopmost=hud.Topmost,SeedMergeIdempotent=true,LayoutsAndPrices=true,QualityBackgrounds=true,Sorting=true,PreferencePersistence=true,SelectedOutput=session.SelectedDevice?.Name,RecommendedOutput=AudioRouting.RecommendedId(),Runtime=System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription},new JsonSerializerOptions{WriteIndented=true}));
   hud.Close();main.Close();
  }
+ private static void SaveImage(Window window,string filename){window.UpdateLayout();var image=new RenderTargetBitmap((int)window.ActualWidth,(int)window.ActualHeight,96,96,PixelFormats.Pbgra32);image.Render(window);var encoder=new PngBitmapEncoder();encoder.Frames.Add(BitmapFrame.Create(image));using var file=File.Create(filename);encoder.Save(file);}
 }

@@ -14,7 +14,8 @@ public sealed record CandidateView(string Name,string ScoreLabel,BitmapSource? I
   get {
    try {
     var color=(Color)ColorConverter.ConvertFromString(string.IsNullOrWhiteSpace(QualityColor)?"#243746":QualityColor);
-    var tinted=Color.FromArgb(72,color.R,color.G,color.B);
+    byte Blend(byte channel,byte baseChannel)=> (byte)Math.Clamp(Math.Round(channel*.45+baseChannel*.55),0,255);
+    var tinted=Color.FromRgb(Blend(color.R,12),Blend(color.G,18),Blend(color.B,24));
     var brush=new SolidColorBrush(tinted);brush.Freeze();return brush;
    } catch { return new SolidColorBrush(Color.FromRgb(36,55,70)); }
   }
