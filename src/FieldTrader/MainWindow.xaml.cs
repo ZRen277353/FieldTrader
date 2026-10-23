@@ -5,11 +5,18 @@ using System.Windows.Controls;
 using System.Windows.Input;
 namespace FieldTrader;
 public partial class MainWindow : Window {
- private readonly SessionState session; private OverlayWindow? overlay;private VoiceBoardWindow? voiceBoard;private Market.MarketWindow? market;
- public MainWindow(SessionState session) { InitializeComponent(); this.session=session; DataContext=session;Closed+=(_,_)=>{voiceBoard?.Dispose();market?.Close();}; }
+ private readonly SessionState session; private readonly GlobalHotKeyService hotKeys; private UserSettings settings; private OverlayWindow? overlay;private VoiceBoardWindow? voiceBoard;private Market.MarketWindow? market;
+ internal bool IsListeningHotKeyRegistered=>hotKeys.IsRegistered;
+ public MainWindow(SessionState session) {
+  InitializeComponent();this.session=session;DataContext=session;settings=UserSettingsStore.Load(session.Store.Root);hotKeys=new(this,settings.ToggleListeningHotKey);
+  hotKeys.Pressed+=async(_,_)=>await ToggleListeningAsync();
+  Closed+=(_,_)=>{hotKeys.Dispose();voiceBoard?.Dispose();market?.Close();};
+ }
  private void OpenMarket(object sender,RoutedEventArgs e){market??=new Market.MarketWindow(session.Store.Root){Owner=this};market.Closed+=(_,_)=>market=null;market.Show();market.Activate();}
- private void StartListening(object sender,RoutedEventArgs e) { session.Start(); if(session.Listening) ShowOverlay(); }
+ private void StartListening(object sender,RoutedEventArgs e)=>StartListeningFromShortcut();
  private async void StopListening(object sender,RoutedEventArgs e)=>await session.StopAsync();
+ private void StartListeningFromShortcut() { if(!session.CanStart)return;session.Start();if(session.Listening)ShowOverlay(); }
+ private async Task ToggleListeningAsync() { if(session.Listening)await session.StopAsync();else StartListeningFromShortcut(); }
  private void RefreshDevices(object sender,RoutedEventArgs e)=>session.RefreshDevices();
  private void AudioDiagnostics(object sender,RoutedEventArgs e){
   var panel=new StackPanel{Margin=new Thickness(20)};
@@ -36,16 +43,31 @@ public partial class MainWindow : Window {
  private void GoHome(object sender,RoutedEventArgs e)=>Activate();
  private void ClearHistory(object sender,RoutedEventArgs e)=>session.ClearHistory();
  private void OpenDataFolder(object sender,RoutedEventArgs e){try{Process.Start(new ProcessStartInfo(session.Store.Root){UseShellExecute=true});}catch(Exception ex){ShowInfo("无法打开数据目录",ex.Message);}}
- private void Help(object sender,RoutedEventArgs e)=>ShowInfo("使用说明","作者：取名字真麻烦\n抖音号：21360166462\n作者 QQ：3445838743\n免费使用，禁止倒卖；转载分发请保留作者信息。\n\n1. 选择游戏使用的输出设备，点击开始监听，小悬浮窗将自动打开。\n\n2. 两个窗口的波形、电平与频谱来自实际采集。开始监听后只匹配拿起声音的起始部分，无需放下声音；也可以用「音频文件测试」分析录音。相似度不是准确率。\n\n3. 在「物品数据库」中添加图片、声音样本和声音组关系。同一声音可能对应多个物品。\n\n4. 拖动小窗标题栏调整位置；锁定后不能拖动；极简缩小显示；右下角齿轮可按占格、横竖筛选，并调整透明度。\n\n5. 隐藏 HUD、最小化主窗口不会停止监听；退出主程序会释放设备。建议游戏使用窗口化或无边框全屏，独占全屏可能无法覆盖。");
+ private void Help(object sender,RoutedEventArgs e)=>ShowInfo("使用说明","作者：取名字真麻烦\n抖音号：21360166462\n作者 QQ：3445838743\n免费使用，禁止倒卖；转载分发请保留作者信息。\n\n1. 选择游戏使用的输出设备，点击开始监听，小悬浮窗将自动打开。默认可用全局快捷键 Alt + W 开始或停止监听，并在「软件设置」中修改。\n\n2. 两个窗口的波形、电平与频谱来自实际采集。开始监听后只匹配拿起声音的起始部分，无需放下声音；也可以用「音频文件测试」分析录音。相似度不是准确率。\n\n3. 在「物品数据库」中添加图片、声音样本和声音组关系。同一声音可能对应多个物品。悬浮窗在物品名称下显示 MerchantHelper 参考价。\n\n4. 拖动小窗标题栏调整位置；锁定后不能拖动；极简缩小显示；规格切换与透明度选项默认显示。\n\n5. 隐藏 HUD、最小化主窗口不会停止监听；退出主程序会释放设备。建议游戏使用窗口化或无边框全屏，独占全屏可能无法覆盖。");
  private void Settings(object sender,RoutedEventArgs e){
   var panel=new StackPanel{Margin=new Thickness(24)};
+  panel.Children.Add(new TextBlock{Text="全局监听快捷键",FontSize=16,Margin=new Thickness(0,0,0,8)});
+  panel.Children.Add(new TextBlock{Text="在游戏或其他窗口前台时，按一次开始监听，再按一次停止监听。点击下方输入框后按下新的组合键。",TextWrapping=TextWrapping.Wrap,Margin=new Thickness(0,0,0,5)});
+  var hotKeyCandidate=settings.ToggleListeningHotKey;
+  var hotKeyBox=new TextBox{Text=hotKeyCandidate.DisplayText,IsReadOnly=true,IsReadOnlyCaretVisible=false,Cursor=Cursors.Hand,Height=40,VerticalContentAlignment=VerticalAlignment.Center,TextAlignment=TextAlignment.Center,FontSize=15,FontWeight=FontWeights.SemiBold,Margin=new Thickness(0,4,0,4),ToolTip="点击后按下新的全局快捷键"};
+  var hotKeyStatus=new TextBlock{Text="快捷键需包含 Ctrl、Alt、Shift 或 Win。",Foreground=new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(142,166,184)),FontSize=11,TextWrapping=TextWrapping.Wrap,Margin=new Thickness(0,0,0,16)};
+  bool capturing=false;
+  void ShowHotKeyStatus(string? message=null)=>hotKeyStatus.Text=message??"快捷键需包含 Ctrl、Alt、Shift 或 Win。";
+  void BeginCapture(){capturing=true;hotKeys.Suspend();hotKeyBox.Text="请按下新的组合键";ShowHotKeyStatus();}
+  hotKeyBox.GotKeyboardFocus+=(_,_)=>{if(!capturing)BeginCapture();};
+  hotKeyBox.PreviewMouseLeftButtonDown+=(_,_)=>{if(!capturing)BeginCapture();};
+  hotKeyBox.PreviewKeyDown+=(_,ev)=>{if(!capturing)return;ev.Handled=true;var key=ev.Key==Key.System?ev.SystemKey:ev.Key;if(key==Key.Escape){hotKeyCandidate=settings.ToggleListeningHotKey;hotKeyBox.Text=hotKeyCandidate.DisplayText;ShowHotKeyStatus("已取消修改。");return;}var modifiers=Keyboard.Modifiers;if(HotKeyGesture.TryCreate(modifiers,key,out var next)){hotKeyCandidate=next;hotKeyBox.Text=next.DisplayText;ShowHotKeyStatus("将在保存后生效。");}else if(key is Key.LeftCtrl or Key.RightCtrl or Key.LeftAlt or Key.RightAlt or Key.LeftShift or Key.RightShift or Key.LWin or Key.RWin){ShowHotKeyStatus("继续按下字母、数字或功能键。");}else ShowHotKeyStatus("快捷键至少需要一个修饰键。");};
+  var restoreHotKey=new Button{Content="恢复默认 Alt + W",HorizontalAlignment=HorizontalAlignment.Left};restoreHotKey.Click+=(_,_)=>{hotKeyCandidate=UserSettings.Default.ToggleListeningHotKey;hotKeyBox.Text=hotKeyCandidate.DisplayText;ShowHotKeyStatus("将在保存后生效。");};
+  panel.Children.Add(hotKeyBox);panel.Children.Add(hotKeyStatus);panel.Children.Add(restoreHotKey);
+  panel.Children.Add(new Border{BorderBrush=new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(43,64,75)),BorderThickness=new Thickness(0,1,0,0),Margin=new Thickness(0,2,0,18)});
   panel.Children.Add(new TextBlock{Text="内部识别增益",FontSize=23,Margin=new Thickness(0,0,0,16)});
   panel.Children.Add(new TextBlock{Text="只放大送入识别的声音，不改变耳机音量、原始录音或电平表。较小的拿起声更容易触发检测，环境声也会同时放大；70%匹配门槛不变。",TextWrapping=TextWrapping.Wrap,Margin=new Thickness(0,0,0,20)});
   var slider=new Slider{Minimum=1,Maximum=8,Value=session.InputGain,TickFrequency=1,IsSnapToTickEnabled=true};var label=new TextBlock{Margin=new Thickness(0,10,0,18)};
   void Update()=>label.Text=slider.Value==1?"1倍 · 关闭放大":$"{slider.Value:0}倍 · 建议先用4倍";slider.ValueChanged+=(_,_)=>Update();Update();panel.Children.Add(slider);panel.Children.Add(label);
   panel.Children.Add(new TextBlock{Text=$"物品库：{session.ItemCount}件 / {session.GroupCount}组\n同声物品请结合占格筛选。调节后会重新准备识别服务。",TextWrapping=TextWrapping.Wrap,Margin=new Thickness(0,0,0,20)});
-  var window=new Window{Title="软件设置",Owner=this,Width=540,SizeToContent=SizeToContent.Height,WindowStartupLocation=WindowStartupLocation.CenterOwner,Style=(Style)FindResource(typeof(Window)),Content=panel};
-  var save=new Button{Content="保存并应用"};save.Click+=(_,_)=>{try{session.SetInputGain(slider.Value);window.Close();}catch(Exception ex){label.Text="保存失败："+ex.Message;}};panel.Children.Add(save);window.ShowDialog();
+  var window=new Window{Title="软件设置",Owner=this,Width=560,SizeToContent=SizeToContent.Height,WindowStartupLocation=WindowStartupLocation.CenterOwner,Style=(Style)FindResource(typeof(Window)),Content=panel};
+  window.Closed+=(_,_)=>hotKeys.Resume();
+  var save=new Button{Content="保存并应用"};save.Click+=(_,_)=>{try{if(!hotKeys.TrySet(hotKeyCandidate,out var error)){hotKeys.Suspend();ShowHotKeyStatus(error+"，请换一个组合键。");return;}session.SetInputGain(slider.Value);settings=new(hotKeyCandidate.Modifiers,hotKeyCandidate.Key);UserSettingsStore.Save(session.Store.Root,settings);window.Close();}catch(Exception ex){label.Text="保存失败："+ex.Message;}};panel.Children.Add(save);window.ShowDialog();
  }
  private void ShowHistory(object sender,RoutedEventArgs e) {var list=new ListBox{ItemsSource=session.History,Margin=new Thickness(22)};var w=new Window{Title="识别记录",Width=760,Height=500,Owner=this,WindowStartupLocation=WindowStartupLocation.CenterOwner,Style=(Style)FindResource(typeof(Window)),Content=list};w.ShowDialog();}
  private void ShowInfo(string title,string text) {var panel=new StackPanel{Margin=new Thickness(26)};panel.Children.Add(new TextBlock{Text=title,FontSize=23,Margin=new Thickness(0,0,0,20)});panel.Children.Add(new TextBlock{Text=text,TextWrapping=TextWrapping.Wrap,LineHeight=23});var w=new Window{Title=title,Width=600,Height=580,Owner=this,WindowStartupLocation=WindowStartupLocation.CenterOwner,Style=(Style)FindResource(typeof(Window)),Content=new ScrollViewer{Content=panel,VerticalScrollBarVisibility=ScrollBarVisibility.Auto}};w.ShowDialog();}

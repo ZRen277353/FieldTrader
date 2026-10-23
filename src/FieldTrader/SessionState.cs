@@ -6,7 +6,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Threading;
 namespace FieldTrader;
-public sealed record CandidateView(string Name,string ScoreLabel,BitmapSource? Image,int ArtKind=0,bool Highlight=false,double Score=0,string Tag="MOCK · 同一声音组",int GridWidth=0,int GridHeight=0) { public bool HasImage=>Image!=null; public string LayoutLabel=>ItemImage.Layout(GridWidth,GridHeight); }
+public sealed record CandidateView(string Name,string ScoreLabel,BitmapSource? Image,int ArtKind=0,bool Highlight=false,double Score=0,string Tag="MOCK · 同一声音组",int GridWidth=0,int GridHeight=0,string PriceLabel="") { public bool HasImage=>Image!=null; public string LayoutLabel=>ItemImage.Layout(GridWidth,GridHeight); public Visibility PriceVisibility=>string.IsNullOrWhiteSpace(PriceLabel)?Visibility.Collapsed:Visibility.Visible; }
 public sealed record HistoryView(string Time,string Name,string Detail,CandidateView? Candidate);
 public sealed class SessionState : INotifyPropertyChanged, IDisposable {
  public event PropertyChangedEventHandler? PropertyChanged;
@@ -100,7 +100,7 @@ public sealed class SessionState : INotifyPropertyChanged, IDisposable {
   Candidates.Clear();int index=0;
   ResultNotice=result.IsMock?"模拟演示":"匹配 ≥70% · 同声物品请结合规格判断";ResultOpacity=1;Changed(nameof(ResultNotice));Changed(nameof(ResultOpacity));
   foreach(var c in result.Candidates) { var image=ItemImage.Load(c.Item,Store);
-   Candidates.Add(new(c.Item.Name,$"{c.Similarity:P1}",image,index,index==0,c.Similarity*100,result.IsMock?"MOCK · 同一声音组":ItemImage.Layout(c.Item)+" · 同声",c.Item.GridWidth,c.Item.GridHeight));index++;
+   Candidates.Add(new(c.Item.Name,$"{c.Similarity:P1}",image,index,index==0,c.Similarity*100,result.IsMock?"MOCK · 同一声音组":ItemImage.Layout(c.Item)+" · 同声",c.Item.GridWidth,c.Item.GridHeight,ReferencePriceCatalog.Bundled.FormatFor(c.Item.Name)));index++;
   }
   previousHud=latestHud;previousHudTime=latestHudTime;latestHud=Candidates.ToArray();latestHudTime=result.Timestamp.ToString("HH:mm:ss");
   var group=Store.Data.SoundGroups.FirstOrDefault(g=>g.Id==result.SoundGroupId)?.Name??result.SoundGroupId;

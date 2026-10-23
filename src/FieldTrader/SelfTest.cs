@@ -21,14 +21,25 @@ public static class SelfTest {
   Check(events.Count(e=>(e.Timestamp-DateTimeOffset.UnixEpoch).TotalSeconds>1)==3,"持续背景声下仍能连续检测三个后续声音，不等待绝对静音");
   detector.Reset();Check(detector.Push(new(new float[16000],16000,DateTimeOffset.UnixEpoch)).Count==0,"停止重置后静音不产生事件");
   var ring=new AudioRingBuffer(4);ring.Write([1,2,3]);ring.Write([4,5,6]);Check(ring.Snapshot().SequenceEqual(new float[]{3,4,5,6}),"循环缓冲保留最新样本");
+  Check(ReferencePriceCatalog.FormatWan("1550000")=="155W"&&ReferencePriceCatalog.FormatWan("75000")=="7.5W","参考价格式化为整数或一位小数 W");
+  Check(ReferencePriceCatalog.Bundled.FormatFor("阵列镜片")=="155W"&&ReferencePriceCatalog.Bundled.FormatFor("黎明")=="165W","MerchantHelper 参考价按名称匹配及别名回退");
   var silence=SpectrumAnalysis.Mel(new float[2048],48000);Check(silence.All(v=>v==0),"静音频谱不产生伪信号"); var sine=Enumerable.Range(0,2048).Select(i=>(float)(.3*Math.Sin(2*Math.PI*1000*i/48000))).ToArray();var mel=SpectrumAnalysis.Mel(sine,48000);int peak=Array.IndexOf(mel,mel.Max());Check(peak>=15&&peak<=19,"1 kHz 测试音落入正确 Mel 频带");
   var root=Path.Combine(AppContext.BaseDirectory,"test-data");var store=new CatalogStore(root);store.Load();store.Save();var reread=new CatalogStore(root);reread.Load();Check(reread.Data.Items.Count==store.Data.Items.Count,"JSON 往返与声音组关系");
   var mock=new MockRecognitionService();var result=mock.Recognize(new([],48000,DateTimeOffset.Now),store.Data)!;Check(result.Candidates.Count==3&&result.IsMock,"一声音组多候选与 MOCK 标记");
-  using var state=new SessionState(store,Application.Current.Dispatcher);var main=new MainWindow(state);var overlay=new OverlayWindow(state);main.Show();overlay.Show();await Task.Delay(200);Check(ReferenceEquals(main.DataContext,overlay.DataContext)&&overlay.Topmost,"主窗口与置顶 HUD 共享状态");
+  using var state=new SessionState(store,Application.Current.Dispatcher);var main=new MainWindow(state);var overlay=new OverlayWindow(state);main.Show();overlay.Show();await Task.Delay(200);Check(main.IsListeningHotKeyRegistered,"默认 Alt + W 全局监听快捷键注册成功");Check(ReferenceEquals(main.DataContext,overlay.DataContext)&&overlay.Topmost,"主窗口与置顶 HUD 共享状态");Check(overlay.OpacityPanel.Visibility==Visibility.Visible,"HUD 默认显示规格与透明度选项");
   var settingsButton=Descendants(main).OfType<Button>().First(b=>b.Content?.ToString()?.Contains("软件设置")==true);
-  _ = Application.Current.Dispatcher.BeginInvoke(new Action(async()=>{await Task.Delay(150);var settings=Application.Current.Windows.OfType<Window>().First(w=>w.Title=="软件设置");var slider=Descendants(settings).OfType<Slider>().First();slider.Value=3;SaveImage(settings,"recognition-gain-settings.png");Click(settings,"保存并应用");}));
-  settingsButton.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));Check(state.InputGain==3&&RecognitionGain.Load(state.Store.Root)==3,"内部增益设置保存并记忆");state.SetInputGain(4);
-  var combo=Descendants(main).OfType<ComboBox>().First();combo.IsDropDownOpen=true;await Task.Delay(80);Check(combo.IsDropDownOpen,"深色设备下拉菜单可展开");combo.IsDropDownOpen=false; SaveImage(main,"main-window-idle.png"); Check(state.DisplayCandidates.Count()==4,"待机界面保留四个候选占位卡片"); state.Demo();state.Demo();state.Demo();await Task.Delay(100); SaveImage(main,"main-window.png");SaveImage(overlay,"overlay-window.png"); main.Width=900;main.Height=760;await Task.Delay(100);SaveImage(main,"main-window-small.png");main.Width=1150;main.Height=970;overlay.Close();Check(state.Candidates.Count==3,"关闭 HUD 保留结果");
+  bool defaultHotKeyShown=false;
+  _ = Application.Current.Dispatcher.BeginInvoke(new Action(async()=>{await Task.Delay(150);var settings=Application.Current.Windows.OfType<Window>().First(w=>w.Title=="软件设置");defaultHotKeyShown=Descendants(settings).OfType<TextBox>().Any(t=>t.Text=="Alt + W");var slider=Descendants(settings).OfType<Slider>().First();slider.Value=3;SaveImage(settings,"recognition-gain-settings.png");Click(settings,"保存并应用");}));
+  settingsButton.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));Check(defaultHotKeyShown,"设置窗口显示默认全局监听快捷键");Check(state.InputGain==3&&RecognitionGain.Load(state.Store.Root)==3,"内部增益设置保存并记忆");state.SetInputGain(4);
+  var combo=Descendants(main).OfType<ComboBox>().First();combo.IsDropDownOpen=true;await Task.Delay(80);Check(combo.IsDropDownOpen,"深色设备下拉菜单可展开");combo.IsDropDownOpen=false; SaveImage(main,"main-window-idle.png"); Check(state.DisplayCandidates.Count()==4,"待机界面保留四个候选占位卡片"); state.Demo();state.Demo();state.Demo();
+  var pricedItems=new[]{
+   new Candidate(new Item("preview-array-lens","阵列镜片",null,"preview",2,3),.97),
+   new Candidate(new Item("preview-antenna","天线",null,"preview",2,2),.95),
+   new Candidate(new Item("preview-dawn","黎明",null,"preview",3,2),.93)
+  };
+  state.Publish(new(DateTimeOffset.Now,"price-preview",pricedItems,false));await Task.Delay(100);
+  Check(state.HudCandidates.Select(c=>c.PriceLabel).SequenceEqual(new[]{"155W","9W","165W"}),"HUD 名称下方显示 MerchantHelper 参考价");
+  SaveImage(main,"main-window.png");SaveImage(overlay,"overlay-window.png"); main.Width=900;main.Height=760;await Task.Delay(100);SaveImage(main,"main-window-small.png");main.Width=1150;main.Height=970;overlay.Close();Check(state.Candidates.Count==3,"关闭 HUD 保留结果");
   var lastHud=state.HudCandidates.ToArray();var priorHud=state.PreviousHudCandidates.ToArray();
   state.MarkAnalyzing();Check(state.ResultBadge=="正在分析","检测后立即显示正在分析");state.MarkUnmatched("最高相似度 64%，未达到70%");Check(state.Candidates.Count==0&&state.HistoryEntries[0].Name=="本次不确定"&&state.ResultNotice.Contains("已收到声音"),"不确定清除旧候选、显示收到声音并写入历史");
   Check(state.HudCandidates.SequenceEqual(lastHud)&&state.PreviousHudCandidates.SequenceEqual(priorHud)&&state.HudNotice.Contains("保留上次结果"),"不确定不清除两轮HUD快照");
