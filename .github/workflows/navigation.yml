@@ -1,0 +1,26 @@
+name: Navigation core offline checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  navigation:
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - name: Navigation deterministic fixtures (no native input)
+        run: dotnet run --project tests/FieldTrader.Navigation.Tests -- artifacts/navigation-results.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: navigation-${{ matrix.os }}
+          path: artifacts/navigation-results.json

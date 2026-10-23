@@ -1,0 +1,50 @@
+using FieldTrader.Market;
+
+namespace FieldTrader.Navigation;
+
+public sealed class NavigationVerifier(VisualTargetResolver resolver) {
+    public Verification Before(PageObservation source, PageObservation current, PlannedAction action,
+        DateTimeOffset now, TimeSpan maxAge) {
+        VisualTargetResolver.Validate(source); VisualTargetResolver.Validate(current);
+        var s = source.Screen; var c = current.Screen; var target = action.Target;
+        if (maxAge <= TimeSpan.Zero || now < s.Frame.CapturedAt || now - s.Frame.CapturedAt > maxAge
+            || now < c.Frame.CapturedAt || now - c.Frame.CapturedAt > maxAge)
+            return new(false, true, "Expired/future frame; recapture required");
+        if (target.FrameId != s.Frame.Id || target.ContentHash != s.ContentHash || target.CapturedAt != s.Frame.CapturedAt
+            || target.Click != CoordinateTransform.ToScreen(target.Bounds, s)) return new(false, true, "Target provenance mismatch");
+        if (current.Errors.Length > 0 || current.Page != action.Step.ExpectedBefore || source.Layout != current.Layout
+            || s.WindowHandle != c.WindowHandle || s.ScreenX != c.ScreenX || s.ScreenY != c.ScreenY
+            || s.Width != c.Width || s.Height != c.Height || s.Live != c.Live)
+            return new(false, true, "Page/layout/window changed; discard remaining coordinates");
+        var found = resolver.Resolve(current, action.Step.Target);
+        if (found.Length != 1 || found[0].Bounds != target.Bounds || found[0].Click != target.Click)
+            return new(false, true, "Target moved/disappeared/ambiguous");
+        NavigationSafety.Check(action.Step, found[0]);
+        return new(true, false, "Before-action evidence verified");
+    }
+    public Verification After(PageObservation before, PageObservation after, NavigationStep step) {
+        VisualTargetResolver.Validate(after);
+        if (after.Screen.Frame.Id == before.Screen.Frame.Id || after.Screen.Frame.CapturedAt <= before.Screen.Frame.CapturedAt)
+            return new(false, true, "Verification requires a newer independent frame");
+        if (before.Screen.WindowHandle != after.Screen.WindowHandle || before.Screen.ScreenX != after.Screen.ScreenX
+            || before.Screen.ScreenY != after.Screen.ScreenY || before.Screen.Width != after.Screen.Width
+            || before.Screen.Height != after.Screen.Height || before.Screen.Live != after.Screen.Live)
+            return new(false, true, "Window changed during action");
+        if (after.Errors.Length > 0) return new(false, true, string.Join("; ", after.Errors));
+        if (after.Page != step.ExpectedAfter) return new(false, true, "Expected page not reached");
+        if (step.ExpectedResultTarget is { } expected && resolver.Resolve(after, expected, allowModalEvidence: true).Length != 1)
+            return new(false, true, "Expected result target is absent, ambiguous or outside its visual context");
+        if (step.Effect == LayoutEffect.Stable && before.Layout != after.Layout)
+            return new(false, true, "Unexpected layout change inside stable batch");
+        if ((step.RequiredAfterText ?? []).Any(text => !after.Vision.Texts.Any(t => t.Confidence >= .95
+            && Geometry.Normalize(t.Label) == Geometry.Normalize(text)))) return new(false, true, "Expected result evidence missing");
+        if (step.Operation == InputOperation.Click && step.ExpectedAfter == step.ExpectedBefore
+            && !(step.RequiredAfterText ?? []).Any(text => !before.Vision.Texts.Any(t => t.Confidence >= .95
+                && Geometry.Normalize(t.Label) == Geometry.Normalize(text))))
+            return new(false, true, "Same-page click lacks a new positive result anchor");
+        // Same-page dynamic operations need positive change evidence, not just a completed click.
+        if (step.Effect == LayoutEffect.MayChange && step.ExpectedAfter == step.ExpectedBefore
+            && before.Screen.ContentHash == after.Screen.ContentHash) return new(false, true, "No observed result change");
+        return new(true, false, "Page, result anchors and layout verified; no transaction claim");
+    }
+}

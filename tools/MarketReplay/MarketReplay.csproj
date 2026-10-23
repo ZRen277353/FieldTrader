@@ -4,4 +4,5 @@
   <ItemGroup><PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.21" /></ItemGroup>
   <ItemGroup><Content Include="../../src/FieldTrader/Market/vision_worker.py" Link="Market/vision_worker.py" CopyToOutputDirectory="PreserveNewest" /></ItemGroup>
   <ItemGroup><Content Include="../../src/FieldTrader/MarketSeed/*" Link="MarketSeed/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" /></ItemGroup>
+  <ItemGroup><Compile Include="../../src/FieldTrader/Market/Navigation/*.cs" Link="Navigation/%(Filename)%(Extension)" /></ItemGroup>
 </Project>

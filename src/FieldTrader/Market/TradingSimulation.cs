@@ -29,7 +29,7 @@ public sealed class SimulationState {
 }
 public static class MarketOperationGate {
     public static SemaphoreSlim Shared {get;}=new(1,1);
-    public static SemaphoreSlim TradeSession {get;}=new(1,1);
+    public static SemaphoreSlim TradeSession => FieldTrader.Navigation.NavigationInputGate.Shared;
 }
 
 // Only SimulatedMouseExecutor is accepted. There is deliberately no native trade submit implementation.

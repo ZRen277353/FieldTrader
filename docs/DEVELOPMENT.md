@@ -83,3 +83,7 @@ CI 不代表游戏内准确率、所有蓝牙驱动兼容性或实际队友收�
 初始库位于 `SeedData/catalog.json`，包含 Item / SoundGroup / SoundSample 和相对资源路径。用户运行库位于 `%LOCALAPPDATA%\FieldTrader`，首次启动与升级时通过 `SeedCatalog` 合并。
 
 新增物品请为稳定 ID、声音组、占格和横竖方向提供明确关系；共享声音的物品使用同一组，不用强行训练成唯一物品。源码仓库只提交用于软件分发的初始样本，不提交私人诊断录音或原始视频。
+
+## 通用导航核心（Mac 阶段）
+
+架构、接口、三种模式、稳定/动态批次、测试命令与 Windows 待验收清单见 [导航核心说明](NAVIGATION_CORE.md)。独立测试入口为 `dotnet run --project tests/FieldTrader.Navigation.Tests -- artifacts/navigation-results.json`。旧真实鼠标入口已停用，新 Windows 输入暂限本地测试窗口；市场预演与音频核心保持原逻辑。
