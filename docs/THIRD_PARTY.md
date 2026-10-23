@@ -24,12 +24,13 @@
 
 项目通过 NuGet 引用 [NAudio 2.2.1](https://www.nuget.org/packages/NAudio/2.2.1)，上游源码与许可见 [NAudio](https://github.com/naudio/NAudio)。NAudio 使用 MIT 许可；随可运行版本提供其原始许可副本。
 
-## MerchantHelper 参考价数据
+## MerchantHelper 数据与素材
 
-- 来源：[A1Chao/MerchantHelper](https://github.com/A1Chao/MerchantHelper) 的 `assets/database.json`。
+- 来源：[A1Chao/MerchantHelper](https://github.com/A1Chao/MerchantHelper) 的 `assets/database.json`、物品图片和声音文件。
 - 快照提交：`5a0f5249cd5c7b4522866ba962952326b5fed23e`；文件 SHA-256：`6D82472F750D64478B887F73804C6BC8A79E65CAB15A372742E89E29064C8F56`。
-- 本软件只读取物品名称与 `reference_value` 生成名称下方的 `W` 参考价，不调用联网接口，也不声称它是实时成交价。
-- 上游说明为仅供学习交流、禁止商业用途；本软件不改变 MerchantHelper、游戏数据或相关素材的权利归属。完整说明见 `src/FieldTrader/PriceSeed/MerchantHelper/README.md`。
+- 本软件读取物品名称与 `reference_value` 生成名称下方的 `W` 参考价，不调用联网接口，也不声称它是实时成交价。
+- 导入时跳过当前库已有名称及明确名称变体，新增 69 件物品；其图片和声音按当前项目的图片路径、声学组、样本、占格和方向字段保存。
+- 上游说明为仅供学习交流、禁止商业用途；本软件不改变 MerchantHelper、游戏数据或相关素材的权利归属。价格快照说明见 `src/FieldTrader/PriceSeed/MerchantHelper/README.md`，物品与声音导入规则见 [MERCHANTHELPER_IMPORT.md](MERCHANTHELPER_IMPORT.md)。
 
 ## 游戏图像、声音与语音素材
 

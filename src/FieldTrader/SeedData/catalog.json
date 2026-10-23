@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "SeedRevision": "items-20261008-v076",
+  "SeedRevision": "items-20261023-merchanthelper-5a0f5249",
   "Items": [
     {
       "Id": "bulk-item-45e6503f0b99",
@@ -1325,6 +1325,834 @@
       "ImageCrop": null,
       "SourceName": "北境星辰",
       "SourceBatch": "user-20261008"
+    },
+    {
+      "Id": "merchanthelper-item-6d6ac2cb52",
+      "Name": "扁气罐",
+      "ImagePath": "images/merchanthelper-item-6d6ac2cb52.png",
+      "SoundGroupId": "merchanthelper-sound-7d23cd1fe2",
+      "GridWidth": 1,
+      "GridHeight": 2,
+      "Orientation": "vertical",
+      "ImageCrop": null,
+      "SourceName": "扁气罐",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-7b4096abc3",
+      "Name": "变异体手绘画",
+      "ImagePath": "images/merchanthelper-item-7b4096abc3.png",
+      "SoundGroupId": "merchanthelper-sound-ebc58a056a",
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "变异体手绘画",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-917dd7758f",
+      "Name": "变异体样本",
+      "ImagePath": "images/merchanthelper-item-917dd7758f.png",
+      "SoundGroupId": "merchanthelper-sound-1c8c8fe375",
+      "GridWidth": 2,
+      "GridHeight": 3,
+      "Orientation": "vertical",
+      "ImageCrop": null,
+      "SourceName": "变异体样本",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-54af013a9a",
+      "Name": "便携酒精炉",
+      "ImagePath": "images/merchanthelper-item-54af013a9a.png",
+      "SoundGroupId": "merchanthelper-sound-09a6922aca",
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "便携酒精炉",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-08f6c310aa",
+      "Name": "便携收录机",
+      "ImagePath": "images/merchanthelper-item-08f6c310aa.png",
+      "SoundGroupId": "merchanthelper-sound-a61e2f38a3",
+      "GridWidth": 1,
+      "GridHeight": 2,
+      "Orientation": "vertical",
+      "ImageCrop": null,
+      "SourceName": "便携收录机",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-d510d911e0",
+      "Name": "丙烷罐",
+      "ImagePath": "images/merchanthelper-item-d510d911e0.png",
+      "SoundGroupId": "merchanthelper-sound-7d23cd1fe2",
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "丙烷罐",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-2f54d2e3c0",
+      "Name": "测光表",
+      "ImagePath": "images/merchanthelper-item-2f54d2e3c0.png",
+      "SoundGroupId": "merchanthelper-sound-64d40d39b3",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "测光表",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-4eb3de1304",
+      "Name": "测距望远镜",
+      "ImagePath": "images/merchanthelper-item-4eb3de1304.png",
+      "SoundGroupId": "merchanthelper-sound-68f6c613ff",
+      "GridWidth": 2,
+      "GridHeight": 1,
+      "Orientation": "horizontal",
+      "ImageCrop": null,
+      "SourceName": "测距望远镜",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-c777fbe6c4",
+      "Name": "唱片机",
+      "ImagePath": "images/merchanthelper-item-c777fbe6c4.png",
+      "SoundGroupId": "merchanthelper-sound-516f6b73ba",
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "唱片机",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-5375790fbf",
+      "Name": "宠物蛋",
+      "ImagePath": "images/merchanthelper-item-5375790fbf.png",
+      "SoundGroupId": "merchanthelper-sound-a61e2f38a3",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "宠物蛋",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-7829965b48",
+      "Name": "电容分析仪",
+      "ImagePath": "images/merchanthelper-item-7829965b48.png",
+      "SoundGroupId": "merchanthelper-sound-a61e2f38a3",
+      "GridWidth": 1,
+      "GridHeight": 2,
+      "Orientation": "vertical",
+      "ImageCrop": null,
+      "SourceName": "电容分析仪",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-ee9a613272",
+      "Name": "电子听诊器",
+      "ImagePath": "images/merchanthelper-item-ee9a613272.png",
+      "SoundGroupId": "merchanthelper-sound-a61e2f38a3",
+      "GridWidth": 1,
+      "GridHeight": 2,
+      "Orientation": "vertical",
+      "ImageCrop": null,
+      "SourceName": "电子听诊器",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-46bb2021d5",
+      "Name": "发条小汽车",
+      "ImagePath": "images/merchanthelper-item-46bb2021d5.png",
+      "SoundGroupId": "merchanthelper-sound-a61e2f38a3",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "发条小汽车",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-3f36b0300a",
+      "Name": "工具套组",
+      "ImagePath": "images/merchanthelper-item-3f36b0300a.png",
+      "SoundGroupId": "merchanthelper-sound-cd33268f69",
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "工具套组",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-52615f9ac9",
+      "Name": "固态硬盘",
+      "ImagePath": "images/merchanthelper-item-52615f9ac9.png",
+      "SoundGroupId": "merchanthelper-sound-aa6d3cc4f1",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "固态硬盘",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-a1ee8125d4",
+      "Name": "故障电视",
+      "ImagePath": "images/merchanthelper-item-a1ee8125d4.png",
+      "SoundGroupId": "merchanthelper-sound-14d626e724",
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "故障电视",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-aa50f97c34",
+      "Name": "怀表",
+      "ImagePath": "images/merchanthelper-item-aa50f97c34.png",
+      "SoundGroupId": "merchanthelper-sound-95c2828c08",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "怀表",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-0a62929c3e",
+      "Name": "缓降器",
+      "ImagePath": "images/merchanthelper-item-0a62929c3e.png",
+      "SoundGroupId": "merchanthelper-sound-cd33268f69",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "缓降器",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-3f1b7fedd5",
+      "Name": "火焰喷灯",
+      "ImagePath": "images/merchanthelper-item-3f1b7fedd5.png",
+      "SoundGroupId": "merchanthelper-sound-14d626e724",
+      "GridWidth": 1,
+      "GridHeight": 2,
+      "Orientation": "vertical",
+      "ImageCrop": null,
+      "SourceName": "火焰喷灯",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-ae6a7999be",
+      "Name": "机械硬盘",
+      "ImagePath": "images/merchanthelper-item-ae6a7999be.png",
+      "SoundGroupId": "merchanthelper-sound-aa6d3cc4f1",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "机械硬盘",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-2cf2083ea1",
+      "Name": "机油壶",
+      "ImagePath": "images/merchanthelper-item-2cf2083ea1.png",
+      "SoundGroupId": "merchanthelper-sound-09a6922aca",
+      "GridWidth": 2,
+      "GridHeight": 1,
+      "Orientation": "horizontal",
+      "ImageCrop": null,
+      "SourceName": "机油壶",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-f687b81003",
+      "Name": "纪念硬币",
+      "ImagePath": "images/merchanthelper-item-f687b81003.png",
+      "SoundGroupId": "merchanthelper-sound-95c2828c08",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "纪念硬币",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-6f00185b5c",
+      "Name": "金丝边眼镜",
+      "ImagePath": "images/merchanthelper-item-6f00185b5c.png",
+      "SoundGroupId": "merchanthelper-sound-745d981e77",
+      "GridWidth": 2,
+      "GridHeight": 1,
+      "Orientation": "horizontal",
+      "ImageCrop": null,
+      "SourceName": "金丝边眼镜",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-1a3d39b935",
+      "Name": "金质钢笔",
+      "ImagePath": "images/merchanthelper-item-1a3d39b935.png",
+      "SoundGroupId": "merchanthelper-sound-a61e2f38a3",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "金质钢笔",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-d8931c8bac",
+      "Name": "镜头",
+      "ImagePath": "images/merchanthelper-item-d8931c8bac.png",
+      "SoundGroupId": "merchanthelper-sound-68f6c613ff",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "镜头",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-26f5cd081b",
+      "Name": "军用工具包",
+      "ImagePath": "images/merchanthelper-item-26f5cd081b.png",
+      "SoundGroupId": "merchanthelper-sound-a61e2f38a3",
+      "GridWidth": 2,
+      "GridHeight": 1,
+      "Orientation": "horizontal",
+      "ImageCrop": null,
+      "SourceName": "军用工具包",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-78272f2a5e",
+      "Name": "毛绒玩具",
+      "ImagePath": "images/merchanthelper-item-78272f2a5e.png",
+      "SoundGroupId": "merchanthelper-sound-e804154fd4",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "毛绒玩具",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-47fdad4f19",
+      "Name": "煤油灯",
+      "ImagePath": "images/merchanthelper-item-47fdad4f19.png",
+      "SoundGroupId": "merchanthelper-sound-28e6d39dc3",
+      "GridWidth": 1,
+      "GridHeight": 2,
+      "Orientation": "vertical",
+      "ImageCrop": null,
+      "SourceName": "煤油灯",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-23a1e18b3d",
+      "Name": "耐冲击硬胶",
+      "ImagePath": "images/merchanthelper-item-23a1e18b3d.png",
+      "SoundGroupId": "merchanthelper-sound-cbb60814b3",
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "耐冲击硬胶",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-00d19851a5",
+      "Name": "内存条",
+      "ImagePath": "images/merchanthelper-item-00d19851a5.png",
+      "SoundGroupId": "merchanthelper-sound-64d40d39b3",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "内存条",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-388107a2f9",
+      "Name": "镍镉电池组",
+      "ImagePath": "images/merchanthelper-item-388107a2f9.png",
+      "SoundGroupId": "merchanthelper-sound-cd33268f69",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "镍镉电池组",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-44d4092501",
+      "Name": "平衡仪",
+      "ImagePath": "images/merchanthelper-item-44d4092501.png",
+      "SoundGroupId": "merchanthelper-sound-64d40d39b3",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "平衡仪",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-4558581b9f",
+      "Name": "气体分析仪",
+      "ImagePath": "images/merchanthelper-item-4558581b9f.png",
+      "SoundGroupId": "merchanthelper-sound-64d40d39b3",
+      "GridWidth": 1,
+      "GridHeight": 2,
+      "Orientation": "vertical",
+      "ImageCrop": null,
+      "SourceName": "气体分析仪",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-b5ba66ce05",
+      "Name": "千斤顶",
+      "ImagePath": "images/merchanthelper-item-b5ba66ce05.png",
+      "SoundGroupId": "merchanthelper-sound-09a6922aca",
+      "GridWidth": 2,
+      "GridHeight": 1,
+      "Orientation": "horizontal",
+      "ImageCrop": null,
+      "SourceName": "千斤顶",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-7615830b65",
+      "Name": "伞绳",
+      "ImagePath": "images/merchanthelper-item-7615830b65.png",
+      "SoundGroupId": "merchanthelper-sound-f41260da95",
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "伞绳",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-baaaadee54",
+      "Name": "奢华茶具",
+      "ImagePath": "images/merchanthelper-item-baaaadee54.png",
+      "SoundGroupId": "merchanthelper-sound-166bdca9d8",
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "奢华茶具",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-76c42c8364",
+      "Name": "生物样本",
+      "ImagePath": "images/merchanthelper-item-76c42c8364.png",
+      "SoundGroupId": "merchanthelper-sound-68f6c613ff",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "生物样本",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-f341494668",
+      "Name": "手持分析仪",
+      "ImagePath": "images/merchanthelper-item-f341494668.png",
+      "SoundGroupId": "merchanthelper-sound-a61e2f38a3",
+      "GridWidth": 1,
+      "GridHeight": 2,
+      "Orientation": "vertical",
+      "ImageCrop": null,
+      "SourceName": "手持分析仪",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-eb4df0431f",
+      "Name": "手持计算器",
+      "ImagePath": "images/merchanthelper-item-eb4df0431f.png",
+      "SoundGroupId": "merchanthelper-sound-cd33268f69",
+      "GridWidth": 1,
+      "GridHeight": 2,
+      "Orientation": "vertical",
+      "ImageCrop": null,
+      "SourceName": "手持计算器",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-19f22fc536",
+      "Name": "手持盐度计",
+      "ImagePath": "images/merchanthelper-item-19f22fc536.png",
+      "SoundGroupId": "merchanthelper-sound-cd33268f69",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "手持盐度计",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-1d141336e2",
+      "Name": "数字助理",
+      "ImagePath": "images/merchanthelper-item-1d141336e2.png",
+      "SoundGroupId": "merchanthelper-sound-a61e2f38a3",
+      "GridWidth": 1,
+      "GridHeight": 2,
+      "Orientation": "vertical",
+      "ImageCrop": null,
+      "SourceName": "数字助理",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-8c7c6fbcf8",
+      "Name": "水泥",
+      "ImagePath": "images/merchanthelper-item-8c7c6fbcf8.png",
+      "SoundGroupId": "merchanthelper-sound-ea6cca8237",
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "水泥",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-5f38862dc6",
+      "Name": "太阳能板",
+      "ImagePath": "images/merchanthelper-item-5f38862dc6.png",
+      "SoundGroupId": "merchanthelper-sound-8ab593bb32",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "太阳能板",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-7b9c7bb1cc",
+      "Name": "提线木偶",
+      "ImagePath": "images/merchanthelper-item-7b9c7bb1cc.png",
+      "SoundGroupId": "merchanthelper-sound-516f6b73ba",
+      "GridWidth": 1,
+      "GridHeight": 2,
+      "Orientation": "vertical",
+      "ImageCrop": null,
+      "SourceName": "提线木偶",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-ba438ea8fb",
+      "Name": "体温枪",
+      "ImagePath": "images/merchanthelper-item-ba438ea8fb.png",
+      "SoundGroupId": "merchanthelper-sound-64d40d39b3",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "体温枪",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-265d7dacfd",
+      "Name": "通枪工具组",
+      "ImagePath": "images/merchanthelper-item-265d7dacfd.png",
+      "SoundGroupId": "merchanthelper-sound-09a6922aca",
+      "GridWidth": 1,
+      "GridHeight": 2,
+      "Orientation": "vertical",
+      "ImageCrop": null,
+      "SourceName": "通枪工具组",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-9437f4533a",
+      "Name": "完好的屏幕",
+      "ImagePath": "images/merchanthelper-item-9437f4533a.png",
+      "SoundGroupId": "merchanthelper-sound-ee4dffd2b9",
+      "GridWidth": 2,
+      "GridHeight": 1,
+      "Orientation": "horizontal",
+      "ImageCrop": null,
+      "SourceName": "完好的屏幕",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-7adcbc88aa",
+      "Name": "腕表",
+      "ImagePath": "images/merchanthelper-item-7adcbc88aa.png",
+      "SoundGroupId": "merchanthelper-sound-a61e2f38a3",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "腕表",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-fa83e77d99",
+      "Name": "薇雷拉琴",
+      "ImagePath": "images/merchanthelper-item-fa83e77d99.png",
+      "SoundGroupId": "merchanthelper-sound-63e554c488",
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "薇雷拉琴",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-ac087e2b48",
+      "Name": "无线对讲机",
+      "ImagePath": "images/merchanthelper-item-ac087e2b48.png",
+      "SoundGroupId": "merchanthelper-sound-68f6c613ff",
+      "GridWidth": 1,
+      "GridHeight": 2,
+      "Orientation": "vertical",
+      "ImageCrop": null,
+      "SourceName": "无线对讲机",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-d560afdce0",
+      "Name": "香水",
+      "ImagePath": "images/merchanthelper-item-d560afdce0.png",
+      "SoundGroupId": "merchanthelper-sound-166bdca9d8",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "香水",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-1c89c30370",
+      "Name": "硝化棉",
+      "ImagePath": "images/merchanthelper-item-1c89c30370.png",
+      "SoundGroupId": "merchanthelper-sound-f41260da95",
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "硝化棉",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-aba1c1bf27",
+      "Name": "小袋肥料",
+      "ImagePath": "images/merchanthelper-item-aba1c1bf27.png",
+      "SoundGroupId": "merchanthelper-sound-e804154fd4",
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "小袋肥料",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-d0b534d0af",
+      "Name": "芯片处理器",
+      "ImagePath": "images/merchanthelper-item-d0b534d0af.png",
+      "SoundGroupId": "merchanthelper-sound-64d40d39b3",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "芯片处理器",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-0cdfd93b4e",
+      "Name": "信息素试剂盒",
+      "ImagePath": "images/merchanthelper-item-0cdfd93b4e.png",
+      "SoundGroupId": "merchanthelper-sound-166bdca9d8",
+      "GridWidth": 3,
+      "GridHeight": 2,
+      "Orientation": "horizontal",
+      "ImageCrop": null,
+      "SourceName": "信息素试剂盒",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-1571fa91d5",
+      "Name": "行星之子",
+      "ImagePath": "images/merchanthelper-item-1571fa91d5.png",
+      "SoundGroupId": "merchanthelper-sound-a61e2f38a3",
+      "GridWidth": 1,
+      "GridHeight": 2,
+      "Orientation": "vertical",
+      "ImageCrop": null,
+      "SourceName": "行星之子",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-b1a1e407aa",
+      "Name": "一扎宣纸",
+      "ImagePath": "images/merchanthelper-item-b1a1e407aa.png",
+      "SoundGroupId": "merchanthelper-sound-314f686f36",
+      "GridWidth": 1,
+      "GridHeight": 2,
+      "Orientation": "vertical",
+      "ImageCrop": null,
+      "SourceName": "一扎宣纸",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-c406495122",
+      "Name": "银片手链",
+      "ImagePath": "images/merchanthelper-item-c406495122.png",
+      "SoundGroupId": "merchanthelper-sound-95c2828c08",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "银片手链",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-81ac1af2b9",
+      "Name": "油桶",
+      "ImagePath": "images/merchanthelper-item-81ac1af2b9.png",
+      "SoundGroupId": "merchanthelper-sound-7d23cd1fe2",
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "油桶",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-2a7122d01c",
+      "Name": "游戏卡带",
+      "ImagePath": "images/merchanthelper-item-2a7122d01c.png",
+      "SoundGroupId": "merchanthelper-sound-64d40d39b3",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "游戏卡带",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-56e61cac08",
+      "Name": "玉质手串",
+      "ImagePath": "images/merchanthelper-item-56e61cac08.png",
+      "SoundGroupId": "merchanthelper-sound-a61e2f38a3",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "玉质手串",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-1bd269d2d3",
+      "Name": "照相机",
+      "ImagePath": "images/merchanthelper-item-1bd269d2d3.png",
+      "SoundGroupId": "merchanthelper-sound-64d40d39b3",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "照相机",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-4269785c69",
+      "Name": "助听器",
+      "ImagePath": "images/merchanthelper-item-4269785c69.png",
+      "SoundGroupId": "merchanthelper-sound-68f6c613ff",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "助听器",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-96893df538",
+      "Name": "专用电路板",
+      "ImagePath": "images/merchanthelper-item-96893df538.png",
+      "SoundGroupId": "merchanthelper-sound-64d40d39b3",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "专用电路板",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-871d9e625a",
+      "Name": "阻断剂注射枪",
+      "ImagePath": "images/merchanthelper-item-871d9e625a.png",
+      "SoundGroupId": "merchanthelper-sound-166bdca9d8",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "阻断剂注射枪",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-a439b30ee2",
+      "Name": "CPU",
+      "ImagePath": "images/merchanthelper-item-a439b30ee2.png",
+      "SoundGroupId": "merchanthelper-sound-aa6d3cc4f1",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "CPU",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-d7e978ef43",
+      "Name": "GPU",
+      "ImagePath": "images/merchanthelper-item-d7e978ef43.png",
+      "SoundGroupId": "merchanthelper-sound-8ab593bb32",
+      "GridWidth": 1,
+      "GridHeight": 1,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "GPU",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-9285413dfc",
+      "Name": "MRID电脑",
+      "ImagePath": "images/merchanthelper-item-9285413dfc.png",
+      "SoundGroupId": "merchanthelper-sound-cd33268f69",
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "MRID电脑",
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-item-4f97795078",
+      "Name": "PSU电源",
+      "ImagePath": "images/merchanthelper-item-4f97795078.png",
+      "SoundGroupId": "merchanthelper-sound-aa6d3cc4f1",
+      "GridWidth": 2,
+      "GridHeight": 2,
+      "Orientation": "square",
+      "ImageCrop": null,
+      "SourceName": "PSU电源",
+      "SourceBatch": "merchanthelper-5a0f5249"
     }
   ],
   "SoundGroups": [
@@ -1447,6 +2275,121 @@
       "Id": "sound-double-neck-lute-20261008",
       "Name": "特殊声 · 双颈鲁特琴",
       "Evidence": "用户确认独立拿起音效，2026-10-08录屏约2秒；不使用约5秒放下声。"
+    },
+    {
+      "Id": "merchanthelper-sound-28e6d39dc3",
+      "Name": "MerchantHelper · 拔动声音",
+      "Evidence": "MerchantHelper source revision merchanthelper-5a0f5249; sound_type=拔动声音; imported local reference library."
+    },
+    {
+      "Id": "merchanthelper-sound-8ab593bb32",
+      "Name": "MerchantHelper · 呲呲声音",
+      "Evidence": "MerchantHelper source revision merchanthelper-5a0f5249; sound_type=呲呲声音; imported local reference library."
+    },
+    {
+      "Id": "merchanthelper-sound-09a6922aca",
+      "Name": "MerchantHelper · 打铁声音",
+      "Evidence": "MerchantHelper source revision merchanthelper-5a0f5249; sound_type=打铁声音; imported local reference library."
+    },
+    {
+      "Id": "merchanthelper-sound-ebc58a056a",
+      "Name": "MerchantHelper · 翻书声音",
+      "Evidence": "MerchantHelper source revision merchanthelper-5a0f5249; sound_type=翻书声音; imported local reference library."
+    },
+    {
+      "Id": "merchanthelper-sound-cd33268f69",
+      "Name": "MerchantHelper · 金属声音",
+      "Evidence": "MerchantHelper source revision merchanthelper-5a0f5249; sound_type=金属声音; imported local reference library."
+    },
+    {
+      "Id": "merchanthelper-sound-68f6c613ff",
+      "Name": "MerchantHelper · 空灵声音",
+      "Evidence": "MerchantHelper source revision merchanthelper-5a0f5249; sound_type=空灵声音; imported local reference library."
+    },
+    {
+      "Id": "merchanthelper-sound-516f6b73ba",
+      "Name": "MerchantHelper · 木柜声音",
+      "Evidence": "MerchantHelper source revision merchanthelper-5a0f5249; sound_type=木柜声音; imported local reference library."
+    },
+    {
+      "Id": "merchanthelper-sound-aa6d3cc4f1",
+      "Name": "MerchantHelper · 配件声音",
+      "Evidence": "MerchantHelper source revision merchanthelper-5a0f5249; sound_type=配件声音; imported local reference library."
+    },
+    {
+      "Id": "merchanthelper-sound-1c8c8fe375",
+      "Name": "MerchantHelper · 瓶杯摇晃声音",
+      "Evidence": "MerchantHelper source revision merchanthelper-5a0f5249; sound_type=瓶杯摇晃声音; imported local reference library."
+    },
+    {
+      "Id": "merchanthelper-sound-95c2828c08",
+      "Name": "MerchantHelper · 撒币声音",
+      "Evidence": "MerchantHelper source revision merchanthelper-5a0f5249; sound_type=撒币声音; imported local reference library."
+    },
+    {
+      "Id": "merchanthelper-sound-314f686f36",
+      "Name": "MerchantHelper · 手册声音",
+      "Evidence": "MerchantHelper source revision merchanthelper-5a0f5249; sound_type=手册声音; imported local reference library."
+    },
+    {
+      "Id": "merchanthelper-sound-f41260da95",
+      "Name": "MerchantHelper · 塑料包声音",
+      "Evidence": "MerchantHelper source revision merchanthelper-5a0f5249; sound_type=塑料包声音; imported local reference library."
+    },
+    {
+      "Id": "merchanthelper-sound-166bdca9d8",
+      "Name": "MerchantHelper · 陶瓷声音",
+      "Evidence": "MerchantHelper source revision merchanthelper-5a0f5249; sound_type=陶瓷声音; imported local reference library."
+    },
+    {
+      "Id": "merchanthelper-sound-745d981e77",
+      "Name": "MerchantHelper · 特殊 · 金丝边眼镜",
+      "Evidence": "MerchantHelper source revision merchanthelper-5a0f5249; sound_type=特殊; imported local reference library."
+    },
+    {
+      "Id": "merchanthelper-sound-cbb60814b3",
+      "Name": "MerchantHelper · 特殊 · 耐冲击硬胶",
+      "Evidence": "MerchantHelper source revision merchanthelper-5a0f5249; sound_type=特殊; imported local reference library."
+    },
+    {
+      "Id": "merchanthelper-sound-ea6cca8237",
+      "Name": "MerchantHelper · 特殊 · 水泥",
+      "Evidence": "MerchantHelper source revision merchanthelper-5a0f5249; sound_type=特殊; imported local reference library."
+    },
+    {
+      "Id": "merchanthelper-sound-ee4dffd2b9",
+      "Name": "MerchantHelper · 特殊 · 完好的屏幕",
+      "Evidence": "MerchantHelper source revision merchanthelper-5a0f5249; sound_type=特殊; imported local reference library."
+    },
+    {
+      "Id": "merchanthelper-sound-63e554c488",
+      "Name": "MerchantHelper · 特殊 · 薇雷拉琴",
+      "Evidence": "MerchantHelper source revision merchanthelper-5a0f5249; sound_type=特殊; imported local reference library."
+    },
+    {
+      "Id": "merchanthelper-sound-e804154fd4",
+      "Name": "MerchantHelper · 拖地声音",
+      "Evidence": "MerchantHelper source revision merchanthelper-5a0f5249; sound_type=拖地声音; imported local reference library."
+    },
+    {
+      "Id": "merchanthelper-sound-64d40d39b3",
+      "Name": "MerchantHelper · 相机胶卷声音",
+      "Evidence": "MerchantHelper source revision merchanthelper-5a0f5249; sound_type=相机胶卷声音; imported local reference library."
+    },
+    {
+      "Id": "merchanthelper-sound-a61e2f38a3",
+      "Name": "MerchantHelper · 硬币声音",
+      "Evidence": "MerchantHelper source revision merchanthelper-5a0f5249; sound_type=硬币声音; imported local reference library."
+    },
+    {
+      "Id": "merchanthelper-sound-7d23cd1fe2",
+      "Name": "MerchantHelper · 重物拖动声",
+      "Evidence": "MerchantHelper source revision merchanthelper-5a0f5249; sound_type=重物拖动声; imported local reference library."
+    },
+    {
+      "Id": "merchanthelper-sound-14d626e724",
+      "Name": "MerchantHelper · 抓板声音",
+      "Evidence": "MerchantHelper source revision merchanthelper-5a0f5249; sound_type=抓板声音; imported local reference library."
     }
   ],
   "SoundSamples": [
@@ -5339,6 +6282,236 @@
       "StartSeconds": 1.82,
       "EndSeconds": 2.36,
       "SourceBatch": "user-20261008"
+    },
+    {
+      "Id": "merchanthelper-sample-166a7abf78",
+      "SoundGroupId": "merchanthelper-sound-ebc58a056a",
+      "FilePath": "samples/merchanthelper-sound-166a7abf78.wav",
+      "Description": "MerchantHelper · 翻书声音；MerchantHelper 声音类型样例",
+      "SourceRecording": "翻书声音.wav",
+      "StartSeconds": null,
+      "EndSeconds": null,
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-sample-1734ee9854",
+      "SoundGroupId": "merchanthelper-sound-95c2828c08",
+      "FilePath": "samples/merchanthelper-sound-1734ee9854.wav",
+      "Description": "MerchantHelper · 撒币声音；MerchantHelper 声音类型样例",
+      "SourceRecording": "撒币声音.wav",
+      "StartSeconds": null,
+      "EndSeconds": null,
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-sample-300c86d122",
+      "SoundGroupId": "merchanthelper-sound-28e6d39dc3",
+      "FilePath": "samples/merchanthelper-sound-300c86d122.wav",
+      "Description": "MerchantHelper · 拔动声音；MerchantHelper 声音类型样例",
+      "SourceRecording": "拔动声音.wav",
+      "StartSeconds": null,
+      "EndSeconds": null,
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-sample-32fc5c4530",
+      "SoundGroupId": "merchanthelper-sound-ea6cca8237",
+      "FilePath": "samples/merchanthelper-sound-32fc5c4530.wav",
+      "Description": "MerchantHelper · 特殊 · 水泥；MerchantHelper 声音类型样例",
+      "SourceRecording": "水泥.wav",
+      "StartSeconds": null,
+      "EndSeconds": null,
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-sample-4a53cf6e85",
+      "SoundGroupId": "merchanthelper-sound-63e554c488",
+      "FilePath": "samples/merchanthelper-sound-4a53cf6e85.wav",
+      "Description": "MerchantHelper · 特殊 · 薇雷拉琴；MerchantHelper 声音类型样例",
+      "SourceRecording": "薇雷拉琴.wav",
+      "StartSeconds": null,
+      "EndSeconds": null,
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-sample-4d5397dcc6",
+      "SoundGroupId": "merchanthelper-sound-09a6922aca",
+      "FilePath": "samples/merchanthelper-sound-4d5397dcc6.wav",
+      "Description": "MerchantHelper · 打铁声音；MerchantHelper 声音类型样例",
+      "SourceRecording": "打铁声音.wav",
+      "StartSeconds": null,
+      "EndSeconds": null,
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-sample-5b98d78752",
+      "SoundGroupId": "merchanthelper-sound-516f6b73ba",
+      "FilePath": "samples/merchanthelper-sound-5b98d78752.wav",
+      "Description": "MerchantHelper · 木柜声音；MerchantHelper 声音类型样例",
+      "SourceRecording": "木柜声音.wav",
+      "StartSeconds": null,
+      "EndSeconds": null,
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-sample-60f2a206c7",
+      "SoundGroupId": "merchanthelper-sound-64d40d39b3",
+      "FilePath": "samples/merchanthelper-sound-60f2a206c7.wav",
+      "Description": "MerchantHelper · 相机胶卷声音；MerchantHelper 声音类型样例",
+      "SourceRecording": "相机胶卷声音.wav",
+      "StartSeconds": null,
+      "EndSeconds": null,
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-sample-62c30501e6",
+      "SoundGroupId": "merchanthelper-sound-cbb60814b3",
+      "FilePath": "samples/merchanthelper-sound-62c30501e6.wav",
+      "Description": "MerchantHelper · 特殊 · 耐冲击硬胶；MerchantHelper 声音类型样例",
+      "SourceRecording": "耐冲击硬胶.wav",
+      "StartSeconds": null,
+      "EndSeconds": null,
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-sample-72351c6e6d",
+      "SoundGroupId": "merchanthelper-sound-68f6c613ff",
+      "FilePath": "samples/merchanthelper-sound-72351c6e6d.wav",
+      "Description": "MerchantHelper · 空灵声音；MerchantHelper 声音类型样例",
+      "SourceRecording": "空灵声音.wav",
+      "StartSeconds": null,
+      "EndSeconds": null,
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-sample-833a733459",
+      "SoundGroupId": "merchanthelper-sound-7d23cd1fe2",
+      "FilePath": "samples/merchanthelper-sound-833a733459.wav",
+      "Description": "MerchantHelper · 重物拖动声；MerchantHelper 声音类型样例",
+      "SourceRecording": "重物拖动声.wav",
+      "StartSeconds": null,
+      "EndSeconds": null,
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-sample-83491f2411",
+      "SoundGroupId": "merchanthelper-sound-166bdca9d8",
+      "FilePath": "samples/merchanthelper-sound-83491f2411.wav",
+      "Description": "MerchantHelper · 陶瓷声音；MerchantHelper 声音类型样例",
+      "SourceRecording": "陶瓷声音.wav",
+      "StartSeconds": null,
+      "EndSeconds": null,
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-sample-a66e9dde0c",
+      "SoundGroupId": "merchanthelper-sound-aa6d3cc4f1",
+      "FilePath": "samples/merchanthelper-sound-a66e9dde0c.wav",
+      "Description": "MerchantHelper · 配件声音；MerchantHelper 声音类型样例",
+      "SourceRecording": "配件声音.wav",
+      "StartSeconds": null,
+      "EndSeconds": null,
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-sample-ae184dd524",
+      "SoundGroupId": "merchanthelper-sound-8ab593bb32",
+      "FilePath": "samples/merchanthelper-sound-ae184dd524.wav",
+      "Description": "MerchantHelper · 呲呲声音；MerchantHelper 声音类型样例",
+      "SourceRecording": "呲呲声音.wav",
+      "StartSeconds": null,
+      "EndSeconds": null,
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-sample-af8aab8c4f",
+      "SoundGroupId": "merchanthelper-sound-745d981e77",
+      "FilePath": "samples/merchanthelper-sound-af8aab8c4f.wav",
+      "Description": "MerchantHelper · 特殊 · 金丝边眼镜；MerchantHelper 声音类型样例",
+      "SourceRecording": "金丝边眼镜.wav",
+      "StartSeconds": null,
+      "EndSeconds": null,
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-sample-be29707cc7",
+      "SoundGroupId": "merchanthelper-sound-f41260da95",
+      "FilePath": "samples/merchanthelper-sound-be29707cc7.wav",
+      "Description": "MerchantHelper · 塑料包声音；MerchantHelper 声音类型样例",
+      "SourceRecording": "塑料包声音.wav",
+      "StartSeconds": null,
+      "EndSeconds": null,
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-sample-c3443e4972",
+      "SoundGroupId": "merchanthelper-sound-314f686f36",
+      "FilePath": "samples/merchanthelper-sound-c3443e4972.wav",
+      "Description": "MerchantHelper · 手册声音；MerchantHelper 声音类型样例",
+      "SourceRecording": "手册声音.wav",
+      "StartSeconds": null,
+      "EndSeconds": null,
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-sample-c6d5caf688",
+      "SoundGroupId": "merchanthelper-sound-1c8c8fe375",
+      "FilePath": "samples/merchanthelper-sound-c6d5caf688.wav",
+      "Description": "MerchantHelper · 瓶杯摇晃声音；MerchantHelper 声音类型样例",
+      "SourceRecording": "瓶杯摇晃声音.wav",
+      "StartSeconds": null,
+      "EndSeconds": null,
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-sample-cb27ff23d4",
+      "SoundGroupId": "merchanthelper-sound-e804154fd4",
+      "FilePath": "samples/merchanthelper-sound-cb27ff23d4.wav",
+      "Description": "MerchantHelper · 拖地声音；MerchantHelper 声音类型样例",
+      "SourceRecording": "拖地声音.wav",
+      "StartSeconds": null,
+      "EndSeconds": null,
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-sample-d3506fc32b",
+      "SoundGroupId": "merchanthelper-sound-a61e2f38a3",
+      "FilePath": "samples/merchanthelper-sound-d3506fc32b.wav",
+      "Description": "MerchantHelper · 硬币声音；MerchantHelper 声音类型样例",
+      "SourceRecording": "硬币声音.wav",
+      "StartSeconds": null,
+      "EndSeconds": null,
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-sample-d7b1b841b3",
+      "SoundGroupId": "merchanthelper-sound-14d626e724",
+      "FilePath": "samples/merchanthelper-sound-d7b1b841b3.wav",
+      "Description": "MerchantHelper · 抓板声音；MerchantHelper 声音类型样例",
+      "SourceRecording": "抓板声音.wav",
+      "StartSeconds": null,
+      "EndSeconds": null,
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-sample-d872dc22fd",
+      "SoundGroupId": "merchanthelper-sound-ee4dffd2b9",
+      "FilePath": "samples/merchanthelper-sound-d872dc22fd.wav",
+      "Description": "MerchantHelper · 特殊 · 完好的屏幕；MerchantHelper 声音类型样例",
+      "SourceRecording": "完好的屏幕.wav",
+      "StartSeconds": null,
+      "EndSeconds": null,
+      "SourceBatch": "merchanthelper-5a0f5249"
+    },
+    {
+      "Id": "merchanthelper-sample-e72a9230b7",
+      "SoundGroupId": "merchanthelper-sound-cd33268f69",
+      "FilePath": "samples/merchanthelper-sound-e72a9230b7.wav",
+      "Description": "MerchantHelper · 金属声音；MerchantHelper 声音类型样例",
+      "SourceRecording": "金属声音.wav",
+      "StartSeconds": null,
+      "EndSeconds": null,
+      "SourceBatch": "merchanthelper-5a0f5249"
     }
   ]
 }
