@@ -4,7 +4,7 @@
 
 **FieldTrader ·《暗区突围：无限》声音识别与游戏语音工具**
 
-![版本](https://img.shields.io/badge/version-0.8.6-EAA44A)
+![版本](https://img.shields.io/badge/version-0.9.0-EAA44A)
 ![平台](https://img.shields.io/badge/platform-Windows%20x64-247BB2)
 ![技术](https://img.shields.io/badge/.NET-8%20%7C%20WPF-6D54A4)
 
@@ -18,7 +18,7 @@
 
 ## 下载与安装
 
-普通用户请到 **[Releases 下载页面](https://github.com/yu6339096-creator/FieldTrader/releases/latest)** 下载 `FieldTrader-0.8.6-Setup.exe`，不要把 GitHub 的源码压缩包当成可运行软件。
+普通用户请到 **[Releases 下载页面](https://github.com/yu6339096-creator/FieldTrader/releases/latest)** 下载 `FieldTrader-0.9.0-Setup.exe`，不要把 GitHub 的源码压缩包当成可运行软件。
 
 - 安装版包含 .NET 运行组件、物品数据库、图片、声音样本和语音音效。
 - 同时提供便携版 ZIP，解压后运行 `FieldTrader.exe`。
@@ -44,7 +44,7 @@
 | 模块 | 功能 |
 | --- | --- |
 | 听声识物 | 持续监听 Windows 输出音频，以拿起声为重点，与本地模板匹配 |
-| 游戏悬浮窗 | 置顶、拖动、锁定、规格筛选、透明度、极简模式；保留最近两轮有效结果并显示 MerchantHelper 参考价 |
+| 游戏悬浮窗 | 置顶、拖动、锁定、规格筛选、透明度、极简模式；保留最近两轮有效结果并显示图鉴参考价 |
 | 全局快捷键 | 默认 `Alt + W` 开始/停止监听，可在软件设置中自定义 |
 | 候选物品 | 同声组显示多个物品，按占格数与横竖摆放筛选 |
 | 本地数据库 | JSON、图片和 WAV 文件；支持物品及声音样本管理 |
@@ -53,7 +53,7 @@
 | 自动按键说话 | 音效触发后等待组合键松开，自动按住 T，结束后松开；支持自由麦 |
 | 发送增强 | 麦克风音量最高 400%，发送增强 ×1～×8，带输出峰值保护 |
 
-当前内置 **109 个物品、24 个声音组、389 段声音样本**，其中 107 件有图片、2 件待补图；运行时生成 113 份匹配模板。
+当前初始库来自暗区情报站“行商听声鉴宝”图鉴：**138 个物品、17 个声音组、17 段拾取音效**，其中 136 件有图片、2 件网站暂无图片；物品价格、占格和横竖方向均按页面标注保存。
 
 ## 快速开始：听声识物
 
@@ -92,7 +92,7 @@
 
 个人数据目录：`%LOCALAPPDATA%\FieldTrader`。备份时退出软件，复制整个文件夹。
 
-源码自带的 `SeedData` 是初始物品库，`VoiceSeed` 是语音板内置音效，`ThirdParty` 是完整原始 VB-CABLE 组件。后续添加物品请使用软件中的数据库入口，并保留同声组及占格信息。
+源码自带的 `SeedData` 是初始物品库，`VoiceSeed` 是语音板内置音效，`ThirdParty` 是完整原始 VB-CABLE 组件。暗区情报站图鉴的采集和导入规则见 [导入说明](docs/AQTWWX_LISTEN_TREASURE_IMPORT.md)。后续添加物品请使用软件中的数据库入口，并保留同声组及占格信息。
 
 ## 开发者入口
 

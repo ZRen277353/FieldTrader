@@ -24,12 +24,12 @@ public sealed class SessionState : INotifyPropertyChanged, IDisposable {
  public ObservableCollection<string> History { get; }=[];
  public ObservableCollection<HistoryView> HistoryEntries { get; }=[];
  private readonly CandidateView[] placeholders=Enumerable.Range(0,4).Select(i=>new CandidateView("等待识别","—",null,i,false,0,"候选物品")).ToArray();
-  public string[] LayoutOptions {get;}=["全部规格","1格","2格·横放","2格·竖放","3格·横放","3格·竖放","4格","6格·横放","6格·竖放"];
+  public string[] LayoutOptions {get;}=["全部规格","1格","2格·横放","2格·竖放","3格·横放","3格·竖放","4格","6格·横放","6格·竖放","8格·横放","8格·竖放"];
  private string layoutFilter="全部规格";
  public string LayoutFilter {get=>layoutFilter;set{layoutFilter=value;Changed();Changed(nameof(DisplayCandidates));Changed(nameof(HudCandidates));Changed(nameof(PreviousHudCandidates));Changed(nameof(FilterSummary));Changed(nameof(NoFilterMatchesVisibility));Changed(nameof(HudFilterNote));if(Listening)StartPipeline();}}
  public Visibility NoFilterMatchesVisibility=>Candidates.Count>0&&!Candidates.Any(MatchesLayout)?Visibility.Visible:Visibility.Collapsed;
  public string FilterSummary=>$"同声候选 {Candidates.Count} 件 · 当前显示 {Candidates.Count(MatchesLayout)} 件";
- private bool MatchesLayout(CandidateView c)=>LayoutFilter switch {"1格"=>c.GridWidth*c.GridHeight==1,"2格·横放"=>c.GridWidth==2&&c.GridHeight==1,"2格·竖放"=>c.GridWidth==1&&c.GridHeight==2,"3格·横放"=>c.GridWidth==3&&c.GridHeight==1,"3格·竖放"=>c.GridWidth==1&&c.GridHeight==3,"4格"=>c.GridWidth*c.GridHeight==4,"6格·横放"=>c.GridWidth==3&&c.GridHeight==2,"6格·竖放"=>c.GridWidth==2&&c.GridHeight==3,_=>true};
+ private bool MatchesLayout(CandidateView c)=>LayoutFilter switch {"1格"=>c.GridWidth*c.GridHeight==1,"2格·横放"=>c.GridWidth==2&&c.GridHeight==1,"2格·竖放"=>c.GridWidth==1&&c.GridHeight==2,"3格·横放"=>c.GridWidth==3&&c.GridHeight==1,"3格·竖放"=>c.GridWidth==1&&c.GridHeight==3,"4格"=>c.GridWidth*c.GridHeight==4,"6格·横放"=>c.GridWidth==3&&c.GridHeight==2,"6格·竖放"=>c.GridWidth==2&&c.GridHeight==3,"8格·横放"=>c.GridWidth==4&&c.GridHeight==2,"8格·竖放"=>c.GridWidth==2&&c.GridHeight==4,_=>true};
  public IEnumerable<CandidateView> DisplayCandidates=>Candidates.Count==0?placeholders:Candidates.Where(MatchesLayout);
  private CandidateView[] latestHud=[],previousHud=[];
  private string latestHudTime="",previousHudTime="";
@@ -100,7 +100,7 @@ public sealed class SessionState : INotifyPropertyChanged, IDisposable {
   Candidates.Clear();int index=0;
   ResultNotice=result.IsMock?"模拟演示":"匹配 ≥70% · 同声物品请结合规格判断";ResultOpacity=1;Changed(nameof(ResultNotice));Changed(nameof(ResultOpacity));
   foreach(var c in result.Candidates) { var image=ItemImage.Load(c.Item,Store);
-   Candidates.Add(new(c.Item.Name,$"{c.Similarity:P1}",image,index,index==0,c.Similarity*100,result.IsMock?"MOCK · 同一声音组":ItemImage.Layout(c.Item)+" · 同声",c.Item.GridWidth,c.Item.GridHeight,ReferencePriceCatalog.Bundled.FormatFor(c.Item.Name)));index++;
+   Candidates.Add(new(c.Item.Name,$"{c.Similarity:P1}",image,index,index==0,c.Similarity*100,result.IsMock?"MOCK · 同一声音组":ItemImage.Layout(c.Item)+" · 同声",c.Item.GridWidth,c.Item.GridHeight,ReferencePriceCatalog.FormatWan(c.Item.Price)));index++;
   }
   previousHud=latestHud;previousHudTime=latestHudTime;latestHud=Candidates.ToArray();latestHudTime=result.Timestamp.ToString("HH:mm:ss");
   var group=Store.Data.SoundGroups.FirstOrDefault(g=>g.Id==result.SoundGroupId)?.Name??result.SoundGroupId;

@@ -1,10 +1,10 @@
 using System.IO;
 using System.Text.Json;
 namespace FieldTrader;
-public sealed record Item(string Id, string Name, string? ImagePath, string SoundGroupId,int GridWidth=0,int GridHeight=0,string Orientation="unspecified",int[]? ImageCrop=null,string? SourceName=null,string? SourceBatch=null);
+public sealed record Item(string Id, string Name, string? ImagePath, string SoundGroupId,int GridWidth=0,int GridHeight=0,string Orientation="unspecified",int[]? ImageCrop=null,string? SourceName=null,string? SourceBatch=null,int? Price=null);
 public sealed record SoundGroup(string Id, string Name,string? Evidence=null);
 public sealed record SoundSample(string Id, string SoundGroupId, string FilePath, string Description,string? SourceRecording=null,double? StartSeconds=null,double? EndSeconds=null,string? SourceBatch=null);
-public sealed class Catalog { public int Version { get; set; } = 1; public string? SeedRevision {get;set;} public List<Item> Items { get; set; } = []; public List<SoundGroup> SoundGroups { get; set; } = []; public List<SoundSample> SoundSamples { get; set; } = []; }
+public sealed class Catalog { public int Version { get; set; } = 1; public string? SeedRevision {get;set;} public bool ReplaceLegacySeeds {get;set;} public List<Item> Items { get; set; } = []; public List<SoundGroup> SoundGroups { get; set; } = []; public List<SoundSample> SoundSamples { get; set; } = []; }
 public sealed record Candidate(Item Item, double Similarity);
 public sealed record RecognitionResult(DateTimeOffset Timestamp, string SoundGroupId, IReadOnlyList<Candidate> Candidates, bool IsMock);
 public sealed record AudioFrame(float[] Mono, int SampleRate, DateTimeOffset Timestamp,float[]? BackgroundMono=null);

@@ -24,12 +24,13 @@
 
 项目通过 NuGet 引用 [NAudio 2.2.1](https://www.nuget.org/packages/NAudio/2.2.1)，上游源码与许可见 [NAudio](https://github.com/naudio/NAudio)。NAudio 使用 MIT 许可；随可运行版本提供其原始许可副本。
 
-## MerchantHelper 参考价数据
+## 暗区情报站行商图鉴数据
 
-- 来源：[A1Chao/MerchantHelper](https://github.com/A1Chao/MerchantHelper) 的 `assets/database.json`。
-- 快照提交：`5a0f5249cd5c7b4522866ba962952326b5fed23e`；文件 SHA-256：`6D82472F750D64478B887F73804C6BC8A79E65CAB15A372742E89E29064C8F56`。
-- 本软件只读取物品名称与 `reference_value` 生成名称下方的 `W` 参考价，不调用联网接口，也不声称它是实时成交价。
-- 上游说明为仅供学习交流、禁止商业用途；本软件不改变 MerchantHelper、游戏数据或相关素材的权利归属。完整说明见 `src/FieldTrader/PriceSeed/MerchantHelper/README.md`。
+- 来源：[暗区情报站 · 行商听声鉴宝](https://aqtwwx.net/listen-treasure)。
+- 采集日期：2026-10-23；公开页面图鉴包含 17 种拾取音效和 138 件藏品。
+- 本软件导入物品名称、页面标注价格、占格、横竖方向、图片和拾取音效，不调用联网接口，也不声称价格是实时成交价。
+- 图鉴页说明音效与数据仅供练习参考，与游戏官方没有直接关系。图片、声音和游戏数据的权利归各自权利人。
+- 采集快照与字段映射见 `tools/AqtwwxListenTreasure` 和 [AQTWWX_LISTEN_TREASURE_IMPORT.md](AQTWWX_LISTEN_TREASURE_IMPORT.md)。
 
 ## 游戏图像、声音与语音素材
 

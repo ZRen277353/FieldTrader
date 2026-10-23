@@ -4,6 +4,13 @@ namespace FieldTrader;
 public static class SeedCatalog {
  public static void Merge(CatalogStore store){var root=Path.Combine(AppContext.BaseDirectory,"SeedData");var file=Path.Combine(root,"catalog.json");if(!File.Exists(file))return;var seed=JsonSerializer.Deserialize<Catalog>(File.ReadAllText(file))!;CatalogStore.Validate(seed);if(seed.SeedRevision!=null&&store.Data.SeedRevision==seed.SeedRevision)return;
   var current=Path.Combine(store.Root,"catalog.json");if(File.Exists(current))File.Copy(current,Path.Combine(store.Root,$"catalog-backup-{DateTime.Now:yyyyMMdd-HHmmss-fff}.json"),false);
+  if(seed.ReplaceLegacySeeds){
+   var legacyGroupIds=store.Data.SoundGroups.Where(g=>g.Id.StartsWith("family-202609-")||g.Id.StartsWith("merchanthelper-")||g.Id.StartsWith("demo-")||g.Id is "sound-double-neck-lute-20261008" or "sound-golden-lion" or "sound-antique-teapot").Select(g=>g.Id).ToHashSet();
+   var legacyBatches=new HashSet<string>{"music-202609-v04","video-20260924","user-20261008","user-confirmed-20260927","merchanthelper-5a0f5249"};
+   store.Data.Items.RemoveAll(i=>legacyGroupIds.Contains(i.SoundGroupId)||i.Id.StartsWith("bulk-item-")||i.Id.StartsWith("demo-")||(i.SourceBatch!=null&&legacyBatches.Contains(i.SourceBatch)));
+   store.Data.SoundSamples.RemoveAll(s=>legacyGroupIds.Contains(s.SoundGroupId)||(s.SourceBatch!=null&&legacyBatches.Contains(s.SourceBatch)));
+   store.Data.SoundGroups.RemoveAll(g=>legacyGroupIds.Contains(g.Id));
+  }
   // Retire only templates shipped by earlier prototypes, never user-created GUID samples.
   store.Data.SoundSamples.RemoveAll(s=>s.Id.StartsWith("recording-lion-")||s.Id.StartsWith("recording-teapot-")||s.SourceBatch=="music-202609-v04");
   store.Data.Items.RemoveAll(i=>i.Id.StartsWith("demo-")&&i.Name.StartsWith("示例")&&i.ImagePath==null&&!store.Data.SoundSamples.Any(s=>s.SoundGroupId==i.SoundGroupId));
